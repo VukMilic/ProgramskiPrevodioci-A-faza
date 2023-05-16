@@ -1,0 +1,153 @@
+INFO  23:46:07,859 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  23:46:07,920 - #2 program
+INFO  23:46:07,920 - #48 MJProgram
+INFO  23:46:07,921 - #3 {
+INFO  23:46:07,922 - #14 void
+INFO  23:46:07,923 - #48 main
+INFO  23:46:07,923 - #12 (
+INFO  23:46:07,923 - #13 )
+INFO  23:46:07,924 - #48 int
+INFO  23:46:07,925 - #48 i
+INFO  23:46:07,925 - #8 ,
+INFO  23:46:07,927 - #48 i2
+INFO  23:46:07,927 - #8 ,
+INFO  23:46:07,927 - #48 j
+INFO  23:46:07,927 - #9 [
+INFO  23:46:07,927 - #10 ]
+INFO  23:46:07,927 - #7 ;
+INFO  23:46:07,927 - #48 char
+INFO  23:46:07,928 - #48 arr
+INFO  23:46:07,928 - #9 [
+INFO  23:46:07,928 - #10 ]
+INFO  23:46:07,928 - #8 ,
+INFO  23:46:07,928 - #48 c
+INFO  23:46:07,936 - #7 ;
+INFO  23:46:07,936 - #3 {
+INFO  23:46:07,936 - #20 print
+INFO  23:46:07,936 - #12 (
+INFO  23:46:07,937 - #47 1
+INFO  23:46:07,938 - #13 )
+INFO  23:46:07,941 - #7 ;
+INFO  23:46:07,941 - #20 print
+INFO  23:46:07,942 - #12 (
+INFO  23:46:07,942 - #47 2
+INFO  23:46:07,942 - #13 )
+INFO  23:46:07,942 - #7 ;
+INFO  23:46:07,943 - #18 return
+INFO  23:46:07,943 - #7 ;
+INFO  23:46:07,944 - #4 }
+INFO  23:46:07,944 - #4 }
+INFO  23:46:07,952 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoDeclList(
+  ) [NoDeclList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethVoidName(
+       main
+      ) [MethVoidName]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableTypeList(
+              VariableTypeList(
+                OneVarType(
+                 i
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [OneVarType]
+               i2
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [VariableTypeList]
+             j
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [VariableTypeList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableTypeList(
+            OneVarType(
+             arr
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [OneVarType]
+           c
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [VariableTypeList]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNumConst(
+                   1
+                  ) [FactorNumConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 2
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionNot(
+          ) [ExpressionNot]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:46:07,952 - ===================================
+INFO  23:46:07,958 - Deklarisana lokalna promenljiva i na liniji 3, objektni cvor: Var i: Int, 0, 1
+INFO  23:46:07,958 - Deklarisana lokalna promenljiva i2 na liniji 3, objektni cvor: Var i2: Int, 1, 1
+INFO  23:46:07,959 - Deklarisana lokalni niz j na liniji 3, objektni cvor: Var j: Array, 2, 1
+INFO  23:46:07,959 - Deklarisan lokalni niz arr na liniji 3, objektni cvor: Var arr: Array, 3, 1
+INFO  23:46:07,959 - Deklarisana lokalna promenljiva c na liniji 3, objektni cvor: Var c: Char, 4, 1
+INFO  23:46:07,959 - ===================================
+INFO  23:46:07,959 - 3
+INFO  23:46:07,975 - Parsiranje uspesno zavrseno!

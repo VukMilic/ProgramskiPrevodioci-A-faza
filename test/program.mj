@@ -1,0 +1,14 @@
+program MJProgram
+	int x1, x2[];
+{
+	void main()
+	{			
+		x2[0] = 1;
+		x1 = x2[0];
+		
+		// print(x2[0]);
+		// print(x1);
+		
+		return;
+	}
+}

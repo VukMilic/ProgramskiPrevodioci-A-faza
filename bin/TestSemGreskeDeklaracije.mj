@@ -1,0 +1,17 @@
+program MJCompiler
+	// greske prilikom deklaracija promenljivih ( nepostojeci tip )( ponovna deklaracija )
+	TypeError i1;
+	int i;
+	char i;
+	
+	// greske prilikom deklaracija konstanti ( dodeljen pogresan tip )( ponovna deklaracija )
+	const int con1="false";
+	const Bool con1="true";
+	const char con1 = "CH";
+
+{
+	// greska prilikom deklaracija lokalnih promenljivih ( nepostojeci tip )( ponovna deklaracija )
+	void main() TypeError i1; int i;
+	{
+	}
+}

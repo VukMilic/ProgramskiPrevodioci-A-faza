@@ -1,0 +1,354 @@
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+:}
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, OPENBRACEBRACKET, CLOSEBRACEBRACKET, CONST, EQUAL, SEMI;
+terminal COMMA, OPENSQUAREBRACKET, CLOSESQUAREBRACKET, CLASS, OPENBRACKET; 
+terminal CLOSEBRACKET, VOID, EXTENDS, BREAK, CONTINUE, RETURN, READ, PRINT, IF, WHILE, ELSE, PLUSPLUS;
+terminal MINUSMINUS, LOGICALOR, LOGICALAND, NEW, DOT, EQUALEQUAL, UNEQUAL, MORE, MOREEQUAL; 
+terminal LESS, LESSEQUAL, PLUS, MINUS, MUL, DIV, MOD, DO, ENUM, THIS, EQUALMORE, FOREACH, COLON; 
+
+terminal Integer NUMCONST;
+terminal String IDENT, CHARCONST, BOOLCONST;
+
+nonterminal DeclList, VarDeclList, ConstDecl, ConstTypeNumList; 
+nonterminal ConstTypeCharList, ConstTypeBoolList, VarDecl, GVarDecl, VarTypeList, GVarTypeList, ClassDecl, ClassMethodDecl; 
+nonterminal MethodDeclList, ExtendsType, FormPars, FormalParamList, FormalParamDecl;
+nonterminal StatementList, Statement, ElseStatement, CommaNumConst, DesignatorStatement, DesignatorList; 
+nonterminal PostDesignator, ActPars, ActParams, ExprList, Condition; 
+nonterminal CondTerm, MinusOrNot; 
+nonterminal ExprOrActPars, WhileTerm, ForeachTerm;
+nonterminal Label, AssignOp, Relop, Addop, Mulop, AssignError, DeclType, SquareBrackets;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName, Designator, Factor, MulopFactList, Term, AddopTermList, Expr, ExprOrNot;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorOrNot, CondFact, GVarIdent;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
+precedence left ELSE;
+
+Program ::= (Program) PROG ProgName:p DeclList OPENBRACEBRACKET MethodDeclList CLOSEBRACEBRACKET;
+
+ProgName ::= (ProgName) IDENT:progName;
+
+DeclList ::= (DeclarationsList) DeclList DeclType
+			|
+			(NoDeclList) /* epsilon */
+			;
+
+DeclType ::= (DeclConst) ConstDecl
+			|
+			(DeclGVar) GVarDecl
+			|
+			(DeclClass) ClassDecl
+			;
+			
+GVarDecl ::= (GlobalVarDecl) Type:globalVarType GVarTypeList SEMI
+			|
+			(GlobalVarDeclErrorSemi) error SEMI:g
+			{: parser.report_error("Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji " + gleft, null); :}
+			;
+			
+GVarTypeList ::= (GlobalVariableTypeList) GVarTypeList COMMA GVarIdent
+			|
+			(OneGlobalVarType) GVarIdent
+			;
+
+GVarIdent ::= (GlobalVarIdent) IDENT:globVarName SquareBrackets
+			|
+			(GlobalVarDeclCommaError) error:gl
+			{: parser.report_error("Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji " + glleft, null); :}
+			;				
+			
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+			|
+			(NoVarDecl) /* epsilon */
+			;
+
+ConstDecl ::= (NumConstDecl) CONST Type:constType ConstTypeNumList SEMI
+			|
+			(CharConstDecl) CONST Type:constType ConstTypeCharList SEMI
+			|
+			(BoolConstDecl) CONST Type:constType ConstTypeBoolList SEMI
+			;
+			
+ConstTypeNumList ::= (ConstantTypeNumList) ConstTypeNumList COMMA IDENT:constName EQUAL NUMCONST:constVal
+				  |
+				  (OneConstTypeNum) IDENT:constName EQUAL NUMCONST:constVal 
+				  ;
+
+ConstTypeCharList ::= (ConstantTypeCharList) ConstTypeCharList COMMA IDENT:constName EQUAL CHARCONST:constVal
+				  |
+				  (OneConstTypeChar) IDENT:constName EQUAL CHARCONST:constVal 
+				  ;
+
+ConstTypeBoolList ::= (ConstantTypeBoolList) ConstTypeBoolList COMMA IDENT:constName EQUAL BOOLCONST:constVal
+				  |
+				  (OneConstTypeBool) IDENT:constName EQUAL BOOLCONST:constVal
+				  ;
+
+VarDecl ::= (VarDecl) Type:varType VarTypeList SEMI;
+
+VarTypeList ::= (VariableTypeList) VarTypeList COMMA IDENT:varName SquareBrackets
+			|
+			(OneVarType) IDENT:varName SquareBrackets
+			;
+			
+SquareBrackets ::= (SquareBrackets) OPENSQUAREBRACKET CLOSESQUAREBRACKET
+				|
+				(NoSquareBrackets) /* epsilon */
+				;
+
+ClassDecl ::= (ClassDecl) CLASS IDENT ExtendsType OPENBRACEBRACKET VarDeclList ClassMethodDecl CLOSEBRACEBRACKET;
+
+ClassMethodDecl ::= (ClassMethodDeclaration) OPENBRACEBRACKET MethodDeclList CLOSEBRACEBRACKET
+				|
+				(NoClassMethodDecl) /* epsilon */
+				;
+				
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+				|
+				(NoMethodDecl) /* epsilon */
+				;
+
+MethodDecl ::= (MethodDeclaration) MethodTypeName OPENBRACKET FormPars CLOSEBRACKET VarDeclList OPENBRACEBRACKET StatementList CLOSEBRACEBRACKET;
+
+MethodTypeName ::= (MethTypeName) Type:retType IDENT:methName
+					|
+				   (MethVoidName) VOID IDENT:methName
+					;
+
+ExtendsType ::= (ExtendType) EXTENDS Type
+			|
+			(NoExtendsType) /* epsilon */
+			;
+
+Type ::= (Type) IDENT:typeName;
+
+FormPars ::= (FormParams) FormalParamList
+		  |
+		  (NoFormParam) /* epsilon */
+		  ;
+		  
+FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+				|
+				(SingleFormalParamDecl) FormalParamDecl
+				;
+
+FormalParamDecl ::= (FormalParamDecl) Type IDENT SquareBrackets;
+
+StatementList ::= (Statements) StatementList Statement
+				|
+				(NoStmt) /* epsilon */
+				;
+				
+Statement ::= (Assignment) DesignatorStatement
+		   |
+		   (BreakStmt) BREAK SEMI
+		   |
+		   (ContinueStmt) CONTINUE SEMI
+		   |
+		   (ReturnExpr) RETURN ExprOrNot SEMI
+		   |
+		   (ReadDesignator) READ OPENBRACKET Designator CLOSEBRACKET SEMI
+		   |
+		   (PrintStmt) PRINT OPENBRACKET Expr CommaNumConst CLOSEBRACKET SEMI
+		   |
+		   (MoreStmts) OPENBRACEBRACKET StatementList CLOSEBRACEBRACKET
+		   |
+		   (IfStatement) IF OPENBRACKET Condition CLOSEBRACKET Statement ElseStatement
+		   |
+		   (WhileStmt) WhileTerm OPENBRACKET Condition CLOSEBRACKET Statement
+		   |
+		   (DesignatorForEach) Designator DOT ForeachTerm OPENBRACKET IDENT EQUALMORE Statement CLOSEBRACKET SEMI
+		   ;
+
+WhileTerm ::= (WhileTerminal) WHILE;
+
+ForeachTerm ::= (ForeachTerminal) FOREACH;
+
+ElseStatement ::= (ElseStmt) ELSE Statement
+				|
+				(NoElseStmt) /* epsilon */
+				;
+		   
+CommaNumConst ::= (CommaNumConstant) COMMA NUMCONST
+				|
+				(NoCommaNumConst) /* epsilon */
+				;
+				
+DesignatorStatement ::= (DesignatorAssignOp) Designator AssignOp Expr SEMI
+				|
+			    (DesignatorAssignErrorStmt) Designator AssignOp AssignError
+			    |
+				(DesignatorActPars) Designator OPENBRACKET ActPars CLOSEBRACKET SEMI
+				|
+				(DesignatorPlusPlus) Designator PLUSPLUS SEMI
+				|
+				(DesignatorMinusMinus) Designator MINUSMINUS SEMI
+				|
+				(DesignatorStmtTwo) OPENSQUAREBRACKET DesignatorList CLOSESQUAREBRACKET EQUAL Designator SEMI
+				;
+
+DesignatorList ::= (DesigList) DesignatorList COMMA DesignatorOrNot
+				|
+				(OneDesigList) DesignatorOrNot
+				;
+				
+DesignatorOrNot ::= (DesignatorYes) Designator
+				|
+				(DesignatorNot) /* epsilon */
+				;
+				
+AssignError ::= (AssignOpError) error SEMI:el
+				{: parser.report_error("Uspesan oporavak od greske pri dodeli vrednosti na liniji " + elleft, null); :}
+				;
+
+ActPars ::= (ActParameters) ActParams
+		|
+		(NoActPars) /* epsilon */
+		;
+
+ActParams ::= (ActParams) Expr ExprList;
+
+ExprList ::= (ExpressionList) ExprList COMMA Expr
+			|
+			(NoExprList) /* epsilon */
+			;
+
+Condition ::= (CondTermList) Condition LOGICALOR CondTerm
+			|
+			(CondTermOne) CondTerm
+			;
+				
+CondTerm ::= (CondFactList) CondTerm LOGICALAND CondFact
+			|
+			(CondFactOne) CondFact
+			;
+
+CondFact ::= (CondExprRelopExpr) Expr Relop Expr
+			|
+			(CondExpr) Expr
+			;
+
+ExprOrNot ::= (ExpressionYes) Expr
+			|
+			(ExpressionNot) /* epsilon */
+			;	
+	
+Expr ::= (Expression) MinusOrNot Term AddopTermList;
+
+AddopTermList ::= (AddopTerminalList) AddopTermList Addop Term
+				|
+				(NoAddopTermList) /* epsilon */
+				;
+
+MinusOrNot ::= (MinusOr) MINUS
+			|
+			(MinusNot) /* epsilon */
+			;
+			
+Term ::= (Terminal) Factor MulopFactList;
+
+MulopFactList ::= (MulopFactorList) MulopFactList Mulop Factor
+				|
+				(NoMulopFactList) /* epsilon */
+				;
+
+Factor ::= (FactorDesignator) Designator 
+		|
+		(FactorMethod) Designator OPENBRACKET ActPars CLOSEBRACKET
+		|
+		(FactorNumConst) NUMCONST:constName
+		|
+		(FactorCharConst) CHARCONST:constName
+		|
+		(FactorBoolConst) BOOLCONST:constName
+		|
+		(FactorNewExpr) NEW Type OPENSQUAREBRACKET Expr CLOSESQUAREBRACKET
+		|
+		(FactorNewActPars) NEW Type OPENBRACKET ActPars CLOSEBRACKET
+		|
+		(FactorExpr) OPENBRACKET Expr CLOSEBRACKET
+		;
+								
+Designator ::= (DesignatorDot) Designator DOT IDENT:dotName
+				|
+				(DesignatorBrackets) Designator OPENSQUAREBRACKET Expr CLOSESQUAREBRACKET
+				|
+				(DesignatorIdent) IDENT:desigName
+				;
+
+Label ::= (Label) IDENT;
+
+AssignOp ::= (AssignOp) EQUAL;
+
+Relop ::= (EqualEqual) EQUALEQUAL
+		|
+		(UnEqual) UNEQUAL
+		|
+		(More) MORE
+		|
+		(MoreEqual) MOREEQUAL
+		|
+		(Less) LESS
+		|
+		(LessEqual) LESSEQUAL
+		;
+		
+Addop ::= (Plus) PLUS
+		|
+		(Minus) MINUS
+		;
+		
+Mulop ::= (Mul) MUL
+		|
+		(Div) DIV
+		|
+		(Mod) MOD
+		;

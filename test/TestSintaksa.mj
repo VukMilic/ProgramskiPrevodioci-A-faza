@@ -1,0 +1,55 @@
+program MJProgram
+	const int con1 = 4;
+	const Bool con2 = "false";
+	const char con3 = "NekiChar";
+	
+	class K1 {
+		int kx1, kx2;
+		{	
+			void kk() char c;
+			{
+			}
+		}
+	}
+	
+	int x1, x2;
+	
+	// testiranje oporavka od greske do ;
+	Bool b1, b2, "1GRESKA";
+	
+	// testiranje oporavka od greske do ,
+	int i1, "2GRESKA", i3;
+{
+	
+	int k(int fp) int i4; char c1; Bool b3;
+	{
+		x1 = con1 + 5 - x2;
+		
+		if( i1 > x1 )
+			i1 = x1;
+		else
+			x1 = i1;
+			
+		while( i1 == x1)
+			if( i1 > x2)
+				continue;
+			else
+				break;
+			
+		return i4;
+	}
+	
+	void main() char c2, c3, arrChar[];
+	{
+		read(x1);
+		print(arrChar);
+	
+		k(x1);
+		
+		// testiranje oporavka od greske kod dodele vrednosti
+		x2 = x1 + 5 - ;
+		
+		return;
+	}
+	
+}

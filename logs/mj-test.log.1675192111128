@@ -1,0 +1,197 @@
+INFO  20:08:19,228 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  20:08:19,326 - #2 program
+INFO  20:08:19,327 - #48 MJProgram
+INFO  20:08:19,328 - #5 const
+INFO  20:08:19,329 - #48 Bool
+INFO  20:08:19,329 - #48 b1
+INFO  20:08:19,330 - #6 =
+INFO  20:08:19,330 - #50 "true"
+INFO  20:08:19,330 - #7 ;
+INFO  20:08:19,331 - #3 {
+INFO  20:08:19,331 - #14 void
+INFO  20:08:19,332 - #48 main
+INFO  20:08:19,332 - #12 (
+INFO  20:08:19,333 - #13 )
+INFO  20:08:19,333 - #48 int
+INFO  20:08:19,334 - #48 i
+INFO  20:08:19,335 - #8 ,
+INFO  20:08:19,337 - #48 i2
+INFO  20:08:19,337 - #8 ,
+INFO  20:08:19,337 - #48 j
+INFO  20:08:19,337 - #9 [
+INFO  20:08:19,338 - #10 ]
+INFO  20:08:19,345 - #7 ;
+INFO  20:08:19,345 - #48 char
+INFO  20:08:19,347 - #48 arr
+INFO  20:08:19,347 - #9 [
+INFO  20:08:19,347 - #10 ]
+INFO  20:08:19,347 - #8 ,
+INFO  20:08:19,348 - #48 c
+INFO  20:08:19,348 - #7 ;
+INFO  20:08:19,348 - #3 {
+INFO  20:08:19,348 - #20 print
+INFO  20:08:19,349 - #12 (
+INFO  20:08:19,349 - #47 1
+INFO  20:08:19,351 - #13 )
+INFO  20:08:19,354 - #7 ;
+INFO  20:08:19,354 - #20 print
+INFO  20:08:19,354 - #12 (
+INFO  20:08:19,354 - #49 "z"
+INFO  20:08:19,354 - #13 )
+INFO  20:08:19,355 - #7 ;
+INFO  20:08:19,355 - #20 print
+INFO  20:08:19,355 - #12 (
+INFO  20:08:19,355 - #50 "true"
+INFO  20:08:19,355 - #13 )
+INFO  20:08:19,355 - #7 ;
+INFO  20:08:19,356 - #18 return
+INFO  20:08:19,356 - #7 ;
+INFO  20:08:19,356 - #4 }
+INFO  20:08:19,357 - #4 }
+INFO  20:08:19,367 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclConst(
+      BoolConstDecl(
+        Type(
+         Bool
+        ) [Type]
+        OneConstTypeBool(
+         b1
+         "true"
+        ) [OneConstTypeBool]
+      ) [BoolConstDecl]
+    ) [DeclConst]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethVoidName(
+       main
+      ) [MethVoidName]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableTypeList(
+              VariableTypeList(
+                OneVarType(
+                 i
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [OneVarType]
+               i2
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [VariableTypeList]
+             j
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [VariableTypeList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableTypeList(
+            OneVarType(
+             arr
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [OneVarType]
+           c
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [VariableTypeList]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              PrintStmt(
+                Expression(
+                  MinusNot(
+                  ) [MinusNot]
+                  Terminal(
+                    FactorNumConst(
+                     1
+                    ) [FactorNumConst]
+                    NoMulopFactList(
+                    ) [NoMulopFactList]
+                  ) [Terminal]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [Expression]
+                NoCommaNumConst(
+                ) [NoCommaNumConst]
+              ) [PrintStmt]
+            ) [Statements]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorCharConst(
+                   "z"
+                  ) [FactorCharConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorBoolConst(
+                 "true"
+                ) [FactorBoolConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionNot(
+          ) [ExpressionNot]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:08:19,368 - ===================================
+INFO  20:08:19,377 - Deklarisana konstanta b1 na liniji 2, objektni cvor: Con b1: Bool, 0, 0
+INFO  20:08:19,377 - Deklarisana lokalna promenljiva i na liniji 4, objektni cvor: Var i: Int, 0, 1
+INFO  20:08:19,377 - Deklarisana lokalna promenljiva i2 na liniji 4, objektni cvor: Var i2: Int, 1, 1
+INFO  20:08:19,377 - Deklarisana lokalni niz j na liniji 4, objektni cvor: Var j: Array, 2, 1
+INFO  20:08:19,377 - Deklarisan lokalni niz arr na liniji 4, objektni cvor: Var arr: Array, 3, 1
+INFO  20:08:19,379 - Deklarisana lokalna promenljiva c na liniji 4, objektni cvor: Var c: Char, 4, 1
+INFO  20:08:19,379 - ===================================
+INFO  20:08:19,380 - 3
+INFO  20:08:19,411 - Parsiranje uspesno zavrseno!

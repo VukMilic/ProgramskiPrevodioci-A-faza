@@ -1,0 +1,188 @@
+INFO  20:08:31,142 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  20:08:31,234 - #2 program
+INFO  20:08:31,235 - #48 MJProgram
+INFO  20:08:31,235 - #5 const
+INFO  20:08:31,237 - #48 Bool
+INFO  20:08:31,237 - #48 b1
+INFO  20:08:31,238 - #6 =
+INFO  20:08:31,238 - #50 "true"
+INFO  20:08:31,239 - #7 ;
+INFO  20:08:31,239 - #3 {
+INFO  20:08:31,240 - #14 void
+INFO  20:08:31,241 - #48 main
+INFO  20:08:31,241 - #12 (
+INFO  20:08:31,241 - #13 )
+INFO  20:08:31,243 - #48 int
+INFO  20:08:31,244 - #48 i
+INFO  20:08:31,244 - #8 ,
+INFO  20:08:31,246 - #48 i2
+INFO  20:08:31,246 - #8 ,
+INFO  20:08:31,247 - #48 j
+INFO  20:08:31,247 - #9 [
+INFO  20:08:31,248 - #10 ]
+INFO  20:08:31,248 - #7 ;
+INFO  20:08:31,248 - #48 char
+INFO  20:08:31,250 - #48 arr
+INFO  20:08:31,250 - #9 [
+INFO  20:08:31,250 - #10 ]
+INFO  20:08:31,250 - #8 ,
+INFO  20:08:31,250 - #48 c
+INFO  20:08:31,250 - #7 ;
+INFO  20:08:31,251 - #3 {
+INFO  20:08:31,251 - #20 print
+INFO  20:08:31,252 - #12 (
+INFO  20:08:31,252 - #47 1
+INFO  20:08:31,254 - #13 )
+INFO  20:08:31,258 - #7 ;
+INFO  20:08:31,258 - #20 print
+INFO  20:08:31,259 - #12 (
+INFO  20:08:31,259 - #49 "z"
+INFO  20:08:31,259 - #13 )
+INFO  20:08:31,260 - #7 ;
+INFO  20:08:31,260 - #20 print
+INFO  20:08:31,260 - #12 (
+INFO  20:08:31,260 - #50 "true"
+INFO  20:08:31,260 - #13 )
+INFO  20:08:31,260 - #7 ;
+INFO  20:08:31,260 - #18 return
+INFO  20:08:31,260 - #7 ;
+INFO  20:08:31,261 - #4 }
+INFO  20:08:31,262 - #4 }
+INFO  20:08:31,273 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclConst(
+      BoolConstDecl(
+        Type(
+         Bool
+        ) [Type]
+        OneConstTypeBool(
+         b1
+         "true"
+        ) [OneConstTypeBool]
+      ) [BoolConstDecl]
+    ) [DeclConst]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethVoidName(
+       main
+      ) [MethVoidName]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableTypeList(
+              VariableTypeList(
+                OneVarType(
+                 i
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [OneVarType]
+               i2
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [VariableTypeList]
+             j
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [VariableTypeList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableTypeList(
+            OneVarType(
+             arr
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [OneVarType]
+           c
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [VariableTypeList]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              PrintStmt(
+                Expression(
+                  MinusNot(
+                  ) [MinusNot]
+                  Terminal(
+                    FactorNumConst(
+                     1
+                    ) [FactorNumConst]
+                    NoMulopFactList(
+                    ) [NoMulopFactList]
+                  ) [Terminal]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [Expression]
+                NoCommaNumConst(
+                ) [NoCommaNumConst]
+              ) [PrintStmt]
+            ) [Statements]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorCharConst(
+                   "z"
+                  ) [FactorCharConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorBoolConst(
+                 "true"
+                ) [FactorBoolConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionNot(
+          ) [ExpressionNot]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:08:31,273 - ===================================

@@ -1,0 +1,28 @@
+program MJCompiler
+	int i1, i2;
+	const int i3=3;
+{
+	void main() Bool b1, b2;
+	{
+		b1 = "true";
+		b2 = "false";
+		i1 = 5;
+		i2 = 4;
+		
+		while( b1 || b2)
+		{
+			if( i2 > i1 ){
+				read(i1);
+				i2--;
+				continue;
+			} else {
+				print( i1 + i2 );
+				i2 = -5 + i1*2 + i3;
+				break;
+			}
+			b1 = "false";
+		}
+		
+		return;
+	}
+}

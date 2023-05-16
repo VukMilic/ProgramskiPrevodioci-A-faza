@@ -1,0 +1,50 @@
+program MJCompiler
+	const int con1=1;
+	
+	int i1, i2;
+	char c1, c2;
+{
+	void main() int i3[];
+	{
+		// koriscenje nepostojeceg simbola
+		simbolError = i1 + i2;
+		
+		// operacija dodele pogresnih tipova
+		i1 = c1;
+		
+		// dodela vrednosti konstanti
+		con1 = 5;
+		
+		// operacija ++/-- nad tipom koji nije int
+		c1++;
+		
+		// operacije mnozenja i deljenja nad tipovima koji nisu int
+		i1 = con1 * c1;
+		
+		// operacije sabiranja i oduzimanja nad tipovima koji nisu int
+		i1 = 5 + c2;
+		
+		// kada se navede - (MINUS) ispred simbola koji nije int
+		i1 = -c1;
+		
+		// break i continue se koriste izvan petlji
+		break;
+		continue;
+		
+		// read se poziva nad tipom koji nije int, char ili Bool
+		read(i3);
+		// pozivanje read-a nad konstantom
+		read(con1);
+		
+		// print se poziva nad tipom koji nije int, char ili Bool
+		print(i3);
+		
+		// uslov nije tipa Bool
+		while( i1 )
+			break;
+		
+		// prilikom poredjenja tipovi nisu kompatibilni
+		if( i1>c1 )		
+			i1 = i2;
+	}
+}

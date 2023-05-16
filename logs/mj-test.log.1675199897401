@@ -1,0 +1,205 @@
+INFO  21:53:39,206 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  21:53:39,255 - #2 program
+INFO  21:53:39,256 - #48 MJProgram
+INFO  21:53:39,256 - #48 int
+INFO  21:53:39,258 - #48 x1
+INFO  21:53:39,258 - #7 ;
+INFO  21:53:39,258 - #3 {
+INFO  21:53:39,259 - #14 void
+INFO  21:53:39,260 - #48 main
+INFO  21:53:39,260 - #12 (
+INFO  21:53:39,260 - #13 )
+INFO  21:53:39,260 - #48 int
+INFO  21:53:39,261 - #48 i
+INFO  21:53:39,261 - #8 ,
+INFO  21:53:39,261 - #48 i2
+INFO  21:53:39,261 - #8 ,
+INFO  21:53:39,261 - #48 j
+INFO  21:53:39,261 - #9 [
+INFO  21:53:39,261 - #10 ]
+INFO  21:53:39,262 - #7 ;
+INFO  21:53:39,262 - #48 char
+INFO  21:53:39,262 - #48 arr
+INFO  21:53:39,270 - #9 [
+INFO  21:53:39,270 - #10 ]
+INFO  21:53:39,270 - #8 ,
+INFO  21:53:39,271 - #48 c
+INFO  21:53:39,271 - #7 ;
+INFO  21:53:39,271 - #3 {
+INFO  21:53:39,271 - #48 x1
+INFO  21:53:39,271 - #6 =
+INFO  21:53:39,271 - #47 1
+INFO  21:53:39,273 - #7 ;
+INFO  21:53:39,274 - #20 print
+INFO  21:53:39,275 - #12 (
+INFO  21:53:39,275 - #47 1
+INFO  21:53:39,275 - #13 )
+INFO  21:53:39,276 - #7 ;
+INFO  21:53:39,276 - #20 print
+INFO  21:53:39,276 - #12 (
+INFO  21:53:39,276 - #48 x1
+INFO  21:53:39,276 - #13 )
+INFO  21:53:39,276 - #7 ;
+INFO  21:53:39,276 - #18 return
+INFO  21:53:39,276 - #7 ;
+INFO  21:53:39,277 - #4 }
+INFO  21:53:39,277 - #4 }
+INFO  21:53:39,283 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           x1
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethVoidName(
+       main
+      ) [MethVoidName]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            VariableTypeList(
+              VariableTypeList(
+                OneVarType(
+                 i
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [OneVarType]
+               i2
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [VariableTypeList]
+             j
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [VariableTypeList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          VariableTypeList(
+            OneVarType(
+             arr
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [OneVarType]
+           c
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [VariableTypeList]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              Assignment(
+                DesignatorAssignOp(
+                  DesignatorIdent(
+                   x1
+                  ) [DesignatorIdent]
+                  AssignOp(
+                  ) [AssignOp]
+                  Expression(
+                    MinusNot(
+                    ) [MinusNot]
+                    Terminal(
+                      FactorNumConst(
+                       1
+                      ) [FactorNumConst]
+                      NoMulopFactList(
+                      ) [NoMulopFactList]
+                    ) [Terminal]
+                    NoAddopTermList(
+                    ) [NoAddopTermList]
+                  ) [Expression]
+                ) [DesignatorAssignOp]
+              ) [Assignment]
+            ) [Statements]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNumConst(
+                   1
+                  ) [FactorNumConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorDesignator(
+                  DesignatorIdent(
+                   x1
+                  ) [DesignatorIdent]
+                ) [FactorDesignator]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionNot(
+          ) [ExpressionNot]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:53:39,284 - ===================================
+INFO  21:53:39,288 - Deklarisana globalna promenljiva x1 na liniji 2, objektni cvor: Var x1: Int, 0, 0
+INFO  21:53:39,289 - Deklarisana lokalna promenljiva i na liniji 4, objektni cvor: Var i: Int, 0, 1
+INFO  21:53:39,289 - Deklarisana lokalna promenljiva i2 na liniji 4, objektni cvor: Var i2: Int, 1, 1
+INFO  21:53:39,289 - Deklarisana lokalni niz j na liniji 4, objektni cvor: Var j: Array, 2, 1
+INFO  21:53:39,289 - Deklarisan lokalni niz arr na liniji 4, objektni cvor: Var arr: Array, 3, 1
+INFO  21:53:39,289 - Deklarisana lokalna promenljiva c na liniji 4, objektni cvor: Var c: Char, 4, 1
+INFO  21:53:39,289 - Simbol x1 se koristi na liniji 6, objektni cvor: Var x1: Int, 0, 0
+INFO  21:53:39,289 - Simbol x1 se koristi na liniji 9, objektni cvor: Var x1: Int, 0, 0
+INFO  21:53:39,289 - ===================================
+INFO  21:53:39,290 - 4
+INFO  21:53:39,305 - Parsiranje uspesno zavrseno!
