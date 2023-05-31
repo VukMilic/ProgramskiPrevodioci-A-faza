@@ -1,0 +1,138 @@
+INFO  16:01:34,321 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\GenKoda.mj
+INFO  16:01:34,373 - #2 program
+INFO  16:01:34,374 - #48 MJProgram
+INFO  16:01:34,374 - #3 {
+INFO  16:01:34,375 - #48 int
+INFO  16:01:34,375 - #48 main
+INFO  16:01:34,376 - #12 (
+INFO  16:01:34,377 - #13 )
+INFO  16:01:34,377 - #3 {
+INFO  16:01:34,378 - #20 print
+INFO  16:01:34,380 - #12 (
+INFO  16:01:34,380 - #50 "true"
+INFO  16:01:34,381 - #13 )
+INFO  16:01:34,383 - #7 ;
+INFO  16:01:34,384 - #20 print
+INFO  16:01:34,384 - #12 (
+INFO  16:01:34,384 - #50 "false"
+INFO  16:01:34,384 - #13 )
+INFO  16:01:34,384 - #7 ;
+INFO  16:01:34,385 - #20 print
+INFO  16:01:34,385 - #12 (
+INFO  16:01:34,385 - #48 c
+INFO  16:01:34,393 - #13 )
+INFO  16:01:34,393 - #7 ;
+INFO  16:01:34,393 - #18 return
+INFO  16:01:34,394 - #47 1
+INFO  16:01:34,394 - #7 ;
+INFO  16:01:34,394 - #4 }
+INFO  16:01:34,395 - #4 }
+INFO  16:01:34,400 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoDeclList(
+  ) [NoDeclList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              PrintStmt(
+                Expression(
+                  MinusNot(
+                  ) [MinusNot]
+                  Terminal(
+                    FactorBoolConst(
+                     "true"
+                    ) [FactorBoolConst]
+                    NoMulopFactList(
+                    ) [NoMulopFactList]
+                  ) [Terminal]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [Expression]
+                NoCommaNumConst(
+                ) [NoCommaNumConst]
+              ) [PrintStmt]
+            ) [Statements]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorBoolConst(
+                   "false"
+                  ) [FactorBoolConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorDesignator(
+                  DesignatorIdent(
+                   c
+                  ) [DesignatorIdent]
+                ) [FactorDesignator]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:01:34,400 - ===================================
+ERROR 16:01:34,408 - Greska: Simbol c koji se koristi nije deklarisan!  na liniji 9
+ERROR 16:01:34,408 - Greska: PRINT mora da se pozove nad tipom int, char ili Bool na liniji 7
+INFO  16:01:34,409 - ===================================
+INFO  16:01:34,409 - 0
+ERROR 16:01:34,409 - Parsiranje NIJE uspesno zavrseno!

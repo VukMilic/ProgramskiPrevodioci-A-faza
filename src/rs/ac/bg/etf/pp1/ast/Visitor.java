@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/1/2023 23:18:41
+// 31/4/2023 22:10:31
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -38,7 +38,6 @@ public interface Visitor {
     public void visit(ActPars ActPars);
     public void visit(CommaNumConst CommaNumConst);
     public void visit(MethodTypeName MethodTypeName);
-    public void visit(DesignatorList DesignatorList);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(AssignError AssignError);
     public void visit(ConstTypeBoolList ConstTypeBoolList);
@@ -71,6 +70,7 @@ public interface Visitor {
     public void visit(DesignatorDot DesignatorDot);
     public void visit(FactorExpr FactorExpr);
     public void visit(FactorNewActPars FactorNewActPars);
+    public void visit(FactorNewExprExpr FactorNewExprExpr);
     public void visit(FactorNewExpr FactorNewExpr);
     public void visit(FactorBoolConst FactorBoolConst);
     public void visit(FactorCharConst FactorCharConst);
@@ -101,9 +101,6 @@ public interface Visitor {
     public void visit(AssignOpError AssignOpError);
     public void visit(DesignatorNot DesignatorNot);
     public void visit(DesignatorYes DesignatorYes);
-    public void visit(OneDesigList OneDesigList);
-    public void visit(DesigList DesigList);
-    public void visit(DesignatorStmtTwo DesignatorStmtTwo);
     public void visit(DesignatorMinusMinus DesignatorMinusMinus);
     public void visit(DesignatorPlusPlus DesignatorPlusPlus);
     public void visit(DesignatorActPars DesignatorActPars);
@@ -145,6 +142,7 @@ public interface Visitor {
     public void visit(ClassDecl ClassDecl);
     public void visit(NoSquareBrackets NoSquareBrackets);
     public void visit(SquareBrackets SquareBrackets);
+    public void visit(SquareBracketsDouble SquareBracketsDouble);
     public void visit(OneVarType OneVarType);
     public void visit(VariableTypeList VariableTypeList);
     public void visit(VarDecl VarDecl);

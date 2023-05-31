@@ -1,14 +1,13 @@
 program MJProgram
-	int x1, x2[];
+int x, y, z;
 {
-	void main()
-	{			
-		x2[0] = 1;
-		x1 = x2[0];
+	int main(){
+		y = 5;
+		x = 10 - y % 3 * 5 - 2 * 3;
 		
-		// print(x2[0]);
-		// print(x1);
+		print(x);
 		
-		return;
+		return 1;
 	}
+		
 }

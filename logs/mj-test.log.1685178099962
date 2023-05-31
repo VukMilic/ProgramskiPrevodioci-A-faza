@@ -1,0 +1,26 @@
+INFO  11:01:20,396 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\GenKoda.mj
+INFO  11:01:20,479 - #2 program
+INFO  11:01:20,479 - #48 MJProgram
+INFO  11:01:20,480 - #48 int
+INFO  11:01:20,480 - #48 main
+INFO  11:01:20,481 - #12 (
+ERROR 11:01:20,481 - 
+Sintaksna greska na liniji 3
+INFO  11:01:20,481 - #13 )
+INFO  11:01:20,481 - #3 {
+INFO  11:01:20,481 - #20 print
+INFO  11:01:20,482 - #12 (
+INFO  11:01:20,482 - #47 1
+INFO  11:01:20,482 - #13 )
+INFO  11:01:20,482 - #7 ;
+INFO  11:01:20,482 - #20 print
+INFO  11:01:20,483 - #12 (
+INFO  11:01:20,483 - #47 2
+INFO  11:01:20,483 - #13 )
+INFO  11:01:20,483 - #7 ;
+INFO  11:01:20,483 - #18 return
+INFO  11:01:20,483 - #47 1
+INFO  11:01:20,491 - #7 ;
+INFO  11:01:20,491 - #4 }
+INFO  11:01:20,491 - #4 }
+ERROR 11:01:20,491 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12

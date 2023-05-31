@@ -1,0 +1,37 @@
+INFO  14:49:41,271 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  14:49:41,383 - #2 program
+INFO  14:49:41,384 - #48 MJProgram
+INFO  14:49:41,384 - #48 int
+INFO  14:49:41,386 - #48 iarr
+INFO  14:49:41,387 - #9 [
+INFO  14:49:41,387 - #10 ]
+INFO  14:49:41,388 - #7 ;
+INFO  14:49:41,389 - #3 {
+INFO  14:49:41,390 - #48 int
+INFO  14:49:41,392 - #48 main
+INFO  14:49:41,392 - #12 (
+INFO  14:49:41,392 - #13 )
+INFO  14:49:41,395 - #3 {
+INFO  14:49:41,396 - #48 iarr
+INFO  14:49:41,398 - #6 =
+INFO  14:49:41,398 - #28 new
+INFO  14:49:41,401 - #48 int
+INFO  14:49:41,402 - #9 [
+INFO  14:49:41,402 - #47 2
+INFO  14:49:41,402 - #10 ]
+INFO  14:49:41,406 - #7 ;
+INFO  14:49:41,413 - #20 print
+INFO  14:49:41,415 - #12 (
+INFO  14:49:41,415 - #48 iarr
+INFO  14:49:41,415 - #9 [
+INFO  14:49:41,415 - #10 ]
+ERROR 14:49:41,415 - 
+Sintaksna greska na liniji 8
+INFO  14:49:41,416 - #13 )
+INFO  14:49:41,416 - #7 ;
+INFO  14:49:41,416 - #18 return
+INFO  14:49:41,418 - #47 1
+INFO  14:49:41,418 - #7 ;
+INFO  14:49:41,418 - #4 }
+INFO  14:49:41,418 - #4 }
+ERROR 14:49:41,418 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 13

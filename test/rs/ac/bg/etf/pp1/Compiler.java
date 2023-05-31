@@ -46,11 +46,12 @@ public class Compiler {
 		try {
 			File sourceCode = new File("test/program.mj");
 //			File sourceCode = new File("test/TestSintaksa.mj");
-//			File sourceCode = new File("test/TestDeklaracija.mj");
+//			File sourceCode = new File("test/TestSemDeklaracija.mj");
 //			File sourceCode = new File("test/TestStatementa.mj");
 //			File sourceCode = new File("test/TestSemGreskeDeklaracije.mj");
 //			File sourceCode = new File("test/TestSemGreskeStatementa.mj");
-					
+//			File sourceCode = new File("test/GenKoda.mj");
+			
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
 			br = new BufferedReader(new FileReader(sourceCode));

@@ -1,0 +1,26 @@
+program MJProgram
+int x;
+char y;
+const Bool z = "true";
+int iarr[];
+{
+	int main(){
+	
+		x = 3;
+		y = "y";
+		iarr = new int[2];
+		
+		print("c");
+				
+		print("false");
+		
+		print(3);
+		
+		print(x);
+		print(y);
+		print(z);
+		
+		return 1;
+	}
+		
+}

@@ -24,8 +24,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	int isArray = 0;
 	int isMinus = 0;
 	
-	ArrayList<Obj> designatorListObjects = new ArrayList<>();
-	Struct desigListObjType = null;
+//	ArrayList<Obj> designatorListObjects = new ArrayList<>();
+//	Struct desigListObjType = null;
 	
 	Logger log = Logger.getLogger(getClass());
 	
@@ -170,8 +170,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         		if(isArray == 1) {
         			// ako je u pitanju deklaracija niza
             		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), new Struct(Struct.Array, currentType));
+            		nVars++;
             		isArray = 0;
-            		report_info("Deklarisana lokalni niz " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+            		report_info("Deklarisan lokalni niz " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
         		}else {
         			// ako je u pitanju obicna lokalna promenljiva
             		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), currentType);
@@ -193,6 +194,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	    		if(isArray == 1) {
 	    			// ako je u pitanju deklaracija niza
 	        		Obj objPrint = Tab.insert(Obj.Var, oneVarTypeList.getVarName(), new Struct(Struct.Array, currentType));
+	        		nVars++;
 	        		isArray = 0;
 	        		report_info("Deklarisan lokalni niz " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
 	    		}else {
@@ -225,6 +227,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		Obj objPrint = Tab.insert(Obj.Var, globalVarIdent.getGlobVarName(), new Struct(Struct.Array, currentType));
             		objPrint.setLevel(0);
             		report_info("Deklarisan globalni niz " + globalVarIdent.getGlobVarName() + " na liniji " + globalVarIdent.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+            		nVars++;
             		isArray = 0;
         		}else {
         			// ako je u pitanju obicna globalna promenljiva
@@ -243,7 +246,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     // vezano za semantiku metoda (VMMethod)
 
     public void visit(MethodDeclaration methodDeclaration){
-    	if( retDetected ){
+    	if( retDetected || currentMethod.getType() == Tab.noType ){
     		Tab.chainLocalSymbols(currentMethod);
         	Tab.closeScope();
         	
@@ -499,57 +502,57 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	designatorNot.obj = Tab.noObj;
     }
     
-    public void visit(DesigList desigList) {
-    	// TODO: moras da dodas i da ovo radi za element niza (prvi if)
-    	if( desigList.getDesignatorOrNot().obj.getKind() == Obj.Var /* element niza */ ) {
-    		// prvo proveri da li se poklapaju elementi odvojeni zarezom
-        	if( desigListObjType == null ) {
-        		if( desigList.getDesignatorOrNot().obj != Tab.noObj ) {
-        			desigListObjType = desigList.getDesignatorOrNot().obj.getType();
-        		}
-        	} else {
-        		if( desigList.getDesignatorOrNot().obj != Tab.noObj ) {
-        			if( desigListObjType != desigList.getDesignatorOrNot().obj.getType() ) {
-        				report_error("Greska: Tip elementa " + desigList.getDesignatorOrNot().obj.getAdr() + " se ne poklapa sa tipom niza", desigList);
-        				return;
-        			}
-        		}
-        	}
-        	
-        	// ubacujem u listu objekata za operaciju [ ... , , ] = Array
-        	designatorListObjects.add(desigList.getDesignatorOrNot().obj);
-    	} else {
-    		report_error("Greska: Prilikom dodele izmedju nizova, sa leve strane objekat "+ desigList.getDesignatorOrNot().obj.getName() + " mora biti promenljiva ili element niza", desigList);
-    	}    	
-    }
-    
-    public void visit(OneDesigList oneDesigList) {
-    	// ubacujem u listu objekata za operaciju [ ... , , ] = Array
-    	designatorListObjects.add(oneDesigList.getDesignatorOrNot().obj);
-    	
-    	// dohvatam tip koji treba da bude tip svih elemenata ListArray-a, ako ovaj element postoji
-    	if( oneDesigList.getDesignatorOrNot().obj != Tab.noObj ) {
-    		desigListObjType = oneDesigList.getDesignatorOrNot().obj.getType();
-    	}
-    }
-    
-    public void visit(DesignatorStmtTwo designatorStmtTwo) {
-    	    	
-    	if( designatorStmtTwo.getDesignator().obj.getType().getKind() == Struct.Array ) {
-    		if( designatorStmtTwo.getDesignator().obj.getType().getElemType() == desigListObjType ) {
-    			// TODO: ovde treba da se odradi dodela vrednosti
-    			
-    			//report_info("Tipovi se poklapaju prilikom dodele vrednosti nizu", designatorStmtTwo);
-    		} else {
-    			report_error("Greska: Tipovi se ne poklapaju prilikom dodele vrednosti izmedju dva niza", designatorStmtTwo);
-    		}
-    	} else {
-    		report_error("Greska: Prilikom dodele vrednosti nizu, sa desne strane mora biti niz", designatorStmtTwo);
-    	}
-    	
-    	desigListObjType = null;
-    	designatorListObjects.clear();
-    }
+//    public void visit(DesigList desigList) {
+//    	// TODO: moras da dodas i da ovo radi za element niza (prvi if)
+//    	if( desigList.getDesignatorOrNot().obj.getKind() == Obj.Var /* element niza */ ) {
+//    		// prvo proveri da li se poklapaju elementi odvojeni zarezom
+//        	if( desigListObjType == null ) {
+//        		if( desigList.getDesignatorOrNot().obj != Tab.noObj ) {
+//        			desigListObjType = desigList.getDesignatorOrNot().obj.getType();
+//        		}
+//        	} else {
+//        		if( desigList.getDesignatorOrNot().obj != Tab.noObj ) {
+//        			if( desigListObjType != desigList.getDesignatorOrNot().obj.getType() ) {
+//        				report_error("Greska: Tip elementa " + desigList.getDesignatorOrNot().obj.getAdr() + " se ne poklapa sa tipom niza", desigList);
+//        				return;
+//        			}
+//        		}
+//        	}
+//        	
+//        	// ubacujem u listu objekata za operaciju [ ... , , ] = Array
+//        	designatorListObjects.add(desigList.getDesignatorOrNot().obj);
+//    	} else {
+//    		report_error("Greska: Prilikom dodele izmedju nizova, sa leve strane objekat "+ desigList.getDesignatorOrNot().obj.getName() + " mora biti promenljiva ili element niza", desigList);
+//    	}    	
+//    }
+//    
+//    public void visit(OneDesigList oneDesigList) {
+//    	// ubacujem u listu objekata za operaciju [ ... , , ] = Array
+//    	designatorListObjects.add(oneDesigList.getDesignatorOrNot().obj);
+//    	
+//    	// dohvatam tip koji treba da bude tip svih elemenata ListArray-a, ako ovaj element postoji
+//    	if( oneDesigList.getDesignatorOrNot().obj != Tab.noObj ) {
+//    		desigListObjType = oneDesigList.getDesignatorOrNot().obj.getType();
+//    	}
+//    }
+//    
+//    public void visit(DesignatorStmtTwo designatorStmtTwo) {
+//    	    	
+//    	if( designatorStmtTwo.getDesignator().obj.getType().getKind() == Struct.Array ) {
+//    		if( designatorStmtTwo.getDesignator().obj.getType().getElemType() == desigListObjType ) {
+//    			// TODO: ovde treba da se odradi dodela vrednosti
+//    			
+//    			//report_info("Tipovi se poklapaju prilikom dodele vrednosti nizu", designatorStmtTwo);
+//    		} else {
+//    			report_error("Greska: Tipovi se ne poklapaju prilikom dodele vrednosti izmedju dva niza", designatorStmtTwo);
+//    		}
+//    	} else {
+//    		report_error("Greska: Prilikom dodele vrednosti nizu, sa desne strane mora biti niz", designatorStmtTwo);
+//    	}
+//    	
+//    	desigListObjType = null;
+//    	designatorListObjects.clear();
+//    }
     
     // -------------------------------------------------------------------------------------------------------------------------------
     // sve vezano za Factor (VMFactor)
@@ -598,9 +601,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	// moram da ostavim za kasnije
     	
     	if( factorNewExpr.getExpr().obj.getType().getKind() == Struct.Int ) {
-        	factorNewExpr.obj = new Obj(Obj.Var, "factorNew", factorNewExpr.getType().struct);    		
+    		if( currentType.getKind() == Struct.Int ||
+    				currentType.getKind() == Struct.Char ||
+    				currentType.getKind() == Struct.Bool )
+    			factorNewExpr.obj = new Obj(Obj.Var, "factorNewArray", new Struct(Struct.Array, currentType));
+    		else
+    			report_error("Greska: Tip niza mora biti Int, Char ili Bool", factorNewExpr);
     	} else {
-    		report_error("Greska: Tip izraza prilikom konstrukcije objekta, NEW metodom, mora biti int", factorNewExpr);
+    		report_error("Greska: Tip izmedju zagrada mora biti Int", factorNewExpr);
     		factorNewExpr.obj = Tab.noObj;
     	}
     }
@@ -613,6 +621,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	// TODO: 
     	// e sad ovde ne znam trenutno kako da izvucem tip iz Expr neterminala
     	// znaci ovde moram cak i to da uradim , pored kasnijeg dodeljivanja vrednosti
+    	
+    	factorExpr.obj = factorExpr.getExpr().obj;
     }
     
     public void visit(MulopFactorList mulopFactorList) {

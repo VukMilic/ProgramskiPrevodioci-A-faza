@@ -60,7 +60,7 @@ terminal String IDENT, CHARCONST, BOOLCONST;
 nonterminal DeclList, VarDeclList, ConstDecl, ConstTypeNumList; 
 nonterminal ConstTypeCharList, ConstTypeBoolList, VarDecl, GVarDecl, VarTypeList, GVarTypeList, ClassDecl, ClassMethodDecl; 
 nonterminal MethodDeclList, ExtendsType, FormPars, FormalParamList, FormalParamDecl;
-nonterminal StatementList, Statement, ElseStatement, CommaNumConst, DesignatorStatement, DesignatorList; 
+nonterminal StatementList, Statement, ElseStatement, CommaNumConst, DesignatorStatement; 
 nonterminal PostDesignator, ActPars, ActParams, ExprList, Condition; 
 nonterminal CondTerm, MinusOrNot; 
 nonterminal ExprOrActPars, WhileTerm, ForeachTerm;
@@ -139,7 +139,9 @@ VarTypeList ::= (VariableTypeList) VarTypeList COMMA IDENT:varName SquareBracket
 			(OneVarType) IDENT:varName SquareBrackets
 			;
 			
-SquareBrackets ::= (SquareBrackets) OPENSQUAREBRACKET CLOSESQUAREBRACKET
+SquareBrackets ::= (SquareBracketsDouble) OPENSQUAREBRACKET CLOSESQUAREBRACKET OPENSQUAREBRACKET CLOSESQUAREBRACKET
+				|
+				(SquareBrackets) OPENSQUAREBRACKET CLOSESQUAREBRACKET
 				|
 				(NoSquareBrackets) /* epsilon */
 				;
@@ -231,13 +233,6 @@ DesignatorStatement ::= (DesignatorAssignOp) Designator AssignOp Expr SEMI
 				(DesignatorPlusPlus) Designator PLUSPLUS SEMI
 				|
 				(DesignatorMinusMinus) Designator MINUSMINUS SEMI
-				|
-				(DesignatorStmtTwo) OPENSQUAREBRACKET DesignatorList CLOSESQUAREBRACKET EQUAL Designator SEMI
-				;
-
-DesignatorList ::= (DesigList) DesignatorList COMMA DesignatorOrNot
-				|
-				(OneDesigList) DesignatorOrNot
 				;
 				
 DesignatorOrNot ::= (DesignatorYes) Designator
@@ -311,6 +306,8 @@ Factor ::= (FactorDesignator) Designator
 		(FactorBoolConst) BOOLCONST:constName
 		|
 		(FactorNewExpr) NEW Type OPENSQUAREBRACKET Expr CLOSESQUAREBRACKET
+		|
+		(FactorNewExprExpr) NEW Type OPENSQUAREBRACKET Expr CLOSESQUAREBRACKET OPENSQUAREBRACKET Expr CLOSESQUAREBRACKET
 		|
 		(FactorNewActPars) NEW Type OPENBRACKET ActPars CLOSEBRACKET
 		|

@@ -78,8 +78,7 @@ nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal ElseStatement ElseStatement;
 nonterminal CommaNumConst CommaNumConst;
-nonterminal DesignatorStatement DesignatorStatement;
-nonterminal DesignatorList DesignatorList; 
+nonterminal DesignatorStatement DesignatorStatement; 
 nonterminal PostDesignator PostDesignator;
 nonterminal ActPars ActPars;
 nonterminal ActParams ActParams;
@@ -172,7 +171,9 @@ VarTypeList ::= (VariableTypeList) VarTypeList:V1 COMMA IDENT:varName SquareBrac
 			(OneVarType) IDENT:varName SquareBrackets:S1 {: RESULT=new OneVarType(varName, S1); RESULT.setLine(varNameleft); :}
 			;
 			
-SquareBrackets ::= (SquareBrackets) OPENSQUAREBRACKET CLOSESQUAREBRACKET {: RESULT=new SquareBrackets(); :}
+SquareBrackets ::= (SquareBracketsDouble) OPENSQUAREBRACKET CLOSESQUAREBRACKET OPENSQUAREBRACKET CLOSESQUAREBRACKET {: RESULT=new SquareBracketsDouble(); :}
+				|
+				(SquareBrackets) OPENSQUAREBRACKET CLOSESQUAREBRACKET {: RESULT=new SquareBrackets(); :}
 				|
 				(NoSquareBrackets) {: RESULT=new NoSquareBrackets(); :} /* epsilon */
 				;
@@ -264,13 +265,6 @@ DesignatorStatement ::= (DesignatorAssignOp) Designator:D1 AssignOp:A2 Expr:E3 S
 				(DesignatorPlusPlus) Designator:D1 PLUSPLUS SEMI {: RESULT=new DesignatorPlusPlus(D1); RESULT.setLine(D1left); :}
 				|
 				(DesignatorMinusMinus) Designator:D1 MINUSMINUS SEMI {: RESULT=new DesignatorMinusMinus(D1); RESULT.setLine(D1left); :}
-				|
-				(DesignatorStmtTwo) OPENSQUAREBRACKET DesignatorList:D1 CLOSESQUAREBRACKET EQUAL Designator:D2 SEMI {: RESULT=new DesignatorStmtTwo(D1, D2); RESULT.setLine(D1left); :}
-				;
-
-DesignatorList ::= (DesigList) DesignatorList:D1 COMMA DesignatorOrNot:D2 {: RESULT=new DesigList(D1, D2); RESULT.setLine(D1left); :}
-				|
-				(OneDesigList) DesignatorOrNot:D1 {: RESULT=new OneDesigList(D1); RESULT.setLine(D1left); :}
 				;
 				
 DesignatorOrNot ::= (DesignatorYes) Designator:D1 {: RESULT=new DesignatorYes(D1); RESULT.setLine(D1left); :}
@@ -344,6 +338,8 @@ Factor ::= (FactorDesignator) Designator:D1 {: RESULT=new FactorDesignator(D1); 
 		(FactorBoolConst) BOOLCONST:constName {: RESULT=new FactorBoolConst(constName); RESULT.setLine(constNameleft); :}
 		|
 		(FactorNewExpr) NEW Type:T1 OPENSQUAREBRACKET Expr:E2 CLOSESQUAREBRACKET {: RESULT=new FactorNewExpr(T1, E2); RESULT.setLine(T1left); :}
+		|
+		(FactorNewExprExpr) NEW Type:T1 OPENSQUAREBRACKET Expr:E2 CLOSESQUAREBRACKET OPENSQUAREBRACKET Expr:E3 CLOSESQUAREBRACKET {: RESULT=new FactorNewExprExpr(T1, E2, E3); RESULT.setLine(T1left); :}
 		|
 		(FactorNewActPars) NEW Type:T1 OPENBRACKET ActPars:A2 CLOSEBRACKET {: RESULT=new FactorNewActPars(T1, A2); RESULT.setLine(T1left); :}
 		|

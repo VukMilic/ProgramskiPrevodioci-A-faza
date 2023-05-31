@@ -1,0 +1,202 @@
+INFO  19:25:55,961 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  19:25:56,065 - #2 program
+INFO  19:25:56,066 - #48 MJProgram
+INFO  19:25:56,066 - #48 int
+INFO  19:25:56,068 - #48 iarr
+INFO  19:25:56,069 - #9 [
+INFO  19:25:56,069 - #10 ]
+INFO  19:25:56,070 - #7 ;
+INFO  19:25:56,071 - #48 int
+INFO  19:25:56,072 - #48 x
+INFO  19:25:56,072 - #7 ;
+INFO  19:25:56,074 - #3 {
+INFO  19:25:56,074 - #48 int
+INFO  19:25:56,076 - #48 main
+INFO  19:25:56,076 - #12 (
+INFO  19:25:56,077 - #13 )
+INFO  19:25:56,078 - #3 {
+INFO  19:25:56,080 - #48 iarr
+INFO  19:25:56,081 - #6 =
+INFO  19:25:56,082 - #28 new
+INFO  19:25:56,085 - #48 int
+INFO  19:25:56,085 - #9 [
+INFO  19:25:56,093 - #47 2
+INFO  19:25:56,093 - #10 ]
+INFO  19:25:56,097 - #7 ;
+INFO  19:25:56,097 - #48 x
+INFO  19:25:56,098 - #6 =
+INFO  19:25:56,098 - #48 iarr
+INFO  19:25:56,098 - #9 [
+INFO  19:25:56,098 - #47 0
+INFO  19:25:56,098 - #10 ]
+INFO  19:25:56,099 - #7 ;
+INFO  19:25:56,099 - #18 return
+INFO  19:25:56,099 - #47 1
+INFO  19:25:56,099 - #7 ;
+INFO  19:25:56,100 - #4 }
+INFO  19:25:56,100 - #4 }
+INFO  19:25:56,111 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    DeclarationsList(
+      NoDeclList(
+      ) [NoDeclList]
+      DeclGVar(
+        GlobalVarDecl(
+          Type(
+           int
+          ) [Type]
+          OneGlobalVarType(
+            GlobalVarIdent(
+             iarr
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [GlobalVarIdent]
+          ) [OneGlobalVarType]
+        ) [GlobalVarDecl]
+      ) [DeclGVar]
+    ) [DeclarationsList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           x
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            Assignment(
+              DesignatorAssignOp(
+                DesignatorIdent(
+                 iarr
+                ) [DesignatorIdent]
+                AssignOp(
+                ) [AssignOp]
+                Expression(
+                  MinusNot(
+                  ) [MinusNot]
+                  Terminal(
+                    FactorNewExpr(
+                      Type(
+                       int
+                      ) [Type]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           2
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [FactorNewExpr]
+                    NoMulopFactList(
+                    ) [NoMulopFactList]
+                  ) [Terminal]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [Expression]
+              ) [DesignatorAssignOp]
+            ) [Assignment]
+          ) [Statements]
+          Assignment(
+            DesignatorAssignOp(
+              DesignatorIdent(
+               x
+              ) [DesignatorIdent]
+              AssignOp(
+              ) [AssignOp]
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorDesignator(
+                    DesignatorBrackets(
+                      DesignatorIdent(
+                       iarr
+                      ) [DesignatorIdent]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           0
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [DesignatorBrackets]
+                  ) [FactorDesignator]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [DesignatorAssignOp]
+          ) [Assignment]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  19:25:56,112 - ===================================
+INFO  19:25:56,119 - Deklarisan globalni niz iarr na liniji 2, objektni cvor: Var iarr: Array, 0, 0
+INFO  19:25:56,119 - Deklarisana globalna promenljiva x na liniji 3, objektni cvor: Var x: Int, 1, 0
+INFO  19:25:56,120 - Simbol iarr se koristi na liniji 7, objektni cvor: Var iarr: Array, 0, 0
+INFO  19:25:56,120 - Simbol x se koristi na liniji 9, objektni cvor: Var x: Int, 1, 0
+INFO  19:25:56,120 - Simbol iarr se koristi na liniji 9, objektni cvor: Var iarr: Array, 0, 0
+INFO  19:25:56,121 - ===================================
+INFO  19:25:56,122 - 1
+INFO  19:25:56,132 - Parsiranje uspesno zavrseno!

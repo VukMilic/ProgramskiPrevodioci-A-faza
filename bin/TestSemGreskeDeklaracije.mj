@@ -7,7 +7,7 @@ program MJCompiler
 	// greske prilikom deklaracija konstanti ( dodeljen pogresan tip )( ponovna deklaracija )
 	const int con1="false";
 	const Bool con1="true";
-	const char con1 = "CH";
+	const char con1 = "H";
 
 {
 	// greska prilikom deklaracija lokalnih promenljivih ( nepostojeci tip )( ponovna deklaracija )

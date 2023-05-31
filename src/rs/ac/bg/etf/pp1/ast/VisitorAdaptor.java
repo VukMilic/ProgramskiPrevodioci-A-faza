@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/1/2023 23:18:41
+// 31/4/2023 22:10:31
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -38,7 +38,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ActPars ActPars) { }
     public void visit(CommaNumConst CommaNumConst) { }
     public void visit(MethodTypeName MethodTypeName) { }
-    public void visit(DesignatorList DesignatorList) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(AssignError AssignError) { }
     public void visit(ConstTypeBoolList ConstTypeBoolList) { }
@@ -71,6 +70,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorDot DesignatorDot) { visit(); }
     public void visit(FactorExpr FactorExpr) { visit(); }
     public void visit(FactorNewActPars FactorNewActPars) { visit(); }
+    public void visit(FactorNewExprExpr FactorNewExprExpr) { visit(); }
     public void visit(FactorNewExpr FactorNewExpr) { visit(); }
     public void visit(FactorBoolConst FactorBoolConst) { visit(); }
     public void visit(FactorCharConst FactorCharConst) { visit(); }
@@ -101,9 +101,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(AssignOpError AssignOpError) { visit(); }
     public void visit(DesignatorNot DesignatorNot) { visit(); }
     public void visit(DesignatorYes DesignatorYes) { visit(); }
-    public void visit(OneDesigList OneDesigList) { visit(); }
-    public void visit(DesigList DesigList) { visit(); }
-    public void visit(DesignatorStmtTwo DesignatorStmtTwo) { visit(); }
     public void visit(DesignatorMinusMinus DesignatorMinusMinus) { visit(); }
     public void visit(DesignatorPlusPlus DesignatorPlusPlus) { visit(); }
     public void visit(DesignatorActPars DesignatorActPars) { visit(); }
@@ -145,6 +142,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ClassDecl ClassDecl) { visit(); }
     public void visit(NoSquareBrackets NoSquareBrackets) { visit(); }
     public void visit(SquareBrackets SquareBrackets) { visit(); }
+    public void visit(SquareBracketsDouble SquareBracketsDouble) { visit(); }
     public void visit(OneVarType OneVarType) { visit(); }
     public void visit(VariableTypeList VariableTypeList) { visit(); }
     public void visit(VarDecl VarDecl) { visit(); }

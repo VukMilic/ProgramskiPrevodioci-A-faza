@@ -1,0 +1,110 @@
+INFO  16:01:14,800 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\GenKoda.mj
+INFO  16:01:14,843 - #2 program
+INFO  16:01:14,844 - #48 MJProgram
+INFO  16:01:14,844 - #3 {
+INFO  16:01:14,845 - #48 int
+INFO  16:01:14,845 - #48 main
+INFO  16:01:14,846 - #12 (
+INFO  16:01:14,846 - #13 )
+INFO  16:01:14,847 - #3 {
+INFO  16:01:14,848 - #20 print
+INFO  16:01:14,849 - #12 (
+INFO  16:01:14,849 - #50 "true"
+INFO  16:01:14,851 - #13 )
+INFO  16:01:14,854 - #7 ;
+INFO  16:01:14,854 - #20 print
+INFO  16:01:14,855 - #12 (
+INFO  16:01:14,855 - #50 "false"
+INFO  16:01:14,855 - #13 )
+INFO  16:01:14,855 - #7 ;
+INFO  16:01:14,855 - #18 return
+INFO  16:01:14,855 - #47 1
+INFO  16:01:14,855 - #7 ;
+INFO  16:01:14,858 - #4 }
+INFO  16:01:14,858 - #4 }
+INFO  16:01:14,864 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  NoDeclList(
+  ) [NoDeclList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorBoolConst(
+                   "true"
+                  ) [FactorBoolConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorBoolConst(
+                 "false"
+                ) [FactorBoolConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:01:14,864 - ===================================
+INFO  16:01:14,872 - ===================================
+INFO  16:01:14,872 - 0
+INFO  16:01:14,877 - Parsiranje uspesno zavrseno!
