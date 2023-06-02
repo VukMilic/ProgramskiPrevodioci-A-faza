@@ -116,15 +116,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		// prvo proveravamo da li postoji type u Tabeli Simbola
 		Obj typeNode = Tab.find(type.getTypeName());
 		if( typeNode == Tab.noObj){
-			// u slucaju da ne postoji treba proveriti da li je on mozda Boolean tip
-			if( type.getTypeName().equals("bool")) {
-				type.struct = new Struct(Struct.Bool);
-			} else {
-				// ako nije ni Boolean, izbaci gresku
-				errorType = true;
-				report_error("Greska: Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", type);
-				type.struct = Tab.noType;
-			}
+			// izbaci gresku
+			errorType = true;
+			report_error("Greska: Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", type);
+			type.struct = Tab.noType;
 		}else{
 			// ako ga ima u tabeli simbola, onda proveri da li se radi o Tipu ili o necemu drugom iz tabele simbola
 			if( typeNode.getKind() == Obj.Type){

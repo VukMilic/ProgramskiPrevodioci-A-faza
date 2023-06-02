@@ -1,74 +1,74 @@
-INFO  21:46:41,502 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
-INFO  21:46:41,592 - #2 program
-INFO  21:46:41,593 - #48 MJProgram
-INFO  21:46:41,593 - #48 char
-INFO  21:46:41,594 - #48 c
-INFO  21:46:41,596 - #9 [
-INFO  21:46:41,596 - #10 ]
-INFO  21:46:41,596 - #7 ;
-INFO  21:46:41,597 - #48 int
-INFO  21:46:41,598 - #48 x
-INFO  21:46:41,598 - #8 ,
-INFO  21:46:41,598 - #48 y
-INFO  21:46:41,599 - #8 ,
-INFO  21:46:41,599 - #48 z
-INFO  21:46:41,599 - #7 ;
-INFO  21:46:41,599 - #48 bool
-INFO  21:46:41,599 - #48 b
-INFO  21:46:41,600 - #7 ;
-INFO  21:46:41,600 - #3 {
-INFO  21:46:41,600 - #48 int
-INFO  21:46:41,600 - #48 main
-INFO  21:46:41,600 - #12 (
-INFO  21:46:41,602 - #13 )
-INFO  21:46:41,605 - #3 {
-INFO  21:46:41,606 - #48 b
-INFO  21:46:41,607 - #6 =
-INFO  21:46:41,607 - #50 "true"
-INFO  21:46:41,609 - #7 ;
-INFO  21:46:41,611 - #48 y
-INFO  21:46:41,612 - #6 =
-INFO  21:46:41,612 - #47 5
-INFO  21:46:41,612 - #7 ;
-INFO  21:46:41,613 - #48 y
-INFO  21:46:41,613 - #25 --
-INFO  21:46:41,613 - #7 ;
-INFO  21:46:41,613 - #48 x
-INFO  21:46:41,613 - #6 =
-INFO  21:46:41,613 - #37 -
-INFO  21:46:41,613 - #12 (
-INFO  21:46:41,614 - #47 10
-INFO  21:46:41,614 - #37 -
-INFO  21:46:41,614 - #48 y
-INFO  21:46:41,616 - #40 %
-INFO  21:46:41,616 - #47 3
-INFO  21:46:41,619 - #38 *
-INFO  21:46:41,619 - #47 5
-INFO  21:46:41,620 - #36 +
-INFO  21:46:41,620 - #47 2
-INFO  21:46:41,621 - #38 *
-INFO  21:46:41,621 - #47 3
-INFO  21:46:41,622 - #13 )
-INFO  21:46:41,622 - #7 ;
-INFO  21:46:41,622 - #48 x
-INFO  21:46:41,622 - #24 ++
-INFO  21:46:41,622 - #7 ;
-INFO  21:46:41,622 - #20 print
-INFO  21:46:41,623 - #12 (
-INFO  21:46:41,623 - #48 x
-INFO  21:46:41,623 - #13 )
-INFO  21:46:41,624 - #7 ;
-INFO  21:46:41,624 - #20 print
-INFO  21:46:41,624 - #12 (
-INFO  21:46:41,624 - #48 b
-INFO  21:46:41,624 - #13 )
-INFO  21:46:41,625 - #7 ;
-INFO  21:46:41,625 - #18 return
-INFO  21:46:41,625 - #47 1
-INFO  21:46:41,625 - #7 ;
-INFO  21:46:41,626 - #4 }
-INFO  21:46:41,626 - #4 }
-INFO  21:46:41,635 - Program(
+INFO  12:30:13,401 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  12:30:13,451 - #2 program
+INFO  12:30:13,451 - #48 MJProgram
+INFO  12:30:13,451 - #48 char
+INFO  12:30:13,451 - #48 c
+INFO  12:30:13,451 - #9 [
+INFO  12:30:13,451 - #10 ]
+INFO  12:30:13,451 - #7 ;
+INFO  12:30:13,451 - #48 int
+INFO  12:30:13,451 - #48 x
+INFO  12:30:13,451 - #8 ,
+INFO  12:30:13,451 - #48 y
+INFO  12:30:13,451 - #8 ,
+INFO  12:30:13,451 - #48 z
+INFO  12:30:13,451 - #7 ;
+INFO  12:30:13,451 - #48 bool
+INFO  12:30:13,451 - #48 b
+INFO  12:30:13,451 - #7 ;
+INFO  12:30:13,451 - #3 {
+INFO  12:30:13,451 - #48 int
+INFO  12:30:13,463 - #48 main
+INFO  12:30:13,463 - #12 (
+INFO  12:30:13,463 - #13 )
+INFO  12:30:13,472 - #3 {
+INFO  12:30:13,472 - #48 b
+INFO  12:30:13,472 - #6 =
+INFO  12:30:13,472 - #50 "true"
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #48 y
+INFO  12:30:13,472 - #6 =
+INFO  12:30:13,472 - #47 5
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #48 y
+INFO  12:30:13,472 - #25 --
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #48 x
+INFO  12:30:13,472 - #6 =
+INFO  12:30:13,472 - #37 -
+INFO  12:30:13,472 - #12 (
+INFO  12:30:13,472 - #47 10
+INFO  12:30:13,472 - #37 -
+INFO  12:30:13,472 - #48 y
+INFO  12:30:13,472 - #40 %
+INFO  12:30:13,472 - #47 3
+INFO  12:30:13,472 - #38 *
+INFO  12:30:13,472 - #47 5
+INFO  12:30:13,472 - #36 +
+INFO  12:30:13,472 - #47 2
+INFO  12:30:13,472 - #38 *
+INFO  12:30:13,472 - #47 3
+INFO  12:30:13,472 - #13 )
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #48 x
+INFO  12:30:13,472 - #24 ++
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #20 print
+INFO  12:30:13,472 - #12 (
+INFO  12:30:13,472 - #48 x
+INFO  12:30:13,472 - #13 )
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #20 print
+INFO  12:30:13,472 - #12 (
+INFO  12:30:13,472 - #48 b
+INFO  12:30:13,472 - #13 )
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #18 return
+INFO  12:30:13,472 - #47 1
+INFO  12:30:13,472 - #7 ;
+INFO  12:30:13,472 - #4 }
+INFO  12:30:13,472 - #4 }
+INFO  12:30:13,485 - Program(
   ProgName(
    MJProgram
   ) [ProgName]
@@ -363,20 +363,20 @@ INFO  21:46:41,635 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  21:46:41,635 - ===================================
-INFO  21:46:41,641 - Deklarisan globalni niz c na liniji 2, objektni cvor: Var c: Array, 0, 0
-INFO  21:46:41,641 - Deklarisana globalna promenljiva x na liniji 3, objektni cvor: Var x: Int, 1, 0
-INFO  21:46:41,641 - Deklarisana globalna promenljiva y na liniji 3, objektni cvor: Var y: Int, 2, 0
-INFO  21:46:41,641 - Deklarisana globalna promenljiva z na liniji 3, objektni cvor: Var z: Int, 3, 0
-INFO  21:46:41,641 - Deklarisana globalna promenljiva b na liniji 4, objektni cvor: Var b: Bool, 4, 0
-INFO  21:46:41,645 - Simbol b se koristi na liniji 7, objektni cvor: Var b: Bool, 4, 0
-INFO  21:46:41,647 - Simbol y se koristi na liniji 9, objektni cvor: Var y: Int, 2, 0
-INFO  21:46:41,647 - Simbol y se koristi na liniji 10, objektni cvor: Var y: Int, 2, 0
-INFO  21:46:41,649 - Simbol x se koristi na liniji 12, objektni cvor: Var x: Int, 1, 0
-INFO  21:46:41,649 - Simbol y se koristi na liniji 12, objektni cvor: Var y: Int, 2, 0
-INFO  21:46:41,649 - Simbol x se koristi na liniji 14, objektni cvor: Var x: Int, 1, 0
-INFO  21:46:41,649 - Simbol x se koristi na liniji 16, objektni cvor: Var x: Int, 1, 0
-INFO  21:46:41,649 - Simbol b se koristi na liniji 17, objektni cvor: Var b: Bool, 4, 0
-INFO  21:46:41,649 - ===================================
-INFO  21:46:41,651 - 5
-INFO  21:46:41,677 - Parsiranje uspesno zavrseno!
+INFO  12:30:13,485 - ===================================
+INFO  12:30:13,485 - Deklarisan globalni niz c na liniji 2, objektni cvor: Var c: Array, 0, 0
+INFO  12:30:13,485 - Deklarisana globalna promenljiva x na liniji 3, objektni cvor: Var x: Int, 1, 0
+INFO  12:30:13,485 - Deklarisana globalna promenljiva y na liniji 3, objektni cvor: Var y: Int, 2, 0
+INFO  12:30:13,485 - Deklarisana globalna promenljiva z na liniji 3, objektni cvor: Var z: Int, 3, 0
+INFO  12:30:13,485 - Deklarisana globalna promenljiva b na liniji 4, objektni cvor: Var b: Bool, 4, 0
+INFO  12:30:13,485 - Simbol b se koristi na liniji 7, objektni cvor: Var b: Bool, 4, 0
+INFO  12:30:13,485 - Simbol y se koristi na liniji 9, objektni cvor: Var y: Int, 2, 0
+INFO  12:30:13,485 - Simbol y se koristi na liniji 10, objektni cvor: Var y: Int, 2, 0
+INFO  12:30:13,485 - Simbol x se koristi na liniji 12, objektni cvor: Var x: Int, 1, 0
+INFO  12:30:13,485 - Simbol y se koristi na liniji 12, objektni cvor: Var y: Int, 2, 0
+INFO  12:30:13,485 - Simbol x se koristi na liniji 14, objektni cvor: Var x: Int, 1, 0
+INFO  12:30:13,485 - Simbol x se koristi na liniji 16, objektni cvor: Var x: Int, 1, 0
+INFO  12:30:13,485 - Simbol b se koristi na liniji 17, objektni cvor: Var b: Bool, 4, 0
+INFO  12:30:13,485 - ===================================
+INFO  12:30:13,485 - 5
+INFO  12:30:13,501 - Parsiranje uspesno zavrseno!

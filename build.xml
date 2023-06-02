@@ -12,6 +12,9 @@
 				<exclude name="CodeGenerator.java"/>
 				<exclude name="Compiler.java"/>
 				<exclude name="CounterVisitor.java"/>
+				<exclude name="TabBool.java"/>
+				<exclude name="TestBool.java"/>
+				<exclude name="BoolDumpSymbolTableVisitor.java"/>								
 			</fileset>
 		</delete>
 		<delete>

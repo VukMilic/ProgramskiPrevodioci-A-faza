@@ -28,14 +28,8 @@ public class Compiler {
 		Log4JUtils.instance().prepareLogFile(Logger.getRootLogger());
 	}
 	
-	public void tsdump(SymbolTableVisitor stv) {
-		/*
-		 * System.out.
-		 * println("=====================SEMANTICKA OBRADA=========================");
-		 * if (stv == null) stv = new DumpSymbolTableVisitor(); for (Scope s =
-		 * currentScope; s != null; s = s.getOuter()) { s.accept(stv); }
-		 * System.out.println(stv.getOutput());
-		 */
+	public static void tsdump() {
+		TabBool.dump();
 	}
 	
 	public static void main(String[] args) throws Exception {
@@ -44,7 +38,8 @@ public class Compiler {
 		
 		Reader br = null;
 		try {
-			File sourceCode = new File("test/program.mj");
+			File sourceCode = new File(args[0]);
+//			File sourceCode = new File("test/program.mj");
 //			File sourceCode = new File("test/TestSintaksa.mj");
 //			File sourceCode = new File("test/TestSemDeklaracija.mj");
 //			File sourceCode = new File("test/TestStatementa.mj");
@@ -61,7 +56,7 @@ public class Compiler {
 	        Symbol s = p.parse();  //pocetak parsiranja
 	        
 	        Program prog = (Program)(s.value); 
-	        Tab.init();
+	        TabBool.init();
 			// ispis sintaksnog stabla
 			log.info(prog.toString(""));
 			log.info("===================================");
@@ -71,12 +66,14 @@ public class Compiler {
 			prog.traverseBottomUp(v); 
 			
 			log.info("===================================");
-			Tab.dump();
+			tsdump();
 			
 			log.info(v.nVars);
 			
 			if(!p.errorDetected && v.passed()){
-				File objFile = new File("test/program.obj");
+				File objFile = new File(args[1]);
+//				File objFile = new File("test/program.obj");
+				
 				if( objFile.exists() ) objFile.delete();
 				
 				CodeGenerator codeGenerator = new CodeGenerator();
