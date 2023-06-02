@@ -15,17 +15,31 @@ public class CodeGenerator extends VisitorAdaptor {
 	private String muloperation = "";
 	private String addoperation = "";
 
+	private int isMinus = 0;
+	
 	public int getMainPc() {
 		return mainPc;
 	}
 
 	// -----------------------------------------------------------
-	// (VMAssignOp)
+	// (VMDesignatorStatement)
 
 	public void visit(DesignatorAssignOp designatorAssignOp) {
 		// Code.load(designatorAssignOp.getExpr().obj);
 		// ovaj load smatramo da smo vec uradili
 		Code.store(designatorAssignOp.getDesignator().obj);
+	}
+	
+	public void visit(DesignatorPlusPlus designatorPlusPlus){
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(designatorPlusPlus.getDesignator().obj);
+	}
+	
+	public void visit(DesignatorMinusMinus designatorMinusMinus){
+		Code.loadConst(1);
+		Code.put(Code.sub);
+		Code.store(designatorMinusMinus.getDesignator().obj);
 	}
 
 	// -----------------------------------------------------------
@@ -225,6 +239,20 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(Minus minus) {
 		addoperation = "oduzimanje";
+	}
+	
+	// ------------------------------------------------------------
+	// (VMExpr)
+	
+	public void visit(Expression expression){
+		if( isMinus == 1 ){
+			Code.put(Code.neg);
+			isMinus = 0;
+		}
+	}
+	
+	public void visit(MinusOr minusOr){
+		isMinus = 1;
 	}
 	
 }

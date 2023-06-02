@@ -117,7 +117,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Obj typeNode = Tab.find(type.getTypeName());
 		if( typeNode == Tab.noObj){
 			// u slucaju da ne postoji treba proveriti da li je on mozda Boolean tip
-			if( type.getTypeName().equals("Bool")) {
+			if( type.getTypeName().equals("bool")) {
 				type.struct = new Struct(Struct.Bool);
 			} else {
 				// ako nije ni Boolean, izbaci gresku
