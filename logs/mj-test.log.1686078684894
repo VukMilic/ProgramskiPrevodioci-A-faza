@@ -1,0 +1,151 @@
+INFO  21:11:15,008 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  21:11:15,039 - #2 program
+INFO  21:11:15,039 - #48 MJProgram
+INFO  21:11:15,039 - #48 char
+INFO  21:11:15,039 - #48 i
+INFO  21:11:15,039 - #9 [
+INFO  21:11:15,039 - #10 ]
+INFO  21:11:15,039 - #9 [
+INFO  21:11:15,039 - #10 ]
+INFO  21:11:15,039 - #7 ;
+INFO  21:11:15,039 - #3 {
+INFO  21:11:15,039 - #48 int
+INFO  21:11:15,055 - #48 main
+INFO  21:11:15,055 - #12 (
+INFO  21:11:15,055 - #13 )
+INFO  21:11:15,055 - #3 {
+INFO  21:11:15,055 - #48 i
+INFO  21:11:15,055 - #6 =
+INFO  21:11:15,055 - #28 new
+INFO  21:11:15,055 - #48 int
+INFO  21:11:15,055 - #9 [
+INFO  21:11:15,055 - #47 5
+INFO  21:11:15,055 - #10 ]
+INFO  21:11:15,066 - #9 [
+INFO  21:11:15,066 - #47 6
+INFO  21:11:15,066 - #10 ]
+INFO  21:11:15,066 - #7 ;
+INFO  21:11:15,066 - #18 return
+INFO  21:11:15,066 - #47 1
+INFO  21:11:15,066 - #7 ;
+INFO  21:11:15,066 - #4 }
+INFO  21:11:15,066 - #4 }
+INFO  21:11:15,082 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         char
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           i
+            SquareBracketsDouble(
+            ) [SquareBracketsDouble]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            DesignatorAssignOp(
+              DesignatorIdent(
+               i
+              ) [DesignatorIdent]
+              AssignOp(
+              ) [AssignOp]
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNewExprExpr(
+                    Type(
+                     int
+                    ) [Type]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [Expression]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorNumConst(
+                         6
+                        ) [FactorNumConst]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [Expression]
+                  ) [FactorNewExprExpr]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [DesignatorAssignOp]
+          ) [Assignment]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:11:15,082 - ===================================
+INFO  21:11:15,082 - Deklarisana globalna matrica i na liniji 2, objektni cvor: Var i: Array, 0, 0
+INFO  21:11:15,082 - Simbol i se koristi na liniji 6, objektni cvor: Var i: Array, 0, 0
+ERROR 21:11:15,082 - Greska: tipovi matrica se ne poklapaju prilikom dodele vrednosti!  na liniji 6
+INFO  21:11:15,082 - ===================================
+INFO  21:11:15,082 - 1
+ERROR 21:11:15,082 - Parsiranje NIJE uspesno zavrseno!

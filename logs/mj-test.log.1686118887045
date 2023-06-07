@@ -1,0 +1,112 @@
+INFO  21:12:08,130 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  21:12:08,179 - #2 program
+INFO  21:12:08,179 - #48 MJProgram
+INFO  21:12:08,180 - #48 char
+INFO  21:12:08,180 - #48 i
+INFO  21:12:08,181 - #7 ;
+INFO  21:12:08,182 - #3 {
+INFO  21:12:08,182 - #48 int
+INFO  21:12:08,182 - #48 main
+INFO  21:12:08,182 - #12 (
+INFO  21:12:08,182 - #13 )
+INFO  21:12:08,182 - #3 {
+INFO  21:12:08,182 - #48 i
+INFO  21:12:08,182 - #6 =
+INFO  21:12:08,182 - #47 5
+INFO  21:12:08,182 - #7 ;
+INFO  21:12:08,182 - #18 return
+INFO  21:12:08,182 - #47 1
+INFO  21:12:08,182 - #7 ;
+INFO  21:12:08,182 - #4 }
+INFO  21:12:08,182 - #4 }
+INFO  21:12:08,182 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         char
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           i
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            DesignatorAssignOp(
+              DesignatorIdent(
+               i
+              ) [DesignatorIdent]
+              AssignOp(
+              ) [AssignOp]
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNumConst(
+                   5
+                  ) [FactorNumConst]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [DesignatorAssignOp]
+          ) [Assignment]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  21:12:08,202 - ===================================
+INFO  21:12:08,202 - Deklarisana globalna promenljiva i na liniji 2, objektni cvor: Var i: Char, 0, 0
+INFO  21:12:08,202 - Simbol i se koristi na liniji 6, objektni cvor: Var i: Char, 0, 0
+ERROR 21:12:08,202 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 6
+INFO  21:12:08,202 - ===================================
+INFO  21:12:08,202 - 1
+ERROR 21:12:08,202 - Parsiranje NIJE uspesno zavrseno!

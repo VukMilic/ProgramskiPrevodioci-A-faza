@@ -1,0 +1,132 @@
+INFO  20:34:27,496 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  20:34:27,543 - #2 program
+INFO  20:34:27,543 - #48 MJProgram
+INFO  20:34:27,543 - #48 int
+INFO  20:34:27,543 - #48 i
+INFO  20:34:27,543 - #9 [
+INFO  20:34:27,543 - #10 ]
+INFO  20:34:27,543 - #7 ;
+INFO  20:34:27,543 - #3 {
+INFO  20:34:27,543 - #48 int
+INFO  20:34:27,543 - #48 main
+INFO  20:34:27,543 - #12 (
+INFO  20:34:27,543 - #13 )
+INFO  20:34:27,543 - #3 {
+INFO  20:34:27,543 - #48 i
+INFO  20:34:27,543 - #6 =
+INFO  20:34:27,543 - #28 new
+INFO  20:34:27,543 - #48 int
+INFO  20:34:27,543 - #9 [
+INFO  20:34:27,543 - #47 5
+INFO  20:34:27,543 - #10 ]
+INFO  20:34:27,543 - #7 ;
+INFO  20:34:27,543 - #18 return
+INFO  20:34:27,561 - #47 1
+INFO  20:34:27,561 - #7 ;
+INFO  20:34:27,561 - #4 }
+INFO  20:34:27,561 - #4 }
+INFO  20:34:27,576 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           i
+            SquareBrackets(
+            ) [SquareBrackets]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            DesignatorAssignOp(
+              DesignatorIdent(
+               i
+              ) [DesignatorIdent]
+              AssignOp(
+              ) [AssignOp]
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNewExpr(
+                    Type(
+                     int
+                    ) [Type]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [Expression]
+                  ) [FactorNewExpr]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [DesignatorAssignOp]
+          ) [Assignment]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:34:27,576 - ===================================
+INFO  20:34:27,576 - Deklarisan globalni niz i na liniji 2, objektni cvor: Var i: Array, 0, 0
+INFO  20:34:27,576 - Simbol i se koristi na liniji 6, objektni cvor: Var i: Array, 0, 0
+INFO  20:34:27,576 - ===================================
+INFO  20:34:27,576 - 1
+INFO  20:34:27,596 - Parsiranje uspesno zavrseno!

@@ -3,6 +3,8 @@ package rs.ac.bg.etf.pp1;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.Stack;
 
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.symboltable.*;
@@ -23,6 +25,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	int isArray = 0;
 	int isMinus = 0;
+	int isMatrix = 0;
 	
 //	ArrayList<Obj> designatorListObjects = new ArrayList<>();
 //	Struct desigListObjType = null;
@@ -141,6 +144,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(SquareBrackets squareBrackets) {
     	isArray = 1;
     }
+    
+    public void visit(SquareBracketsDouble squareBracketsDouble) {
+    	isMatrix = 1;
+    }
 	
     // ----------------------------------------------------------------------------
     // da li je u pitanju minus (VMMinus)
@@ -168,7 +175,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		nVars++;
             		isArray = 0;
             		report_info("Deklarisan lokalni niz " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
-        		}else {
+        		} 
+        		else if(isMatrix == 1)
+        		{
+        			// ako je u pitanju deklaracija matrice
+            		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
+            		nVars++;
+            		isMatrix = 0;
+            		report_info("Deklarisana lokalna matrica " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+        		}
+        		else 
+        		{
         			// ako je u pitanju obicna lokalna promenljiva
             		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), currentType);
             		report_info("Deklarisana lokalna promenljiva " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
@@ -192,7 +209,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	        		nVars++;
 	        		isArray = 0;
 	        		report_info("Deklarisan lokalni niz " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
-	    		}else {
+	    		}
+	    		else if(isMatrix == 1)
+	    		{
+	    			// ako je u pitanju deklaracija matrice
+	        		Obj objPrint = Tab.insert(Obj.Var, oneVarTypeList.getVarName(), new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
+	        		nVars++;
+	        		isMatrix = 0;
+	        		report_info("Deklarisana lokalna matrica " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+	    		}	    		
+	    		else 
+	    		{
 	    			// ako je u pitanju obicna globalna promenljiva
 	        		Obj objPrint = Tab.insert(Obj.Var, oneVarTypeList.getVarName(), currentType);
 	        		report_info("Deklarisana lokalna promenljiva " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
@@ -224,7 +251,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		report_info("Deklarisan globalni niz " + globalVarIdent.getGlobVarName() + " na liniji " + globalVarIdent.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
             		nVars++;
             		isArray = 0;
-        		}else {
+        		}
+        		else if(isMatrix == 1)
+        		{
+        			// ako je u pitanju deklaracija matrice
+            		Obj objPrint = Tab.insert(Obj.Var, globalVarIdent.getGlobVarName(), new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
+            		objPrint.setLevel(0);
+            		report_info("Deklarisana globalna matrica " + globalVarIdent.getGlobVarName() + " na liniji " + globalVarIdent.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+            		nVars++;
+            		isMatrix = 0;
+        		}
+        		else 
+        		{
         			// ako je u pitanju obicna globalna promenljiva
             		Obj objPrint = Tab.insert(Obj.Var, globalVarIdent.getGlobVarName(), currentType);
             		objPrint.setLevel(0);
@@ -420,8 +458,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if( designatorBrackets.getDesignator().obj.getType().getKind() == Struct.Array ) {
     		if( designatorBrackets.getExpr().obj.getType().getKind() == Struct.Int ) {
     			// TODO: ako je sve okej, ovde radis sa nizom tako da ces morati nesto da promenis
-    			
-    			designatorBrackets.obj = new Obj(Obj.Elem, "elem", designatorBrackets.getDesignator().obj.getType().getElemType());
+    			if( isMinus == 1 ){
+    				report_error("Greska: prilikom dohvatanja elementa niza vrednost u uglastim zagradama ne sme biti negativna vrednost", designatorBrackets);
+            		designatorBrackets.obj = Tab.noObj;
+            		isMinus = 0;
+    			} else {
+    				designatorBrackets.obj = new Obj(Obj.Elem, "elem", designatorBrackets.getDesignator().obj.getType().getElemType());
+    			}
     		} else {
         		report_error("Greska: prilikom dohvatanja elementa niza vrednost u uglastim zagradama mora biti tipa int", designatorBrackets);
         		designatorBrackets.obj = Tab.noObj;
@@ -439,9 +482,21 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     			|| designatorAssignOp.getDesignator().obj.getKind() == Obj.Elem ) {
     		
         	if( designatorAssignOp.getDesignator().obj.getType().getKind() == designatorAssignOp.getExpr().obj.getType().getKind() ){
-        		// ovde bi sad isla dodela vrednosti Expr u Designator
-        		//report_info("Tipovi se poklapaju prilikom dodele vrednosti", designatorAssignOp);
-        		
+        		if( designatorAssignOp.getDesignator().obj.getType().getKind() == Struct.Array 
+        				&& designatorAssignOp.getDesignator().obj.getType().getElemType().getKind() != designatorAssignOp.getExpr().obj.getType().getElemType().getKind()){
+        			report_error("Greska: tipovi nizova se ne poklapaju prilikom dodele vrednosti! ", designatorAssignOp);	
+        		} 
+        		else if( designatorAssignOp.getDesignator().obj.getType().getKind() == Struct.Array
+        				&& designatorAssignOp.getDesignator().obj.getType().getElemType().getKind() == Struct.Array
+        				&& designatorAssignOp.getDesignator().obj.getType().getElemType().getElemType().getKind() != designatorAssignOp.getExpr().obj.getType().getElemType().getElemType().getKind())
+        		{
+        			report_error("Greska: tipovi matrica se ne poklapaju prilikom dodele vrednosti! ", designatorAssignOp);
+        		}
+        		else
+        		{
+        			// ovde bi sad isla dodela vrednosti Expr u Designator
+            		//report_info("Tipovi se poklapaju prilikom dodele vrednosti", designatorAssignOp);	
+        		}
         	}else {
         		if( designatorAssignOp.getDesignator().obj != Tab.noObj )
         			report_error("Greska: tipovi se ne poklapaju prilikom dodele vrednosti! ", designatorAssignOp);
@@ -608,6 +663,25 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     }
     
+    public void visit(FactorNewExprExpr factorNewExprExpr) {
+    	// TODO: ovde trenutno samo pravim objekat koji ce da bude tipa Type
+    	// za dalje dodeljivanje vrednosti ovom objektu ili bilo sta sledece
+    	// moram da ostavim za kasnije
+    	
+    	if( factorNewExprExpr.getExpr().obj.getType().getKind() == Struct.Int 
+    			&& factorNewExprExpr.getExpr1().obj.getType().getKind() == Struct.Int ) {
+    		if( currentType.getKind() == Struct.Int ||
+    				currentType.getKind() == Struct.Char ||
+    				currentType.getKind() == Struct.Bool )
+    			factorNewExprExpr.obj = new Obj(Obj.Var, "factorNewMatrix", new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
+    		else
+    			report_error("Greska: Tip matrice mora biti Int, Char ili Bool", factorNewExprExpr);
+    	} else {
+    		report_error("Greska: Tip izmedju zagrada mora biti Int", factorNewExprExpr);
+    		factorNewExprExpr.obj = Tab.noObj;
+    	}
+    }
+    
     public void visit(FactorNewActPars factorNewActPars) {
     	factorNewActPars.obj = new Obj(Obj.Var, "factorNew", factorNewActPars.getType().struct);
     }
@@ -695,8 +769,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     			report_error("Greska: tip posle minusa mora biti int! ", expression);
     			expression.obj = Tab.noObj;
     		}
-    		
-    		isMinus = 0;
+    		// ako je ovo slucaj za velicinu niza onda mora da ostane minus da bismo prijavili gresku
+    		if(!(DesignatorBrackets.class == expression.getParent().getClass()))
+    			isMinus = 0;
     	}
     } 
     

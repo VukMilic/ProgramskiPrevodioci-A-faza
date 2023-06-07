@@ -38,8 +38,8 @@ public class Compiler {
 		
 		Reader br = null;
 		try {
-			File sourceCode = new File(args[0]);
-//			File sourceCode = new File("test/program.mj");
+//			File sourceCode = new File(args[0]);
+			File sourceCode = new File("test/program.mj");
 //			File sourceCode = new File("test/TestSintaksa.mj");
 //			File sourceCode = new File("test/TestSemDeklaracija.mj");
 //			File sourceCode = new File("test/TestStatementa.mj");
@@ -71,8 +71,8 @@ public class Compiler {
 			log.info(v.nVars);
 			
 			if(!p.errorDetected && v.passed()){
-				File objFile = new File(args[1]);
-//				File objFile = new File("test/program.obj");
+//				File objFile = new File(args[1]);
+				File objFile = new File("test/program.obj");
 				
 				if( objFile.exists() ) objFile.delete();
 				

@@ -1,0 +1,194 @@
+INFO  14:31:45,549 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  14:31:45,658 - #2 program
+INFO  14:31:45,658 - #48 MJProgram
+INFO  14:31:45,658 - #48 char
+INFO  14:31:45,662 - #48 i
+INFO  14:31:45,663 - #9 [
+INFO  14:31:45,663 - #10 ]
+INFO  14:31:45,663 - #7 ;
+INFO  14:31:45,665 - #48 int
+INFO  14:31:45,666 - #48 x
+INFO  14:31:45,666 - #7 ;
+INFO  14:31:45,667 - #3 {
+INFO  14:31:45,667 - #48 int
+INFO  14:31:45,668 - #48 main
+INFO  14:31:45,669 - #12 (
+INFO  14:31:45,669 - #13 )
+INFO  14:31:45,671 - #3 {
+INFO  14:31:45,672 - #48 x
+INFO  14:31:45,673 - #6 =
+INFO  14:31:45,673 - #47 5
+INFO  14:31:45,676 - #7 ;
+INFO  14:31:45,678 - #48 i
+INFO  14:31:45,679 - #6 =
+INFO  14:31:45,687 - #28 new
+INFO  14:31:45,687 - #48 char
+INFO  14:31:45,687 - #9 [
+INFO  14:31:45,688 - #48 x
+INFO  14:31:45,688 - #36 +
+INFO  14:31:45,688 - #47 5
+INFO  14:31:45,690 - #10 ]
+INFO  14:31:45,691 - #7 ;
+INFO  14:31:45,691 - #18 return
+INFO  14:31:45,691 - #47 1
+INFO  14:31:45,692 - #7 ;
+INFO  14:31:45,692 - #4 }
+INFO  14:31:45,692 - #4 }
+INFO  14:31:45,720 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    DeclarationsList(
+      NoDeclList(
+      ) [NoDeclList]
+      DeclGVar(
+        GlobalVarDecl(
+          Type(
+           char
+          ) [Type]
+          OneGlobalVarType(
+            GlobalVarIdent(
+             i
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [GlobalVarIdent]
+          ) [OneGlobalVarType]
+        ) [GlobalVarDecl]
+      ) [DeclGVar]
+    ) [DeclarationsList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           x
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            Assignment(
+              DesignatorAssignOp(
+                DesignatorIdent(
+                 x
+                ) [DesignatorIdent]
+                AssignOp(
+                ) [AssignOp]
+                Expression(
+                  MinusNot(
+                  ) [MinusNot]
+                  Terminal(
+                    FactorNumConst(
+                     5
+                    ) [FactorNumConst]
+                    NoMulopFactList(
+                    ) [NoMulopFactList]
+                  ) [Terminal]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [Expression]
+              ) [DesignatorAssignOp]
+            ) [Assignment]
+          ) [Statements]
+          Assignment(
+            DesignatorAssignOp(
+              DesignatorIdent(
+               i
+              ) [DesignatorIdent]
+              AssignOp(
+              ) [AssignOp]
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNewExpr(
+                    Type(
+                     char
+                    ) [Type]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorDesignator(
+                          DesignatorIdent(
+                           x
+                          ) [DesignatorIdent]
+                        ) [FactorDesignator]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      AddopTerminalList(
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                        Plus(
+                        ) [Plus]
+                        Terminal(
+                          FactorNumConst(
+                           5
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                      ) [AddopTerminalList]
+                    ) [Expression]
+                  ) [FactorNewExpr]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [DesignatorAssignOp]
+          ) [Assignment]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  14:31:45,721 - ===================================
+INFO  14:31:45,769 - Deklarisan globalni niz i na liniji 2, objektni cvor: Var i: Array, 0, 0
+INFO  14:31:45,770 - Deklarisana globalna promenljiva x na liniji 3, objektni cvor: Var x: Int, 1, 0
+INFO  14:31:45,770 - Simbol x se koristi na liniji 7, objektni cvor: Var x: Int, 1, 0
+INFO  14:31:45,770 - Simbol i se koristi na liniji 9, objektni cvor: Var i: Array, 0, 0
+INFO  14:31:45,771 - Simbol x se koristi na liniji 9, objektni cvor: Var x: Int, 1, 0

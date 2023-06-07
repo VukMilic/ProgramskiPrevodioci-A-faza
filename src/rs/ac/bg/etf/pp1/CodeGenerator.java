@@ -16,6 +16,8 @@ public class CodeGenerator extends VisitorAdaptor {
 	private String addoperation = "";
 
 	private int isMinus = 0;
+	private int flag_numOfRows = 0;
+	private int numOfRows = 0;
 	
 	public int getMainPc() {
 		return mainPc;
@@ -120,10 +122,37 @@ public class CodeGenerator extends VisitorAdaptor {
 		// load-ovao si Array na stek u designatorIdent smeni
 		// load-ovao si Expr takodje pre ove smene
 		
-		SyntaxNode parent = designatorBrackets.getParent();
+		if( designatorBrackets.getDesignator().getClass() == DesignatorBrackets.class )
+		{
+			// za slucaj kada smo naisli na drugu zagradu matrice
+			Code.put(Code.add);
 
-		if (DesignatorAssignOp.class != parent.getClass() && ReadDesignator.class != parent.getClass())
-			Code.load(designatorBrackets.obj);
+			SyntaxNode parent = designatorBrackets.getParent();
+			if (DesignatorAssignOp.class != parent.getClass() && ReadDesignator.class != parent.getClass())
+				Code.load(designatorBrackets.obj);
+		}
+		else if( designatorBrackets.getParent().getClass() == DesignatorBrackets.class )
+		{
+			// za slucaj kada smo naisli na prvu zagradu matrice
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			Code.put(Code.dup_x1);
+			Code.put(Code.dup);
+			Code.put(Code.arraylength);
+			Code.loadConst(1);
+			Code.put(Code.sub);
+			Code.put(Code.aload);
+			Code.put(Code.mul);
+		} 
+		else 		
+		{
+			// za sve slucajeve koji nisu matrica
+			
+			SyntaxNode parent = designatorBrackets.getParent();
+
+			if (DesignatorAssignOp.class != parent.getClass() && ReadDesignator.class != parent.getClass())
+				Code.load(designatorBrackets.obj);
+		}
 	}
 
 	// --------------------------------------------------------
@@ -138,6 +167,34 @@ public class CodeGenerator extends VisitorAdaptor {
 		} else {
 			Code.put(1);
 		}
+	}
+	
+	public void visit(FactorNewExprExpr factorNewExprExpr){
+		// Expr1 i Expr2 na steku, promeni im pozicije i ostavi Expr2 na vrhu
+		Code.put(Code.dup_x1);
+		// pomnozi Expr1 i Expr2 i dodaj im 1 = velicina matrice (niza)
+		Code.put(Code.mul);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		// sada na steku imas velicinu niza,alociraj ga
+		Code.put(Code.newarray);
+		if( factorNewExprExpr.getType().struct.getKind() == Struct.Char)
+			Code.put(0);
+		else
+			Code.put(1);
+		
+		Code.put(Code.dup_x1);
+		Code.put(Code.dup);
+		Code.put(Code.arraylength);
+		Code.loadConst(1);
+		Code.put(Code.sub);
+		
+		Code.put(Code.dup_x2);
+		Code.put(Code.pop);
+		Code.put(Code.dup_x2);
+		Code.put(Code.pop);
+	
+		Code.put(Code.astore);
 	}
 
 	// --------------------------------------------------------
@@ -248,6 +305,12 @@ public class CodeGenerator extends VisitorAdaptor {
 		if( isMinus == 1 ){
 			Code.put(Code.neg);
 			isMinus = 0;
+		}
+		if(FactorNewExprExpr.class == expression.getParent().getClass()){
+			if(flag_numOfRows == 0){
+				//
+			}
+			flag_numOfRows = (flag_numOfRows + 1)%2;
 		}
 	}
 	

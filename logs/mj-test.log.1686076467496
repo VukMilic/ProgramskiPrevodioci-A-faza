@@ -1,0 +1,133 @@
+INFO  20:34:14,256 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  20:34:14,334 - #2 program
+INFO  20:34:14,334 - #48 MJProgram
+INFO  20:34:14,334 - #48 int
+INFO  20:34:14,334 - #48 i
+INFO  20:34:14,334 - #9 [
+INFO  20:34:14,334 - #10 ]
+INFO  20:34:14,334 - #7 ;
+INFO  20:34:14,334 - #3 {
+INFO  20:34:14,334 - #48 int
+INFO  20:34:14,334 - #48 main
+INFO  20:34:14,334 - #12 (
+INFO  20:34:14,334 - #13 )
+INFO  20:34:14,334 - #3 {
+INFO  20:34:14,334 - #48 i
+INFO  20:34:14,334 - #6 =
+INFO  20:34:14,334 - #28 new
+INFO  20:34:14,334 - #48 char
+INFO  20:34:14,334 - #9 [
+INFO  20:34:14,334 - #47 5
+INFO  20:34:14,334 - #10 ]
+INFO  20:34:14,334 - #7 ;
+INFO  20:34:14,334 - #18 return
+INFO  20:34:14,356 - #47 1
+INFO  20:34:14,356 - #7 ;
+INFO  20:34:14,356 - #4 }
+INFO  20:34:14,356 - #4 }
+INFO  20:34:14,356 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    NoDeclList(
+    ) [NoDeclList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           i
+            SquareBrackets(
+            ) [SquareBrackets]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          Assignment(
+            DesignatorAssignOp(
+              DesignatorIdent(
+               i
+              ) [DesignatorIdent]
+              AssignOp(
+              ) [AssignOp]
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorNewExpr(
+                    Type(
+                     char
+                    ) [Type]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorNumConst(
+                         5
+                        ) [FactorNumConst]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [Expression]
+                  ) [FactorNewExpr]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [DesignatorAssignOp]
+          ) [Assignment]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:34:14,356 - ===================================
+INFO  20:34:14,372 - Deklarisan globalni niz i na liniji 2, objektni cvor: Var i: Array, 0, 0
+INFO  20:34:14,372 - Simbol i se koristi na liniji 6, objektni cvor: Var i: Array, 0, 0
+ERROR 20:34:14,372 - Greska: tipovi nizova se ne poklapaju prilikom dodele vrednosti!  na liniji 6
+INFO  20:34:14,372 - ===================================
+INFO  20:34:14,372 - 1
+ERROR 20:34:14,372 - Parsiranje NIJE uspesno zavrseno!

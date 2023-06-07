@@ -1,20 +1,17 @@
 program MJProgram
-char c[];
-int x, y, z;
-bool b;
+char i[][];
+int i2[][];
 {
 	int main(){
-		b = "true";
+
+		i = new char[4][4];
+		i2 = new int[2][2];
 		
-		y = 5;
-		y--;
+		i[2][3] = "s";
+		i2[0][1] = 4;
 		
-		x = - ( 10 - y % 3 * 5 + 2 * 3 );
-		
-		x++;
-		
-		print(x);
-		print(b);
+		print(i[2][3]);
+		print(i2[0][1]);
 		
 		return 1;
 	}
