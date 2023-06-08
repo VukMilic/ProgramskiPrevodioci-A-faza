@@ -1,0 +1,593 @@
+INFO  09:10:51,861 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  09:10:52,025 - #2 program
+INFO  09:10:52,025 - #48 MJProgram
+INFO  09:10:52,027 - #48 char
+INFO  09:10:52,031 - #48 i
+INFO  09:10:52,033 - #9 [
+INFO  09:10:52,033 - #10 ]
+INFO  09:10:52,034 - #9 [
+INFO  09:10:52,034 - #10 ]
+INFO  09:10:52,034 - #7 ;
+INFO  09:10:52,037 - #48 int
+INFO  09:10:52,037 - #48 i2
+INFO  09:10:52,039 - #9 [
+INFO  09:10:52,039 - #10 ]
+INFO  09:10:52,039 - #9 [
+INFO  09:10:52,039 - #10 ]
+INFO  09:10:52,040 - #7 ;
+INFO  09:10:52,040 - #3 {
+INFO  09:10:52,040 - #48 int
+INFO  09:10:52,041 - #48 main
+INFO  09:10:52,042 - #12 (
+INFO  09:10:52,043 - #13 )
+INFO  09:10:52,045 - #3 {
+INFO  09:10:52,048 - #48 i
+INFO  09:10:52,048 - #6 =
+INFO  09:10:52,050 - #28 new
+INFO  09:10:52,054 - #48 char
+INFO  09:10:52,054 - #9 [
+INFO  09:10:52,055 - #47 4
+INFO  09:10:52,055 - #10 ]
+INFO  09:10:52,059 - #9 [
+INFO  09:10:52,059 - #47 4
+INFO  09:10:52,060 - #10 ]
+INFO  09:10:52,060 - #7 ;
+INFO  09:10:52,061 - #48 i2
+INFO  09:10:52,062 - #6 =
+INFO  09:10:52,063 - #28 new
+INFO  09:10:52,063 - #48 int
+INFO  09:10:52,063 - #9 [
+INFO  09:10:52,063 - #47 2
+INFO  09:10:52,063 - #10 ]
+INFO  09:10:52,065 - #9 [
+INFO  09:10:52,065 - #47 2
+INFO  09:10:52,065 - #10 ]
+INFO  09:10:52,066 - #7 ;
+INFO  09:10:52,066 - #48 i
+INFO  09:10:52,067 - #9 [
+INFO  09:10:52,067 - #47 2
+INFO  09:10:52,068 - #10 ]
+INFO  09:10:52,068 - #9 [
+INFO  09:10:52,068 - #47 3
+INFO  09:10:52,068 - #10 ]
+INFO  09:10:52,069 - #6 =
+INFO  09:10:52,069 - #49 "s"
+INFO  09:10:52,069 - #7 ;
+INFO  09:10:52,070 - #48 i2
+INFO  09:10:52,070 - #9 [
+INFO  09:10:52,070 - #47 0
+INFO  09:10:52,071 - #10 ]
+INFO  09:10:52,071 - #9 [
+INFO  09:10:52,071 - #47 1
+INFO  09:10:52,071 - #10 ]
+INFO  09:10:52,071 - #6 =
+INFO  09:10:52,072 - #47 4
+INFO  09:10:52,072 - #7 ;
+INFO  09:10:52,072 - #48 i2
+INFO  09:10:52,072 - #9 [
+INFO  09:10:52,073 - #47 0
+INFO  09:10:52,073 - #10 ]
+INFO  09:10:52,074 - #9 [
+INFO  09:10:52,075 - #47 1
+INFO  09:10:52,075 - #10 ]
+INFO  09:10:52,075 - #24 ++
+INFO  09:10:52,076 - #7 ;
+INFO  09:10:52,076 - #48 i2
+INFO  09:10:52,076 - #9 [
+INFO  09:10:52,077 - #47 0
+INFO  09:10:52,077 - #10 ]
+INFO  09:10:52,077 - #9 [
+INFO  09:10:52,077 - #47 1
+INFO  09:10:52,077 - #10 ]
+INFO  09:10:52,077 - #25 --
+INFO  09:10:52,077 - #7 ;
+INFO  09:10:52,078 - #20 print
+INFO  09:10:52,078 - #12 (
+INFO  09:10:52,079 - #48 i
+INFO  09:10:52,079 - #9 [
+INFO  09:10:52,079 - #47 2
+INFO  09:10:52,079 - #10 ]
+INFO  09:10:52,079 - #9 [
+INFO  09:10:52,080 - #47 3
+INFO  09:10:52,080 - #10 ]
+INFO  09:10:52,080 - #13 )
+INFO  09:10:52,083 - #7 ;
+INFO  09:10:52,083 - #20 print
+INFO  09:10:52,084 - #12 (
+INFO  09:10:52,084 - #48 i2
+INFO  09:10:52,084 - #9 [
+INFO  09:10:52,084 - #47 0
+INFO  09:10:52,084 - #10 ]
+INFO  09:10:52,085 - #9 [
+INFO  09:10:52,085 - #47 1
+INFO  09:10:52,085 - #10 ]
+INFO  09:10:52,086 - #13 )
+INFO  09:10:52,086 - #7 ;
+INFO  09:10:52,086 - #18 return
+INFO  09:10:52,086 - #47 1
+INFO  09:10:52,086 - #7 ;
+INFO  09:10:52,087 - #4 }
+INFO  09:10:52,088 - #4 }
+INFO  09:10:52,127 - Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  DeclarationsList(
+    DeclarationsList(
+      NoDeclList(
+      ) [NoDeclList]
+      DeclGVar(
+        GlobalVarDecl(
+          Type(
+           char
+          ) [Type]
+          OneGlobalVarType(
+            GlobalVarIdent(
+             i
+              SquareBracketsDouble(
+              ) [SquareBracketsDouble]
+            ) [GlobalVarIdent]
+          ) [OneGlobalVarType]
+        ) [GlobalVarDecl]
+      ) [DeclGVar]
+    ) [DeclarationsList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         int
+        ) [Type]
+        OneGlobalVarType(
+          GlobalVarIdent(
+           i2
+            SquareBracketsDouble(
+            ) [SquareBracketsDouble]
+          ) [GlobalVarIdent]
+        ) [OneGlobalVarType]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethTypeName(
+        Type(
+         int
+        ) [Type]
+       main
+      ) [MethTypeName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        NoStmt(
+                        ) [NoStmt]
+                        Assignment(
+                          DesignatorAssignOp(
+                            DesignatorIdent(
+                             i
+                            ) [DesignatorIdent]
+                            AssignOp(
+                            ) [AssignOp]
+                            Expression(
+                              MinusNot(
+                              ) [MinusNot]
+                              Terminal(
+                                FactorNewExprExpr(
+                                  Type(
+                                   char
+                                  ) [Type]
+                                  Expression(
+                                    MinusNot(
+                                    ) [MinusNot]
+                                    Terminal(
+                                      FactorNumConst(
+                                       4
+                                      ) [FactorNumConst]
+                                      NoMulopFactList(
+                                      ) [NoMulopFactList]
+                                    ) [Terminal]
+                                    NoAddopTermList(
+                                    ) [NoAddopTermList]
+                                  ) [Expression]
+                                  Expression(
+                                    MinusNot(
+                                    ) [MinusNot]
+                                    Terminal(
+                                      FactorNumConst(
+                                       4
+                                      ) [FactorNumConst]
+                                      NoMulopFactList(
+                                      ) [NoMulopFactList]
+                                    ) [Terminal]
+                                    NoAddopTermList(
+                                    ) [NoAddopTermList]
+                                  ) [Expression]
+                                ) [FactorNewExprExpr]
+                                NoMulopFactList(
+                                ) [NoMulopFactList]
+                              ) [Terminal]
+                              NoAddopTermList(
+                              ) [NoAddopTermList]
+                            ) [Expression]
+                          ) [DesignatorAssignOp]
+                        ) [Assignment]
+                      ) [Statements]
+                      Assignment(
+                        DesignatorAssignOp(
+                          DesignatorIdent(
+                           i2
+                          ) [DesignatorIdent]
+                          AssignOp(
+                          ) [AssignOp]
+                          Expression(
+                            MinusNot(
+                            ) [MinusNot]
+                            Terminal(
+                              FactorNewExprExpr(
+                                Type(
+                                 int
+                                ) [Type]
+                                Expression(
+                                  MinusNot(
+                                  ) [MinusNot]
+                                  Terminal(
+                                    FactorNumConst(
+                                     2
+                                    ) [FactorNumConst]
+                                    NoMulopFactList(
+                                    ) [NoMulopFactList]
+                                  ) [Terminal]
+                                  NoAddopTermList(
+                                  ) [NoAddopTermList]
+                                ) [Expression]
+                                Expression(
+                                  MinusNot(
+                                  ) [MinusNot]
+                                  Terminal(
+                                    FactorNumConst(
+                                     2
+                                    ) [FactorNumConst]
+                                    NoMulopFactList(
+                                    ) [NoMulopFactList]
+                                  ) [Terminal]
+                                  NoAddopTermList(
+                                  ) [NoAddopTermList]
+                                ) [Expression]
+                              ) [FactorNewExprExpr]
+                              NoMulopFactList(
+                              ) [NoMulopFactList]
+                            ) [Terminal]
+                            NoAddopTermList(
+                            ) [NoAddopTermList]
+                          ) [Expression]
+                        ) [DesignatorAssignOp]
+                      ) [Assignment]
+                    ) [Statements]
+                    Assignment(
+                      DesignatorAssignOp(
+                        DesignatorBrackets(
+                          DesignatorBrackets(
+                            DesignatorIdent(
+                             i
+                            ) [DesignatorIdent]
+                            Expression(
+                              MinusNot(
+                              ) [MinusNot]
+                              Terminal(
+                                FactorNumConst(
+                                 2
+                                ) [FactorNumConst]
+                                NoMulopFactList(
+                                ) [NoMulopFactList]
+                              ) [Terminal]
+                              NoAddopTermList(
+                              ) [NoAddopTermList]
+                            ) [Expression]
+                          ) [DesignatorBrackets]
+                          Expression(
+                            MinusNot(
+                            ) [MinusNot]
+                            Terminal(
+                              FactorNumConst(
+                               3
+                              ) [FactorNumConst]
+                              NoMulopFactList(
+                              ) [NoMulopFactList]
+                            ) [Terminal]
+                            NoAddopTermList(
+                            ) [NoAddopTermList]
+                          ) [Expression]
+                        ) [DesignatorBrackets]
+                        AssignOp(
+                        ) [AssignOp]
+                        Expression(
+                          MinusNot(
+                          ) [MinusNot]
+                          Terminal(
+                            FactorCharConst(
+                             "s"
+                            ) [FactorCharConst]
+                            NoMulopFactList(
+                            ) [NoMulopFactList]
+                          ) [Terminal]
+                          NoAddopTermList(
+                          ) [NoAddopTermList]
+                        ) [Expression]
+                      ) [DesignatorAssignOp]
+                    ) [Assignment]
+                  ) [Statements]
+                  Assignment(
+                    DesignatorAssignOp(
+                      DesignatorBrackets(
+                        DesignatorBrackets(
+                          DesignatorIdent(
+                           i2
+                          ) [DesignatorIdent]
+                          Expression(
+                            MinusNot(
+                            ) [MinusNot]
+                            Terminal(
+                              FactorNumConst(
+                               0
+                              ) [FactorNumConst]
+                              NoMulopFactList(
+                              ) [NoMulopFactList]
+                            ) [Terminal]
+                            NoAddopTermList(
+                            ) [NoAddopTermList]
+                          ) [Expression]
+                        ) [DesignatorBrackets]
+                        Expression(
+                          MinusNot(
+                          ) [MinusNot]
+                          Terminal(
+                            FactorNumConst(
+                             1
+                            ) [FactorNumConst]
+                            NoMulopFactList(
+                            ) [NoMulopFactList]
+                          ) [Terminal]
+                          NoAddopTermList(
+                          ) [NoAddopTermList]
+                        ) [Expression]
+                      ) [DesignatorBrackets]
+                      AssignOp(
+                      ) [AssignOp]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           4
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [DesignatorAssignOp]
+                  ) [Assignment]
+                ) [Statements]
+                Assignment(
+                  DesignatorPlusPlus(
+                    DesignatorBrackets(
+                      DesignatorBrackets(
+                        DesignatorIdent(
+                         i2
+                        ) [DesignatorIdent]
+                        Expression(
+                          MinusNot(
+                          ) [MinusNot]
+                          Terminal(
+                            FactorNumConst(
+                             0
+                            ) [FactorNumConst]
+                            NoMulopFactList(
+                            ) [NoMulopFactList]
+                          ) [Terminal]
+                          NoAddopTermList(
+                          ) [NoAddopTermList]
+                        ) [Expression]
+                      ) [DesignatorBrackets]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           1
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [DesignatorBrackets]
+                  ) [DesignatorPlusPlus]
+                ) [Assignment]
+              ) [Statements]
+              Assignment(
+                DesignatorMinusMinus(
+                  DesignatorBrackets(
+                    DesignatorBrackets(
+                      DesignatorIdent(
+                       i2
+                      ) [DesignatorIdent]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           0
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [DesignatorBrackets]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorNumConst(
+                         1
+                        ) [FactorNumConst]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [Expression]
+                  ) [DesignatorBrackets]
+                ) [DesignatorMinusMinus]
+              ) [Assignment]
+            ) [Statements]
+            PrintStmt(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorDesignator(
+                    DesignatorBrackets(
+                      DesignatorBrackets(
+                        DesignatorIdent(
+                         i
+                        ) [DesignatorIdent]
+                        Expression(
+                          MinusNot(
+                          ) [MinusNot]
+                          Terminal(
+                            FactorNumConst(
+                             2
+                            ) [FactorNumConst]
+                            NoMulopFactList(
+                            ) [NoMulopFactList]
+                          ) [Terminal]
+                          NoAddopTermList(
+                          ) [NoAddopTermList]
+                        ) [Expression]
+                      ) [DesignatorBrackets]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           3
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [DesignatorBrackets]
+                  ) [FactorDesignator]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+              NoCommaNumConst(
+              ) [NoCommaNumConst]
+            ) [PrintStmt]
+          ) [Statements]
+          PrintStmt(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorDesignator(
+                  DesignatorBrackets(
+                    DesignatorBrackets(
+                      DesignatorIdent(
+                       i2
+                      ) [DesignatorIdent]
+                      Expression(
+                        MinusNot(
+                        ) [MinusNot]
+                        Terminal(
+                          FactorNumConst(
+                           0
+                          ) [FactorNumConst]
+                          NoMulopFactList(
+                          ) [NoMulopFactList]
+                        ) [Terminal]
+                        NoAddopTermList(
+                        ) [NoAddopTermList]
+                      ) [Expression]
+                    ) [DesignatorBrackets]
+                    Expression(
+                      MinusNot(
+                      ) [MinusNot]
+                      Terminal(
+                        FactorNumConst(
+                         1
+                        ) [FactorNumConst]
+                        NoMulopFactList(
+                        ) [NoMulopFactList]
+                      ) [Terminal]
+                      NoAddopTermList(
+                      ) [NoAddopTermList]
+                    ) [Expression]
+                  ) [DesignatorBrackets]
+                ) [FactorDesignator]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+            NoCommaNumConst(
+            ) [NoCommaNumConst]
+          ) [PrintStmt]
+        ) [Statements]
+        ReturnExpr(
+          ExpressionYes(
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorNumConst(
+                 1
+                ) [FactorNumConst]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [ExpressionYes]
+        ) [ReturnExpr]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  09:10:52,130 - ===================================
+INFO  09:10:52,145 - Deklarisana globalna matrica i na liniji 2, objektni cvor: Var i: Array, 0, 0
+INFO  09:10:52,145 - Deklarisana globalna matrica i2 na liniji 3, objektni cvor: Var i2: Array, 1, 0
+INFO  09:10:52,148 - Simbol i se koristi na liniji 7, objektni cvor: Var i: Array, 0, 0
+INFO  09:10:52,149 - Simbol i2 se koristi na liniji 8, objektni cvor: Var i2: Array, 1, 0
+INFO  09:10:52,150 - Simbol i se koristi na liniji 10, objektni cvor: Var i: Array, 0, 0
+INFO  09:10:52,150 - Simbol i2 se koristi na liniji 11, objektni cvor: Var i2: Array, 1, 0
+INFO  09:10:52,151 - Simbol i2 se koristi na liniji 12, objektni cvor: Var i2: Array, 1, 0
+INFO  09:10:52,151 - Simbol i2 se koristi na liniji 13, objektni cvor: Var i2: Array, 1, 0
+ERROR 09:10:52,151 - Greska: ne moze da se izvrsi operacija -- nad objektom elem na liniji 13
+INFO  09:10:52,152 - Simbol i se koristi na liniji 15, objektni cvor: Var i: Array, 0, 0
+INFO  09:10:52,152 - Simbol i2 se koristi na liniji 16, objektni cvor: Var i2: Array, 1, 0
+INFO  09:10:52,152 - ===================================
+INFO  09:10:52,156 - 2
+ERROR 09:10:52,157 - Parsiranje NIJE uspesno zavrseno!

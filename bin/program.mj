@@ -1,18 +1,16 @@
 program MJProgram
-char i[][];
-int i2[][];
+bool b;
 {
 	int main(){
 
-		i = new char[4][4];
-		i2 = new int[2][2];
+		b = true;
 		
-		i[2][3] = "s";
-		i2[0][1] = 4;
+		print(b);
 		
-		print(i[2][3]);
-		print(i2[0][1]);
+		b = false;
 		
+		print(b);
+				
 		return 1;
 	}
 		

@@ -519,7 +519,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(DesignatorPlusPlus designatorPlusPlus) {
     	// TODO: potrebno izmeniti za Array i Class
     	
-    	if( designatorPlusPlus.getDesignator().obj.getKind() == Obj.Var && designatorPlusPlus.getDesignator().obj != Tab.noObj) {
+    	if( designatorPlusPlus.getDesignator().obj.getKind() == Obj.Var || designatorPlusPlus.getDesignator().obj.getKind() == Obj.Elem) {
     		if( designatorPlusPlus.getDesignator().obj.getType().getKind() == Struct.Int ) {
         		//report_info("Operacija ++ moze uspesno da se izvrsi", designatorPlusPlus);
         	}else {
@@ -533,7 +533,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(DesignatorMinusMinus designatorMinusMinus) {
     	// TODO: potrebno izmeniti za Array i Class
     	
-    	if( designatorMinusMinus.getDesignator().obj.getKind() == Obj.Var && designatorMinusMinus.getDesignator().obj != Tab.noObj ) {
+    	if( designatorMinusMinus.getDesignator().obj.getKind() == Obj.Var || designatorMinusMinus.getDesignator().obj.getKind() == Obj.Elem ) {
     		if( designatorMinusMinus.getDesignator().obj.getType().getKind() == Struct.Int ) {
         		//report_info("Operacija -- moze uspesno da se izvrsi", designatorMinusMinus);
         	}else {

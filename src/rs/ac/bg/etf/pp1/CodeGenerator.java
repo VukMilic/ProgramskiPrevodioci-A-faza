@@ -11,14 +11,14 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor {
 
 	private int mainPc;
-	
+
 	private String muloperation = "";
 	private String addoperation = "";
 
 	private int isMinus = 0;
 	private int flag_numOfRows = 0;
 	private int numOfRows = 0;
-	
+
 	public int getMainPc() {
 		return mainPc;
 	}
@@ -31,14 +31,14 @@ public class CodeGenerator extends VisitorAdaptor {
 		// ovaj load smatramo da smo vec uradili
 		Code.store(designatorAssignOp.getDesignator().obj);
 	}
-	
-	public void visit(DesignatorPlusPlus designatorPlusPlus){
+
+	public void visit(DesignatorPlusPlus designatorPlusPlus) {
 		Code.loadConst(1);
 		Code.put(Code.add);
 		Code.store(designatorPlusPlus.getDesignator().obj);
 	}
-	
-	public void visit(DesignatorMinusMinus designatorMinusMinus){
+
+	public void visit(DesignatorMinusMinus designatorMinusMinus) {
 		Code.loadConst(1);
 		Code.put(Code.sub);
 		Code.store(designatorMinusMinus.getDesignator().obj);
@@ -68,13 +68,13 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		}
 	}
-	
+
 	// ---------------------------------------------------------
-	//(VMRead)
-	
+	// (VMRead)
+
 	public void visit(ReadDesignator readDesignator) {
-		if( readDesignator.getDesignator().obj.getType().getKind() == Struct.Int 
-				|| readDesignator.getDesignator().obj.getType().getKind() == Struct.Bool ) {
+		if (readDesignator.getDesignator().obj.getType().getKind() == Struct.Int
+				|| readDesignator.getDesignator().obj.getType().getKind() == Struct.Bool) {
 			Code.put(Code.read);
 		} else if (readDesignator.getDesignator().obj.getType().getKind() == Struct.Char) {
 			Code.put(Code.bread);
@@ -107,32 +107,39 @@ public class CodeGenerator extends VisitorAdaptor {
 	// (VMDesignator)
 
 	public void visit(DesignatorIdent designatorIdent) {
-		// znaci ovde moram da proverim, ako mu roditelj nije Assignment ili FuncCall
+		// znaci ovde moram da proverim, ako mu roditelj nije Assignment ili
+		// FuncCall
 		// jer ako mu je roditelj Assignment, nece biti potreban load, vec ce se
 		// vrednost
 		// store-ovati u Designator (u DesignatorAssignOp visitu)
 
 		SyntaxNode parent = designatorIdent.getParent();
 
-		if (DesignatorAssignOp.class != parent.getClass() && ReadDesignator.class != parent.getClass())
+		if (DesignatorAssignOp.class != parent.getClass()
+				&& ReadDesignator.class != parent.getClass())
 			Code.load(designatorIdent.obj);
 	}
 
 	public void visit(DesignatorBrackets designatorBrackets) {
 		// load-ovao si Array na stek u designatorIdent smeni
 		// load-ovao si Expr takodje pre ove smene
-		
-		if( designatorBrackets.getDesignator().getClass() == DesignatorBrackets.class )
-		{
+
+		if (designatorBrackets.getDesignator().getClass() == DesignatorBrackets.class) {
 			// za slucaj kada smo naisli na drugu zagradu matrice
+			// i*n + j - ovde radimo +j
 			Code.put(Code.add);
 
 			SyntaxNode parent = designatorBrackets.getParent();
-			if (DesignatorAssignOp.class != parent.getClass() && ReadDesignator.class != parent.getClass())
+			if (DesignatorAssignOp.class != parent.getClass()
+					&& ReadDesignator.class != parent.getClass()) {
+				// dupliraj u slucaju kada imas ++ i --
+				if (DesignatorPlusPlus.class == parent.getClass()
+						|| DesignatorMinusMinus.class == parent.getClass()) {
+					Code.put(Code.dup2);
+				}
 				Code.load(designatorBrackets.obj);
-		}
-		else if( designatorBrackets.getParent().getClass() == DesignatorBrackets.class )
-		{
+			}
+		} else if (designatorBrackets.getParent().getClass() == DesignatorBrackets.class) {
 			// za slucaj kada smo naisli na prvu zagradu matrice
 			Code.put(Code.dup_x1);
 			Code.put(Code.pop);
@@ -143,15 +150,21 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.sub);
 			Code.put(Code.aload);
 			Code.put(Code.mul);
-		} 
-		else 		
-		{
+		} else {
 			// za sve slucajeve koji nisu matrica
-			
 			SyntaxNode parent = designatorBrackets.getParent();
 
-			if (DesignatorAssignOp.class != parent.getClass() && ReadDesignator.class != parent.getClass())
+			if (DesignatorAssignOp.class != parent.getClass()
+					&& ReadDesignator.class != parent.getClass()) {
+				// u slucaju da je niz u pitanju moras da dupliras vrednost sa
+				// steka za slucajeve ++ i --
+				if (DesignatorPlusPlus.class == parent.getClass()
+						|| DesignatorMinusMinus.class == parent.getClass()) {
+					Code.put(Code.dup2);
+				}
 				Code.load(designatorBrackets.obj);
+			}
+
 		}
 	}
 
@@ -168,8 +181,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(1);
 		}
 	}
-	
-	public void visit(FactorNewExprExpr factorNewExprExpr){
+
+	public void visit(FactorNewExprExpr factorNewExprExpr) {
 		// Expr1 i Expr2 na steku, promeni im pozicije i ostavi Expr2 na vrhu
 		Code.put(Code.dup_x1);
 		// pomnozi Expr1 i Expr2 i dodaj im 1 = velicina matrice (niza)
@@ -178,22 +191,22 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.add);
 		// sada na steku imas velicinu niza,alociraj ga
 		Code.put(Code.newarray);
-		if( factorNewExprExpr.getType().struct.getKind() == Struct.Char)
+		if (factorNewExprExpr.getType().struct.getKind() == Struct.Char)
 			Code.put(0);
 		else
 			Code.put(1);
-		
+
 		Code.put(Code.dup_x1);
 		Code.put(Code.dup);
 		Code.put(Code.arraylength);
 		Code.loadConst(1);
 		Code.put(Code.sub);
-		
+
 		Code.put(Code.dup_x2);
 		Code.put(Code.pop);
 		Code.put(Code.dup_x2);
 		Code.put(Code.pop);
-	
+
 		Code.put(Code.astore);
 	}
 
@@ -248,74 +261,74 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(formCnt.getCount());
 		Code.put(formCnt.getCount() + varCnt.getCount());
 	}
-	
+
 	// ---------------------------------------------------------------
-	//(VMMulop)
-	
+	// (VMMulop)
+
 	public void visit(MulopFactorList mulopFactorList) {
-		if( muloperation.equals("mnozenje")) {
+		if (muloperation.equals("mnozenje")) {
 			Code.put(Code.mul);
 			muloperation = "";
-		} else if( muloperation.equals("deljenje")) {
+		} else if (muloperation.equals("deljenje")) {
 			Code.put(Code.div);
 			muloperation = "";
-		} else if( muloperation.equals("ostatak")) {
+		} else if (muloperation.equals("ostatak")) {
 			Code.put(Code.rem);
 			muloperation = "";
 		}
 	}
-	
+
 	public void visit(Mul mul) {
 		muloperation = "mnozenje";
 	}
-	
+
 	public void visit(Div div) {
 		muloperation = "deljenje";
 	}
-	
+
 	public void visit(Mod mod) {
 		muloperation = "ostatak";
 	}
-	
+
 	// -------------------------------------------------------
 	// (VMAddop)
-	
+
 	public void visit(AddopTerminalList addopTerminalList) {
-		if( addoperation.equals("sabiranje")) {
+		if (addoperation.equals("sabiranje")) {
 			Code.put(Code.add);
 			addoperation = "";
-		} else if( addoperation.equals("oduzimanje")) {
+		} else if (addoperation.equals("oduzimanje")) {
 			Code.put(Code.sub);
 			addoperation = "";
 		}
 	}
-	
+
 	public void visit(Plus plus) {
 		addoperation = "sabiranje";
 	}
-	
+
 	public void visit(Minus minus) {
 		addoperation = "oduzimanje";
 	}
-	
+
 	// ------------------------------------------------------------
 	// (VMExpr)
-	
-	public void visit(Expression expression){
-		if( isMinus == 1 ){
+
+	public void visit(Expression expression) {
+		if (isMinus == 1) {
 			Code.put(Code.neg);
 			isMinus = 0;
 		}
-		if(FactorNewExprExpr.class == expression.getParent().getClass()){
-			if(flag_numOfRows == 0){
+		if (FactorNewExprExpr.class == expression.getParent().getClass()) {
+			if (flag_numOfRows == 0) {
 				//
 			}
-			flag_numOfRows = (flag_numOfRows + 1)%2;
+			flag_numOfRows = (flag_numOfRows + 1) % 2;
 		}
 	}
-	
-	public void visit(MinusOr minusOr){
+
+	public void visit(MinusOr minusOr) {
 		isMinus = 1;
 	}
-	
+
 }
