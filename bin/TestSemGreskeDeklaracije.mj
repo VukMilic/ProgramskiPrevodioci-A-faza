@@ -5,8 +5,8 @@ program MJCompiler
 	char i;
 	
 	// greske prilikom deklaracija konstanti ( dodeljen pogresan tip )( ponovna deklaracija )
-	const int con1="false";
-	const Bool con1="true";
+	const int con1 = false;
+	const Bool con1 = true;
 	const char con1 = "H";
 
 {

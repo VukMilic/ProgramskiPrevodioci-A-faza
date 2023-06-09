@@ -20,6 +20,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	Obj currentMethod = null;
 	Struct currentType = null;
+	int currScopeLevel = -1;
 	int currWhileLevel = 0;
 	int currForeachLevel = 0;
 	
@@ -105,11 +106,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(ProgName progName){
     	progName.obj  = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
     	Tab.openScope();
+    	currScopeLevel++;
     }
 
     public void visit(Program program){
     	Tab.chainLocalSymbols(program.getProgName().obj);
     	Tab.closeScope();
+    	currScopeLevel--;
     }
 
 	// --------------------------------------------------
@@ -168,6 +171,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		errorType = false;
     	} else {
     		Obj obj = Tab.find(variableTypeList.getVarName());
+    		// ako je pronadjen istoimeni simbol, da li su u istom scope-u
+    		// ako nisu, dozvoli insert
+    		if( obj.getLevel() != currScopeLevel )
+				obj = Tab.noObj;
+    		
         	if (obj == Tab.noObj) {
         		if(isArray == 1) {
         			// ako je u pitanju deklaracija niza
@@ -201,7 +209,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if( errorType ) {
 			errorType = false;
 		} else {
+			
 			Obj obj = Tab.find(oneVarTypeList.getVarName());
+			// ako je pronadjen istoimeni simbol, da li su u istom scope-u
+			// ako nisu, dozvoli insert
+			if( obj.getLevel() != currScopeLevel )
+				obj = Tab.noObj;
+			
 	    	if (obj == Tab.noObj) {
 	    		if(isArray == 1) {
 	    			// ako je u pitanju deklaracija niza
@@ -282,6 +296,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if( retDetected || currentMethod.getType() == Tab.noType ){
     		Tab.chainLocalSymbols(currentMethod);
         	Tab.closeScope();
+        	currScopeLevel--;
         	
         	currentMethod = null;  
         	retDetected = false;
@@ -296,6 +311,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	currentMethod = methTypeName.obj;
     	
     	Tab.openScope();
+    	currScopeLevel++;
     	//report_info("Obradjuje se funkcija " + methTypeName.getMethName(), methTypeName);
     }
     
@@ -305,6 +321,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	currentMethod = methVoidName.obj;
     	
     	Tab.openScope();
+    	currScopeLevel++;
     	//report_info("Obradjuje se funkcija " + methVoidName.getMethName(), methVoidName);    	
     }
     
@@ -344,7 +361,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		if( obj == Tab.noObj ) {
         		Obj refobj = Tab.insert(Obj.Con, constantTypeNumList.getConstName(), currentType);
         		refobj.setAdr(constantTypeNumList.getConstVal());
-        		report_info("Deklarisana konstanta " + constantTypeNumList.getConstName() + " na liniji " + constantTypeNumList.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
+        		report_info("Definisana konstanta " + constantTypeNumList.getConstName() + " na liniji " + constantTypeNumList.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
     		} else {
         		report_error("Greska: konstanta " + constantTypeNumList.getConstName() + " je vec deklarisana! ", constantTypeNumList);
     		}
@@ -359,7 +376,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		if( obj == Tab.noObj ) {
     			Obj refobj = Tab.insert(Obj.Con, oneConstTypeNum.getConstName(), currentType);
     			refobj.setAdr(oneConstTypeNum.getConstVal());
-        		report_info("Deklarisana konstanta " + oneConstTypeNum.getConstName() + " na liniji " + oneConstTypeNum.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
+        		report_info("Definisana konstanta " + oneConstTypeNum.getConstName() + " na liniji " + oneConstTypeNum.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
     		} else {
         		report_error("Greska: konstanta " + oneConstTypeNum.getConstName() + " je vec deklarisana! ", oneConstTypeNum);
     		}
@@ -375,7 +392,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		if( obj == Tab.noObj ) {
         		Obj refobj = Tab.insert(Obj.Con, constantTypeCharList.getConstName(), currentType);
         		refobj.setAdr(constantTypeCharList.getConstVal().charAt(1));
-        		report_info("Deklarisana konstanta " + constantTypeCharList.getConstName() + " na liniji " + constantTypeCharList.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
+        		report_info("Definisana konstanta " + constantTypeCharList.getConstName() + " na liniji " + constantTypeCharList.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
     		} else {
         		report_error("Greska: konstanta " + constantTypeCharList.getConstName() + " je vec deklarisana! ", constantTypeCharList);
     		}
@@ -390,7 +407,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		if( obj == Tab.noObj ) {
         		Obj refobj = Tab.insert(Obj.Con, oneConstTypeChar.getConstName(), currentType);
     			refobj.setAdr(oneConstTypeChar.getConstVal().charAt(1));
-    			report_info("Deklarisana konstanta " + oneConstTypeChar.getConstName() + " na liniji " + oneConstTypeChar.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
+    			report_info("Definisana konstanta " + oneConstTypeChar.getConstName() + " na liniji " + oneConstTypeChar.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
     		} else {
         		report_error("Greska: konstanta " + oneConstTypeChar.getConstName() + " je vec deklarisana! ", oneConstTypeChar);
     		}
@@ -409,7 +426,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		refobj.setAdr(1);
             	else
             		refobj.setAdr(0);
-        		report_info("Deklarisana konstanta " + constantTypeBoolList.getConstName() + " na liniji " + constantTypeBoolList.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
+        		report_info("Definisana konstanta " + constantTypeBoolList.getConstName() + " na liniji " + constantTypeBoolList.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
     		} else {
         		report_error("Greska: konstanta " + constantTypeBoolList.getConstName() + " je vec deklarisana! ", constantTypeBoolList);
     		}
@@ -427,7 +444,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		refobj.setAdr(1);
             	else
             		refobj.setAdr(0);
-    			report_info("Deklarisana konstanta " + oneConstTypeBool.getConstName() + " na liniji " + oneConstTypeBool.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
+    			report_info("Definisana konstanta " + oneConstTypeBool.getConstName() + " na liniji " + oneConstTypeBool.getLine() + ", objektni cvor: " + getKindName(refobj.getKind()) + " " + refobj.getName() + ": " + getTypeName(refobj.getType().getKind()) + ", " + refobj.getAdr() + ", " + refobj.getLevel(), null);
     		} else {
         		report_error("Greska: konstanta " + oneConstTypeBool.getConstName() + " je vec deklarisana! ", oneConstTypeBool);
     		}
@@ -444,7 +461,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if( obj == Tab.noObj ) {
     		report_error("Greska: Simbol " + designatorIdent.getDesigName() + " koji se koristi nije deklarisan! ", designatorIdent);
     		designatorIdent.obj = Tab.noObj;
-    	} else {    		
+    	} else {
     		report_info("Simbol " + designatorIdent.getDesigName() + " se koristi na liniji " + designatorIdent.getLine() + ", objektni cvor: " + getKindName(obj.getKind()) + " " + obj.getName() + ": " + getTypeName(obj.getType().getKind()) + ", " + obj.getAdr() + ", " + obj.getLevel(), null);
     		designatorIdent.obj = obj;
     	}
@@ -498,7 +515,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		//report_info("Tipovi se poklapaju prilikom dodele vrednosti", designatorAssignOp);	
         		}
         	}else {
-        		if( designatorAssignOp.getDesignator().obj != Tab.noObj )
+        		if((designatorAssignOp.getExpr().obj.getName().equals("null") && designatorAssignOp.getDesignator().obj.getType().getKind() == Struct.Array)){
+        			// to je okej, ako je sa leve strane niz ili matrica,a sa desne null
+        		} else if( designatorAssignOp.getDesignator().obj != Tab.noObj )
         			report_error("Greska: tipovi se ne poklapaju prilikom dodele vrednosti! ", designatorAssignOp);
         	}
     	} else {
@@ -508,11 +527,28 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(DesignatorActPars designatorActPars) {
     	// TODO: ovde ces videti sta treba da se doda da bi se funkcija uspesno izvrsila
-    	
-    	if( designatorActPars.getDesignator().obj.getKind() == Obj.Meth ) {
-    		//report_info("Funkcija " + designatorActPars.getDesignator().obj.getName() + "() moze uspesno da se izvrsi", designatorActPars);
+    	if( designatorActPars.getDesignator().obj.getKind() != Obj.Meth ) {
+    		report_error("Greska: Simbol mora oznacavati globalnu funkciju", designatorActPars);
+    		designatorActPars.obj = Tab.noObj;
     	} else {
-    		report_error("Greska: objekat " + designatorActPars.getDesignator().obj.getName() + " ne moze da se koristi kao funkcija" , designatorActPars);
+    		// provera za tri ugradjene funkcije - chr, ord i len
+    		if( (designatorActPars.getDesignator().obj.getName().equals("chr") && designatorActPars.getActPars().obj.getType().getKind() != Struct.Int) ){
+    			report_error("Greska: Prilikom poziva funkcije \"chr\" parametar mora biti tipa Int", designatorActPars);
+    			designatorActPars.obj = Tab.noObj;
+    		} 
+    		else if( (designatorActPars.getDesignator().obj.getName().equals("ord") && designatorActPars.getActPars().obj.getType().getKind() != Struct.Char) ){
+    			report_error("Greska: Prilikom poziva funkcije \"ord\" parametar mora biti tipa Char", designatorActPars);
+    			designatorActPars.obj = Tab.noObj;
+    		} 
+    		else if( (designatorActPars.getDesignator().obj.getName().equals("len") && designatorActPars.getActPars().obj.getType().getKind() != Struct.Array) ){
+    			report_error("Greska: Prilikom poziva funkcije \"len\" parametar mora biti tipa Array", designatorActPars);
+    			designatorActPars.obj = Tab.noObj;
+    		}
+    		// ako smo prosli sve te provere, sve je okej
+    		else{
+    			report_info("Funkcija "+ designatorActPars.getDesignator().obj.getName() +" se uspesno poziva", designatorActPars);
+    			designatorActPars.obj = designatorActPars.getDesignator().obj;		
+    		}
     	}
     }
     
@@ -616,8 +652,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_error("Greska: Simbol mora oznacavati globalnu funkciju", factorMethod);
     		factorMethod.obj = Tab.noObj;
     	} else {
-    		report_info("Funkcija "+ factorMethod.getDesignator().obj.getName() +" se uspesno poziva", factorMethod);
-    		factorMethod.obj = factorMethod.getDesignator().obj;
+    		// provera za tri ugradjene funkcije - chr, ord i len
+    		if( (factorMethod.getDesignator().obj.getName().equals("chr") && factorMethod.getActPars().obj.getType().getKind() != Struct.Int) ){
+    			report_error("Greska: Prilikom poziva funkcije \"chr\" parametar mora biti tipa Int", factorMethod);
+        		factorMethod.obj = Tab.noObj;
+    		} 
+    		else if( (factorMethod.getDesignator().obj.getName().equals("ord") && factorMethod.getActPars().obj.getType().getKind() != Struct.Char) ){
+    			report_error("Greska: Prilikom poziva funkcije \"ord\" parametar mora biti tipa Char", factorMethod);
+        		factorMethod.obj = Tab.noObj;
+    		} 
+    		else if( (factorMethod.getDesignator().obj.getName().equals("len") && factorMethod.getActPars().obj.getType().getKind() != Struct.Array) ){
+    			report_error("Greska: Prilikom poziva funkcije \"len\" parametar mora biti tipa Array", factorMethod);
+        		factorMethod.obj = Tab.noObj;
+    		}
+    		// ako smo prosli sve te provere, sve je okej
+    		else{
+    			report_info("Funkcija "+ factorMethod.getDesignator().obj.getName() +" se uspesno poziva", factorMethod);
+        		factorMethod.obj = factorMethod.getDesignator().obj;		
+    		}
     	}
     }
     
@@ -842,10 +894,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(PrintStmt printStmt) {
     	if( printStmt.getExpr().obj.getType().getKind() == Struct.Int 
     			|| printStmt.getExpr().obj.getType().getKind() == Struct.Char
-    			|| printStmt.getExpr().obj.getType().getKind() == Struct.Bool) {
+    			|| printStmt.getExpr().obj.getType().getKind() == Struct.Bool
+    			|| printStmt.getExpr().obj.getName().equals("eol")) {
     		// TODO: ovde bi isla funkcionalnost print-a
     		
-    	} else {
+    	}
+    	else {
     		report_error("Greska: PRINT mora da se pozove nad tipom int, char ili Bool", printStmt);
     	}
     }
@@ -864,5 +918,59 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_error("Greska: Uslov mora biti tipa Bool", condExpr);
     	}
     }
-
+    
+    // -----------------------------------------------------------------------------------------------------------
+    // (VMFormParam)
+    
+    public void visit(FormalParamDecl formalParamDecl){
+    	if( errorType ) {
+			errorType = false;
+		} else {
+			Obj obj = Tab.find(formalParamDecl.getVarName());
+			// ako je pronadjen istoimeni simbol, da li su u istom scope-u
+    		// ako nisu, dozvoli insert
+    		if( obj.getLevel() != currScopeLevel )
+				obj = Tab.noObj;
+    		
+	    	if (obj == Tab.noObj) {
+	    		if(isArray == 1) {
+	    			// ako je u pitanju deklaracija niza
+	        		Obj objPrint = Tab.insert(Obj.Var, formalParamDecl.getVarName(), new Struct(Struct.Array, currentType));
+	        		nVars++;
+	        		isArray = 0;
+	        		report_info("Deklarisan lokalni niz " + formalParamDecl.getVarName() + " na liniji " + formalParamDecl.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+	    		}
+	    		else if(isMatrix == 1)
+	    		{
+	    			// ako je u pitanju deklaracija matrice
+	        		Obj objPrint = Tab.insert(Obj.Var, formalParamDecl.getVarName(), new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
+	        		nVars++;
+	        		isMatrix = 0;
+	        		report_info("Deklarisana lokalna matrica " + formalParamDecl.getVarName() + " na liniji " + formalParamDecl.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+	    		}	    		
+	    		else 
+	    		{
+	    			// ako je u pitanju obicna globalna promenljiva
+	        		Obj objPrint = Tab.insert(Obj.Var, formalParamDecl.getVarName(), currentType);
+	        		report_info("Deklarisana lokalna promenljiva " + formalParamDecl.getVarName() + " na liniji " + formalParamDecl.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
+	        		nVars++;
+	    		}
+	    	}else {
+	    		report_error("Greska: promenljiva " + formalParamDecl.getVarName() + " je vec deklarisana! ", formalParamDecl);
+	    	}
+		}
+    }
+    
+    // ---------------------------------------------------------------------------------------------
+    // (VMActParams)
+    
+    public void visit(ActParameters actParameters){
+    	actParameters.obj = actParameters.getActParams().obj;
+    }
+    
+    public void visit(ActParams actParams){
+    	// trenutno mi je ovako samo zato sto hocu da uradim
+    	// proveru zafunkcije chr, ord i len koje imaju samo jedan parametar
+    	actParams.obj = actParams.getExpr().obj;
+    }
 }

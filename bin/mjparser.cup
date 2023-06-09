@@ -60,13 +60,13 @@ terminal String IDENT, CHARCONST, BOOLCONST;
 nonterminal DeclList, VarDeclList, ConstDecl, ConstTypeNumList; 
 nonterminal ConstTypeCharList, ConstTypeBoolList, VarDecl, GVarDecl, VarTypeList, GVarTypeList, ClassDecl, ClassMethodDecl; 
 nonterminal MethodDeclList, ExtendsType, FormPars, FormalParamList, FormalParamDecl;
-nonterminal StatementList, Statement, ElseStatement, CommaNumConst, DesignatorStatement; 
-nonterminal PostDesignator, ActPars, ActParams, ExprList, Condition; 
+nonterminal StatementList, Statement, ElseStatement, CommaNumConst; 
+nonterminal ExprList, Condition; 
 nonterminal CondTerm, MinusOrNot; 
-nonterminal ExprOrActPars, WhileTerm, ForeachTerm;
+nonterminal WhileTerm, ForeachTerm;
 nonterminal Label, AssignOp, Relop, Addop, Mulop, AssignError, DeclType, SquareBrackets;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName, Designator, Factor, MulopFactList, Term, AddopTermList, Expr, ExprOrNot;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, ActPars, ActParams, ProgName, Program, MethodDecl, MethodTypeName, Designator, Factor, MulopFactList, Term, AddopTermList, Expr, ExprOrNot;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorOrNot, CondFact, GVarIdent;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
@@ -182,7 +182,7 @@ FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 				(SingleFormalParamDecl) FormalParamDecl
 				;
 
-FormalParamDecl ::= (FormalParamDecl) Type IDENT SquareBrackets;
+FormalParamDecl ::= (FormalParamDecl) Type IDENT:varName SquareBrackets;
 
 StatementList ::= (Statements) StatementList Statement
 				|

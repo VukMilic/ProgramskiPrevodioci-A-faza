@@ -1,0 +1,437 @@
+INFO  15:02:12,479 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  15:02:12,565 - #2 program
+INFO  15:02:12,566 - #48 MJCompiler
+INFO  15:02:12,566 - #5 const
+INFO  15:02:12,569 - #48 int
+INFO  15:02:12,569 - #48 i1
+INFO  15:02:12,570 - #6 =
+INFO  15:02:12,570 - #47 1
+INFO  15:02:12,570 - #8 ,
+INFO  15:02:12,571 - #48 i2
+INFO  15:02:12,571 - #6 =
+INFO  15:02:12,571 - #47 2
+INFO  15:02:12,571 - #7 ;
+INFO  15:02:12,571 - #5 const
+INFO  15:02:12,572 - #48 char
+INFO  15:02:12,572 - #48 c1
+INFO  15:02:12,572 - #6 =
+INFO  15:02:12,572 - #49 "c"
+INFO  15:02:12,572 - #8 ,
+INFO  15:02:12,573 - #48 c2
+INFO  15:02:12,573 - #6 =
+INFO  15:02:12,573 - #49 "s"
+INFO  15:02:12,581 - #7 ;
+INFO  15:02:12,581 - #5 const
+INFO  15:02:12,581 - #48 bool
+INFO  15:02:12,582 - #48 b1
+INFO  15:02:12,582 - #6 =
+INFO  15:02:12,582 - #50 true
+INFO  15:02:12,582 - #8 ,
+INFO  15:02:12,582 - #48 b2
+INFO  15:02:12,582 - #6 =
+INFO  15:02:12,582 - #50 false
+INFO  15:02:12,582 - #7 ;
+INFO  15:02:12,583 - #48 int
+INFO  15:02:12,584 - #48 i3
+INFO  15:02:12,584 - #8 ,
+INFO  15:02:12,585 - #48 i4
+INFO  15:02:12,586 - #9 [
+INFO  15:02:12,586 - #10 ]
+INFO  15:02:12,586 - #8 ,
+INFO  15:02:12,587 - #48 i5
+INFO  15:02:12,587 - #9 [
+INFO  15:02:12,587 - #10 ]
+INFO  15:02:12,588 - #9 [
+INFO  15:02:12,588 - #10 ]
+INFO  15:02:12,588 - #7 ;
+INFO  15:02:12,589 - #48 char
+INFO  15:02:12,590 - #48 c3
+INFO  15:02:12,590 - #8 ,
+INFO  15:02:12,590 - #48 c4
+INFO  15:02:12,590 - #9 [
+INFO  15:02:12,591 - #10 ]
+INFO  15:02:12,591 - #8 ,
+INFO  15:02:12,591 - #48 c5
+INFO  15:02:12,591 - #9 [
+INFO  15:02:12,591 - #10 ]
+INFO  15:02:12,591 - #9 [
+INFO  15:02:12,591 - #10 ]
+INFO  15:02:12,591 - #7 ;
+INFO  15:02:12,592 - #48 bool
+INFO  15:02:12,592 - #48 b3
+INFO  15:02:12,592 - #8 ,
+INFO  15:02:12,592 - #48 b4
+INFO  15:02:12,592 - #9 [
+INFO  15:02:12,593 - #10 ]
+INFO  15:02:12,593 - #8 ,
+INFO  15:02:12,593 - #48 b5
+INFO  15:02:12,593 - #9 [
+INFO  15:02:12,593 - #10 ]
+INFO  15:02:12,593 - #9 [
+INFO  15:02:12,593 - #10 ]
+INFO  15:02:12,601 - #7 ;
+INFO  15:02:12,601 - #3 {
+INFO  15:02:12,601 - #48 int
+INFO  15:02:12,602 - #48 m1
+INFO  15:02:12,602 - #12 (
+INFO  15:02:12,603 - #48 char
+INFO  15:02:12,603 - #48 cArg
+INFO  15:02:12,603 - #8 ,
+INFO  15:02:12,604 - #48 int
+INFO  15:02:12,605 - #48 iArg
+INFO  15:02:12,605 - #13 )
+INFO  15:02:12,606 - #48 int
+INFO  15:02:12,607 - #48 i6
+INFO  15:02:12,607 - #8 ,
+INFO  15:02:12,607 - #48 i7
+INFO  15:02:12,607 - #7 ;
+INFO  15:02:12,608 - #3 {
+INFO  15:02:12,609 - #18 return
+INFO  15:02:12,610 - #48 i6
+INFO  15:02:12,611 - #7 ;
+INFO  15:02:12,614 - #4 }
+INFO  15:02:12,615 - #48 char
+INFO  15:02:12,615 - #48 m2
+INFO  15:02:12,615 - #12 (
+INFO  15:02:12,616 - #13 )
+INFO  15:02:12,616 - #48 char
+INFO  15:02:12,617 - #48 c6
+INFO  15:02:12,617 - #7 ;
+INFO  15:02:12,617 - #48 bool
+INFO  15:02:12,617 - #48 b6
+INFO  15:02:12,617 - #7 ;
+INFO  15:02:12,617 - #3 {
+INFO  15:02:12,617 - #18 return
+INFO  15:02:12,618 - #48 c6
+INFO  15:02:12,618 - #7 ;
+INFO  15:02:12,618 - #4 }
+INFO  15:02:12,618 - #14 void
+INFO  15:02:12,618 - #48 main
+INFO  15:02:12,618 - #12 (
+INFO  15:02:12,619 - #13 )
+INFO  15:02:12,619 - #3 {
+INFO  15:02:12,619 - #4 }
+INFO  15:02:12,619 - #4 }
+INFO  15:02:12,636 - Program(
+  ProgName(
+   MJCompiler
+  ) [ProgName]
+  DeclarationsList(
+    DeclarationsList(
+      DeclarationsList(
+        DeclarationsList(
+          DeclarationsList(
+            DeclarationsList(
+              NoDeclList(
+              ) [NoDeclList]
+              DeclConst(
+                NumConstDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstantTypeNumList(
+                    OneConstTypeNum(
+                     i1
+                     1
+                    ) [OneConstTypeNum]
+                   i2
+                   2
+                  ) [ConstantTypeNumList]
+                ) [NumConstDecl]
+              ) [DeclConst]
+            ) [DeclarationsList]
+            DeclConst(
+              CharConstDecl(
+                Type(
+                 char
+                ) [Type]
+                ConstantTypeCharList(
+                  OneConstTypeChar(
+                   c1
+                   "c"
+                  ) [OneConstTypeChar]
+                 c2
+                 "s"
+                ) [ConstantTypeCharList]
+              ) [CharConstDecl]
+            ) [DeclConst]
+          ) [DeclarationsList]
+          DeclConst(
+            BoolConstDecl(
+              Type(
+               bool
+              ) [Type]
+              ConstantTypeBoolList(
+                OneConstTypeBool(
+                 b1
+                 true
+                ) [OneConstTypeBool]
+               b2
+               false
+              ) [ConstantTypeBoolList]
+            ) [BoolConstDecl]
+          ) [DeclConst]
+        ) [DeclarationsList]
+        DeclGVar(
+          GlobalVarDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalVariableTypeList(
+              GlobalVariableTypeList(
+                OneGlobalVarType(
+                  GlobalVarIdent(
+                   i3
+                    NoSquareBrackets(
+                    ) [NoSquareBrackets]
+                  ) [GlobalVarIdent]
+                ) [OneGlobalVarType]
+                GlobalVarIdent(
+                 i4
+                  SquareBrackets(
+                  ) [SquareBrackets]
+                ) [GlobalVarIdent]
+              ) [GlobalVariableTypeList]
+              GlobalVarIdent(
+               i5
+                SquareBracketsDouble(
+                ) [SquareBracketsDouble]
+              ) [GlobalVarIdent]
+            ) [GlobalVariableTypeList]
+          ) [GlobalVarDecl]
+        ) [DeclGVar]
+      ) [DeclarationsList]
+      DeclGVar(
+        GlobalVarDecl(
+          Type(
+           char
+          ) [Type]
+          GlobalVariableTypeList(
+            GlobalVariableTypeList(
+              OneGlobalVarType(
+                GlobalVarIdent(
+                 c3
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [GlobalVarIdent]
+              ) [OneGlobalVarType]
+              GlobalVarIdent(
+               c4
+                SquareBrackets(
+                ) [SquareBrackets]
+              ) [GlobalVarIdent]
+            ) [GlobalVariableTypeList]
+            GlobalVarIdent(
+             c5
+              SquareBracketsDouble(
+              ) [SquareBracketsDouble]
+            ) [GlobalVarIdent]
+          ) [GlobalVariableTypeList]
+        ) [GlobalVarDecl]
+      ) [DeclGVar]
+    ) [DeclarationsList]
+    DeclGVar(
+      GlobalVarDecl(
+        Type(
+         bool
+        ) [Type]
+        GlobalVariableTypeList(
+          GlobalVariableTypeList(
+            OneGlobalVarType(
+              GlobalVarIdent(
+               b3
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [GlobalVarIdent]
+            ) [OneGlobalVarType]
+            GlobalVarIdent(
+             b4
+              SquareBrackets(
+              ) [SquareBrackets]
+            ) [GlobalVarIdent]
+          ) [GlobalVariableTypeList]
+          GlobalVarIdent(
+           b5
+            SquareBracketsDouble(
+            ) [SquareBracketsDouble]
+          ) [GlobalVarIdent]
+        ) [GlobalVariableTypeList]
+      ) [GlobalVarDecl]
+    ) [DeclGVar]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        NoMethodDecl(
+        ) [NoMethodDecl]
+        MethodDeclaration(
+          MethTypeName(
+            Type(
+             int
+            ) [Type]
+           m1
+          ) [MethTypeName]
+          FormParams(
+            FormalParamDecls(
+              SingleFormalParamDecl(
+                FormalParamDecl(
+                  Type(
+                   char
+                  ) [Type]
+                 cArg
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [FormalParamDecl]
+              ) [SingleFormalParamDecl]
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               iArg
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [FormalParamDecl]
+            ) [FormalParamDecls]
+          ) [FormParams]
+          VarDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+              VariableTypeList(
+                OneVarType(
+                 i6
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [OneVarType]
+               i7
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [VariableTypeList]
+            ) [VarDecl]
+          ) [VarDeclarations]
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            ReturnExpr(
+              ExpressionYes(
+                Expression(
+                  MinusNot(
+                  ) [MinusNot]
+                  Terminal(
+                    FactorDesignator(
+                      DesignatorIdent(
+                       i6
+                      ) [DesignatorIdent]
+                    ) [FactorDesignator]
+                    NoMulopFactList(
+                    ) [NoMulopFactList]
+                  ) [Terminal]
+                  NoAddopTermList(
+                  ) [NoAddopTermList]
+                ) [Expression]
+              ) [ExpressionYes]
+            ) [ReturnExpr]
+          ) [Statements]
+        ) [MethodDeclaration]
+      ) [MethodDeclarations]
+      MethodDeclaration(
+        MethTypeName(
+          Type(
+           char
+          ) [Type]
+         m2
+        ) [MethTypeName]
+        NoFormParam(
+        ) [NoFormParam]
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDecl(
+              Type(
+               char
+              ) [Type]
+              OneVarType(
+               c6
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [OneVarType]
+            ) [VarDecl]
+          ) [VarDeclarations]
+          VarDecl(
+            Type(
+             bool
+            ) [Type]
+            OneVarType(
+             b6
+              NoSquareBrackets(
+              ) [NoSquareBrackets]
+            ) [OneVarType]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          ReturnExpr(
+            ExpressionYes(
+              Expression(
+                MinusNot(
+                ) [MinusNot]
+                Terminal(
+                  FactorDesignator(
+                    DesignatorIdent(
+                     c6
+                    ) [DesignatorIdent]
+                  ) [FactorDesignator]
+                  NoMulopFactList(
+                  ) [NoMulopFactList]
+                ) [Terminal]
+                NoAddopTermList(
+                ) [NoAddopTermList]
+              ) [Expression]
+            ) [ExpressionYes]
+          ) [ReturnExpr]
+        ) [Statements]
+      ) [MethodDeclaration]
+    ) [MethodDeclarations]
+    MethodDeclaration(
+      MethVoidName(
+       main
+      ) [MethVoidName]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:02:12,637 - ===================================
+INFO  15:02:12,642 - Definisana konstanta i1 na liniji 3, objektni cvor: Con i1: Int, 1, 0
+INFO  15:02:12,642 - Definisana konstanta i2 na liniji 3, objektni cvor: Con i2: Int, 2, 0
+INFO  15:02:12,645 - Definisana konstanta c1 na liniji 4, objektni cvor: Con c1: Char, 99, 0
+INFO  15:02:12,645 - Definisana konstanta c2 na liniji 4, objektni cvor: Con c2: Char, 115, 0
+INFO  15:02:12,646 - Definisana konstanta b1 na liniji 5, objektni cvor: Con b1: Bool, 1, 0
+INFO  15:02:12,646 - Definisana konstanta b2 na liniji 5, objektni cvor: Con b2: Bool, 0, 0
+INFO  15:02:12,648 - Deklarisana globalna promenljiva i3 na liniji 8, objektni cvor: Var i3: Int, 0, 0
+INFO  15:02:12,648 - Deklarisan globalni niz i4 na liniji 8, objektni cvor: Var i4: Array, 1, 0
+INFO  15:02:12,649 - Deklarisana globalna matrica i5 na liniji 8, objektni cvor: Var i5: Array, 2, 0
+INFO  15:02:12,649 - Deklarisana globalna promenljiva c3 na liniji 9, objektni cvor: Var c3: Char, 3, 0
+INFO  15:02:12,649 - Deklarisan globalni niz c4 na liniji 9, objektni cvor: Var c4: Array, 4, 0
+INFO  15:02:12,649 - Deklarisana globalna matrica c5 na liniji 9, objektni cvor: Var c5: Array, 5, 0
+INFO  15:02:12,650 - Deklarisana globalna promenljiva b3 na liniji 10, objektni cvor: Var b3: Bool, 6, 0
+INFO  15:02:12,650 - Deklarisan globalni niz b4 na liniji 10, objektni cvor: Var b4: Array, 7, 0
+INFO  15:02:12,650 - Deklarisana globalna matrica b5 na liniji 10, objektni cvor: Var b5: Array, 8, 0
+INFO  15:02:12,650 - Deklarisana lokalna promenljiva i6 na liniji 14, objektni cvor: Var i6: Int, 0, 1
+INFO  15:02:12,650 - Deklarisana lokalna promenljiva i7 na liniji 14, objektni cvor: Var i7: Int, 1, 1
+INFO  15:02:12,650 - Simbol i6 se koristi na liniji 16, objektni cvor: Var i6: Int, 0, 1
+INFO  15:02:12,651 - Deklarisana lokalna promenljiva c6 na liniji 19, objektni cvor: Var c6: Char, 0, 1
+INFO  15:02:12,651 - Deklarisana lokalna promenljiva b6 na liniji 19, objektni cvor: Var b6: Bool, 1, 1
+INFO  15:02:12,651 - Simbol c6 se koristi na liniji 21, objektni cvor: Var c6: Char, 0, 1
+INFO  15:02:12,651 - ===================================
+INFO  15:02:12,653 - 13
+INFO  15:02:12,677 - Parsiranje uspesno zavrseno!

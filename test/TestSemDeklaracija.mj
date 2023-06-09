@@ -2,23 +2,23 @@ program MJCompiler
 	// deklaracija konstanti
 	const int i1=1, i2=2;
 	const char c1="c", c2="s";
-	const Bool b1="true", b2="false";
+	const bool b1=true, b2=false;
 
 	// deklaracija promenljivih
-	int i3, i4[];
-	char c3, c4[];
-	Bool b3, b4;
+	int i3, i4[], i5[][];
+	char c3, c4[], c5[][];
+	bool b3, b4[], b5[][];
 	
 {
 	// deklaracije metoda
-	int m1(char cArg, int iArg) int i5, i6;
+	int m1(char cArg, int i4) int i5;
 	{
 		return i5;
 	}
 	
-	int m2() char c5; Bool b5;
+	char m2() char c6; bool b6;
 	{
-		return i1;
+		return c6;
 	}
 	
 	void main()

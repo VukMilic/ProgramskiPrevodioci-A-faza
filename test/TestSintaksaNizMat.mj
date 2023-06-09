@@ -1,0 +1,67 @@
+program MJProgram
+	const int con1 = 4;
+	const bool con2 = false;
+	const char con3 = "N";
+	
+	class K1 {
+		int kx1, kx2;
+		{	
+			void kk() char c;
+			{
+			}
+		}
+	}
+	
+	int x1, x2;
+	bool b1, b2;
+	int i1, i3;
+	
+	bool barr[];
+	int iarr[];
+	int imat[][];
+	char cmat[][];
+{
+	
+	int k(int fp) int i4; char c1; bool b3;
+	{
+		x1 = con1 + 5 - x2;
+		x1++;
+		
+		if( i1 > x1 )
+			i1 = -1;
+		else
+			x1 = i1;
+			
+		while( i1 == x1 || i1 < x1)
+			if( i1 > x2)
+				continue;
+			else
+				break;
+			
+		return i4;
+	}
+	
+	void main() char c2, c3;
+	{
+		barr = new bool[2];
+		iarr = new int[4];
+		
+		imat = new int[3][3];
+		cmat = new char[2][4];
+		
+		iarr[1] = 5;
+		imat[1][2] = 4;
+		
+		j = 1;
+		
+		i = iarr[1] + imat[1][2] * 2 - j;
+		
+		read(imat[1][2]);
+		print(iarr[1]);
+	
+		k(x1);
+		
+		return;
+	}
+	
+}

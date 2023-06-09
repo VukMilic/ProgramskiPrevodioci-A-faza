@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/5/2023 11:23:52
+// 9/5/2023 21:12:35
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,8 @@ public class ActParams implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
     private Expr Expr;
     private ExprList ExprList;
 

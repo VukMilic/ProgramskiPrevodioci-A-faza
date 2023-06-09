@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/5/2023 11:23:52
+// 9/5/2023 21:12:35
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,13 +10,13 @@ public class FormalParamDecl implements SyntaxNode {
     private SyntaxNode parent;
     private int line;
     private Type Type;
-    private String I2;
+    private String varName;
     private SquareBrackets SquareBrackets;
 
-    public FormalParamDecl (Type Type, String I2, SquareBrackets SquareBrackets) {
+    public FormalParamDecl (Type Type, String varName, SquareBrackets SquareBrackets) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.I2=I2;
+        this.varName=varName;
         this.SquareBrackets=SquareBrackets;
         if(SquareBrackets!=null) SquareBrackets.setParent(this);
     }
@@ -29,12 +29,12 @@ public class FormalParamDecl implements SyntaxNode {
         this.Type=Type;
     }
 
-    public String getI2() {
-        return I2;
+    public String getVarName() {
+        return varName;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setVarName(String varName) {
+        this.varName=varName;
     }
 
     public SquareBrackets getSquareBrackets() {
@@ -93,7 +93,7 @@ public class FormalParamDecl implements SyntaxNode {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        buffer.append(" "+tab+varName);
         buffer.append("\n");
 
         if(SquareBrackets!=null)

@@ -1,17 +1,33 @@
-program MJProgram
-bool b;
+program MJCompiler
+	int i3, i4[], i5[][];
+	char c3, c4[], c5[][];
+	bool b3, b4[], b5[][];
+	
 {
-	int main(){
-
-		b = true;
+	int main()
+	{
+		i3 = 1;
+		// provera da li radi null prilikom dodeljivanja nizu
+		i4 = null;
+		i4 = new int[4];
 		
-		print(b);
+		i5 = new int[5][4];
 		
-		b = false;
+		// provera da li funkcionise eol (novi red)
+		print(i5[0][0]);
+		print(eol);
+		print(i5[0][0]);
 		
-		print(b);
+		// provera da li funkcionisu funkcije: chr, ord i len
+		c3 = chr(i3);
+		i3 = ord(c3);
+		i3 = len(i4);
+		
+		// GRESKE prilikom pozivanja funkcija: chr, ord i len
+		c3 = chr(c3);
+		i3 = ord(i3);
+		i3 = len(b3);
 				
 		return 1;
 	}
-		
 }

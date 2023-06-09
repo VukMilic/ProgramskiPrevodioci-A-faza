@@ -77,16 +77,11 @@ nonterminal FormalParamDecl FormalParamDecl;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal ElseStatement ElseStatement;
-nonterminal CommaNumConst CommaNumConst;
-nonterminal DesignatorStatement DesignatorStatement; 
-nonterminal PostDesignator PostDesignator;
-nonterminal ActPars ActPars;
-nonterminal ActParams ActParams;
+nonterminal CommaNumConst CommaNumConst; 
 nonterminal ExprList ExprList;
 nonterminal Condition Condition; 
 nonterminal CondTerm CondTerm;
 nonterminal MinusOrNot MinusOrNot; 
-nonterminal ExprOrActPars ExprOrActPars;
 nonterminal WhileTerm WhileTerm;
 nonterminal ForeachTerm ForeachTerm;
 nonterminal Label Label;
@@ -98,7 +93,7 @@ nonterminal AssignError AssignError;
 nonterminal DeclType DeclType;
 nonterminal SquareBrackets SquareBrackets;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, MethodTypeName, Designator, Factor, MulopFactList, Term, AddopTermList, Expr, ExprOrNot;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorStatement, ActPars, ActParams, ProgName, Program, MethodDecl, MethodTypeName, Designator, Factor, MulopFactList, Term, AddopTermList, Expr, ExprOrNot;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj DesignatorOrNot, CondFact, GVarIdent;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
@@ -214,7 +209,7 @@ FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:
 				(SingleFormalParamDecl) FormalParamDecl:F1 {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
 				;
 
-FormalParamDecl ::= (FormalParamDecl) Type:T1 IDENT:I2 SquareBrackets:S3 {: RESULT=new FormalParamDecl(T1, I2, S3); RESULT.setLine(T1left); :};
+FormalParamDecl ::= (FormalParamDecl) Type:T1 IDENT:varName SquareBrackets:S2 {: RESULT=new FormalParamDecl(T1, varName, S2); RESULT.setLine(T1left); :};
 
 StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new Statements(S1, S2); RESULT.setLine(S1left); :}
 				|
