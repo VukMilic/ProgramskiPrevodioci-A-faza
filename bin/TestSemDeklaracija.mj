@@ -1,7 +1,7 @@
 program MJCompiler
 	// deklaracija konstanti
 	const int i1=1, i2=2;
-	const char c1="c", c2="s";
+	const char c1='c', c2='s';
 	const bool b1=true, b2=false;
 
 	// deklaracija promenljivih

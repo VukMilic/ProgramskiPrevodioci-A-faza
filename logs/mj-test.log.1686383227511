@@ -1,0 +1,223 @@
+INFO  09:40:24,184 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  09:40:24,237 - #2 program
+INFO  09:40:24,237 - #48 MJCompiler
+INFO  09:40:24,237 - #48 TypeError
+INFO  09:40:24,237 - #48 i1
+INFO  09:40:24,237 - #7 ;
+INFO  09:40:24,253 - #48 int
+INFO  09:40:24,253 - #48 i
+INFO  09:40:24,253 - #7 ;
+INFO  09:40:24,253 - #48 char
+INFO  09:40:24,253 - #48 i
+INFO  09:40:24,253 - #7 ;
+INFO  09:40:24,253 - #5 const
+INFO  09:40:24,253 - #48 int
+INFO  09:40:24,253 - #48 con1
+INFO  09:40:24,253 - #6 =
+INFO  09:40:24,253 - #50 false
+INFO  09:40:24,253 - #7 ;
+INFO  09:40:24,253 - #5 const
+INFO  09:40:24,253 - #48 Bool
+INFO  09:40:24,253 - #48 con1
+INFO  09:40:24,253 - #6 =
+INFO  09:40:24,264 - #50 true
+INFO  09:40:24,264 - #7 ;
+INFO  09:40:24,264 - #5 const
+INFO  09:40:24,264 - #48 char
+INFO  09:40:24,264 - #48 con1
+INFO  09:40:24,264 - #6 =
+INFO  09:40:24,264 - #49 "H"
+INFO  09:40:24,264 - #7 ;
+INFO  09:40:24,264 - #3 {
+INFO  09:40:24,264 - #14 void
+INFO  09:40:24,264 - #48 main
+INFO  09:40:24,264 - #12 (
+INFO  09:40:24,264 - #13 )
+INFO  09:40:24,264 - #48 TypeError
+INFO  09:40:24,264 - #48 i1
+INFO  09:40:24,264 - #7 ;
+INFO  09:40:24,264 - #48 int
+INFO  09:40:24,264 - #48 i
+INFO  09:40:24,264 - #7 ;
+INFO  09:40:24,264 - #3 {
+INFO  09:40:24,264 - #48 i
+INFO  09:40:24,264 - #6 =
+INFO  09:40:24,264 - #48 nepostojeca
+INFO  09:40:24,264 - #7 ;
+INFO  09:40:24,264 - #4 }
+INFO  09:40:24,264 - #4 }
+INFO  09:40:24,279 - Program(
+  ProgName(
+   MJCompiler
+  ) [ProgName]
+  DeclarationsList(
+    DeclarationsList(
+      DeclarationsList(
+        DeclarationsList(
+          DeclarationsList(
+            DeclarationsList(
+              NoDeclList(
+              ) [NoDeclList]
+              DeclGVar(
+                GlobalVarDecl(
+                  Type(
+                   TypeError
+                  ) [Type]
+                  OneGlobalVarType(
+                    GlobalVarIdent(
+                     i1
+                      NoSquareBrackets(
+                      ) [NoSquareBrackets]
+                    ) [GlobalVarIdent]
+                  ) [OneGlobalVarType]
+                ) [GlobalVarDecl]
+              ) [DeclGVar]
+            ) [DeclarationsList]
+            DeclGVar(
+              GlobalVarDecl(
+                Type(
+                 int
+                ) [Type]
+                OneGlobalVarType(
+                  GlobalVarIdent(
+                   i
+                    NoSquareBrackets(
+                    ) [NoSquareBrackets]
+                  ) [GlobalVarIdent]
+                ) [OneGlobalVarType]
+              ) [GlobalVarDecl]
+            ) [DeclGVar]
+          ) [DeclarationsList]
+          DeclGVar(
+            GlobalVarDecl(
+              Type(
+               char
+              ) [Type]
+              OneGlobalVarType(
+                GlobalVarIdent(
+                 i
+                  NoSquareBrackets(
+                  ) [NoSquareBrackets]
+                ) [GlobalVarIdent]
+              ) [OneGlobalVarType]
+            ) [GlobalVarDecl]
+          ) [DeclGVar]
+        ) [DeclarationsList]
+        DeclConst(
+          BoolConstDecl(
+            Type(
+             int
+            ) [Type]
+            OneConstTypeBool(
+             con1
+             false
+            ) [OneConstTypeBool]
+          ) [BoolConstDecl]
+        ) [DeclConst]
+      ) [DeclarationsList]
+      DeclConst(
+        BoolConstDecl(
+          Type(
+           Bool
+          ) [Type]
+          OneConstTypeBool(
+           con1
+           true
+          ) [OneConstTypeBool]
+        ) [BoolConstDecl]
+      ) [DeclConst]
+    ) [DeclarationsList]
+    DeclConst(
+      CharConstDecl(
+        Type(
+         char
+        ) [Type]
+        OneConstTypeChar(
+         con1
+         "H"
+        ) [OneConstTypeChar]
+      ) [CharConstDecl]
+    ) [DeclConst]
+  ) [DeclarationsList]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclaration(
+      MethVoidName(
+       main
+      ) [MethVoidName]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             TypeError
+            ) [Type]
+            OneVarType(
+             i1
+              NoSquareBrackets(
+              ) [NoSquareBrackets]
+            ) [OneVarType]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          OneVarType(
+           i
+            NoSquareBrackets(
+            ) [NoSquareBrackets]
+          ) [OneVarType]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        Assignment(
+          DesignatorAssignOp(
+            DesignatorIdent(
+             i
+            ) [DesignatorIdent]
+            AssignOp(
+            ) [AssignOp]
+            Expression(
+              MinusNot(
+              ) [MinusNot]
+              Terminal(
+                FactorDesignator(
+                  DesignatorIdent(
+                   nepostojeca
+                  ) [DesignatorIdent]
+                ) [FactorDesignator]
+                NoMulopFactList(
+                ) [NoMulopFactList]
+              ) [Terminal]
+              NoAddopTermList(
+              ) [NoAddopTermList]
+            ) [Expression]
+          ) [DesignatorAssignOp]
+        ) [Assignment]
+      ) [Statements]
+    ) [MethodDeclaration]
+  ) [MethodDeclarations]
+) [Program]
+INFO  09:40:24,279 - ===================================
+ERROR 09:40:24,279 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 3
+INFO  09:40:24,279 - Deklarisana globalna promenljiva i na liniji 4, objektni cvor: Var i: Int, 0, 0
+ERROR 09:40:24,279 - Greska: promenljiva i je vec deklarisana!  na liniji 5
+ERROR 09:40:24,279 - Greska: ocekivan tip konstante con1 je Bool!  na liniji 8
+ERROR 09:40:24,279 - Greska: Nije pronadjen tip Bool u tabeli simbola!  na liniji 9
+ERROR 09:40:24,279 - Greska: ocekivan tip konstante con1 je Bool!  na liniji 9
+INFO  09:40:24,279 - Definisana konstanta con1 na liniji 10, objektni cvor: Con con1: Char, 72, 0
+ERROR 09:40:24,279 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 14
+INFO  09:40:24,279 - Deklarisana lokalna promenljiva i na liniji 14, objektni cvor: Var i: Int, 0, 1
+INFO  09:40:24,279 - Simbol i se koristi na liniji 17, objektni cvor: Var i: Int, 0, 1
+ERROR 09:40:24,279 - Greska: Simbol nepostojeca koji se koristi nije deklarisan!  na liniji 17
+ERROR 09:40:24,279 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 17
+INFO  09:40:24,279 - ===================================
+INFO  09:40:24,279 - 2
+ERROR 09:40:24,279 - Parsiranje NIJE uspesno zavrseno!

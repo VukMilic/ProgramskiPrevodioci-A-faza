@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.Stack;
+
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -12,12 +14,9 @@ public class CodeGenerator extends VisitorAdaptor {
 
 	private int mainPc;
 
-	private String muloperation = "";
-	private String addoperation = "";
-
 	private int isMinus = 0;
-	private int flag_numOfRows = 0;
-	private int numOfRows = 0;
+	
+	private Stack<Integer> isMinusExprStack = new Stack<>();
 
 	public int getMainPc() {
 		return mainPc;
@@ -266,69 +265,49 @@ public class CodeGenerator extends VisitorAdaptor {
 	// (VMMulop)
 
 	public void visit(MulopFactorList mulopFactorList) {
-		if (muloperation.equals("mnozenje")) {
+		if (mulopFactorList.getMulop() instanceof Mul) {
 			Code.put(Code.mul);
-			muloperation = "";
-		} else if (muloperation.equals("deljenje")) {
+		} else if (mulopFactorList.getMulop() instanceof Div) {
 			Code.put(Code.div);
-			muloperation = "";
-		} else if (muloperation.equals("ostatak")) {
+		} else if (mulopFactorList.getMulop() instanceof Mod) {
 			Code.put(Code.rem);
-			muloperation = "";
 		}
-	}
-
-	public void visit(Mul mul) {
-		muloperation = "mnozenje";
-	}
-
-	public void visit(Div div) {
-		muloperation = "deljenje";
-	}
-
-	public void visit(Mod mod) {
-		muloperation = "ostatak";
 	}
 
 	// -------------------------------------------------------
 	// (VMAddop)
 
 	public void visit(AddopTerminalList addopTerminalList) {
-		if (addoperation.equals("sabiranje")) {
+		if (addopTerminalList.getAddop() instanceof Plus) {
 			Code.put(Code.add);
-			addoperation = "";
-		} else if (addoperation.equals("oduzimanje")) {
+		} else if (addopTerminalList.getAddop() instanceof Minus) {
 			Code.put(Code.sub);
-			addoperation = "";
 		}
 	}
-
-	public void visit(Plus plus) {
-		addoperation = "sabiranje";
-	}
-
-	public void visit(Minus minus) {
-		addoperation = "oduzimanje";
+	
+	// ------------------------------------------------------------
+	// (VMTerminal)
+	
+	public void visit(Terminal terminal){
+		if( terminal.getParent().getClass() == Expression.class ){
+			if( isMinusExprStack.pop() == 1 ) {
+				Code.put(Code.neg);
+			}
+		}
 	}
 
 	// ------------------------------------------------------------
 	// (VMExpr)
 
 	public void visit(Expression expression) {
-		if (isMinus == 1) {
-			Code.put(Code.neg);
-			isMinus = 0;
-		}
-		if (FactorNewExprExpr.class == expression.getParent().getClass()) {
-			if (flag_numOfRows == 0) {
-				//
-			}
-			flag_numOfRows = (flag_numOfRows + 1) % 2;
-		}
+		
 	}
 
 	public void visit(MinusOr minusOr) {
-		isMinus = 1;
+		isMinusExprStack.push(1);
 	}
 
+	public void visit(MinusNot minusNot) {
+		isMinusExprStack.push(0);
+	}
 }

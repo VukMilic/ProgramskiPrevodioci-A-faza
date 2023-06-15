@@ -1,7 +1,7 @@
 program MJProgram
 	const int con1 = 4;
 	const bool con2 = false;
-	const char con3 = "N";
+	const char con3 = 'N';
 	
 	class K1 {
 		int kx1, kx2;
@@ -52,9 +52,9 @@ program MJProgram
 		iarr[1] = 5;
 		imat[1][2] = 4;
 		
-		j = 1;
+		i3 = 1;
 		
-		i = iarr[1] + imat[1][2] * 2 - j;
+		i1 = iarr[1] + imat[1][2] * 2 - i3;
 		
 		read(imat[1][2]);
 		print(iarr[1]);

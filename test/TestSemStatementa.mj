@@ -2,6 +2,11 @@ program MJCompiler
 	int i1, i2[][];
 	const int i3=3;
 {
+	int k()
+	{
+		i1 = 1;
+		return i1;
+	}
 	void main() bool b1, b2;
 	{
 		b1 = true;
@@ -13,13 +18,13 @@ program MJCompiler
 		
 		while( b1 || b2)
 		{
-			if( i2 > i1 ){
+			if( i2[0][0] > i1 ){
 				read(i1);
-				i2--;
+				i2[0][0]--;
 				continue;
 			} else {
-				print( i1 + i2 );
-				i2 = -5 + i1*2 + i3;
+				print( i1 + i2[0][0] );
+				i2[0][0] = -5 + i1*2 + i3;
 				break;
 			}
 			b1 = false;

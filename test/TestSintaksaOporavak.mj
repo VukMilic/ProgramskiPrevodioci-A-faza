@@ -1,7 +1,7 @@
 program MJProgram
 	const int con1 = 4;
 	const bool con2 = false;
-	const char con3 = "N";
+	const char con3 = 'N';
 	
 	class K1 {
 		int kx1, kx2;

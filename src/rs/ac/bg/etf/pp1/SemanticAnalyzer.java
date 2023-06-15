@@ -28,6 +28,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	int isMinus = 0;
 	int isMatrix = 0;
 	
+	int mainExists = 0;
+	
 //	ArrayList<Obj> designatorListObjects = new ArrayList<>();
 //	Struct desigListObjType = null;
 	
@@ -113,6 +115,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	Tab.chainLocalSymbols(program.getProgName().obj);
     	Tab.closeScope();
     	currScopeLevel--;
+    	
+    	// na kraju programa proveravamo da li postoji main funkcija u programu
+    	if( mainExists == 0 )
+    	{
+    		report_error("Greska: Ne postoji main funkcija u programu ", null);
+    	}
     }
 
 	// --------------------------------------------------
@@ -298,8 +306,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         	Tab.closeScope();
         	currScopeLevel--;
         	
-        	currentMethod = null;  
-        	retDetected = false;
+        	// proveravamo da li je u pitanju funkcija main
+        	// mora biti VOID, zvati se MAIN, biti bez ARGUMENATA
+        	if( currentMethod.getType() == Tab.noType 
+        		&& currentMethod.getName().equals("main") 
+        		&& (methodDeclaration.getFormPars() instanceof NoFormParam))
+        		mainExists = 1;
+        	
+        	currentMethod = null;
+        	retDetected = false;        	
     	} else {
     		report_error("Greska: Ne postoji return naredba u funkciji " + methodDeclaration.getMethodTypeName().obj.getName(), methodDeclaration);
     	}
@@ -910,6 +925,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     public void visit(CondExprRelopExpr condExprRelopExpr) {
     	if( condExprRelopExpr.getExpr().obj.getType().getKind() != condExprRelopExpr.getExpr1().obj.getType().getKind()) {
     		report_error("Greska: Tipovi oba izraza moraju biti kompatibilni u slucaju poredjenja", condExprRelopExpr);
+    	}
+    	else
+    	{
+    		if( condExprRelopExpr.getExpr().obj.getType().getKind() == Struct.Array
+    			&& !(condExprRelopExpr.getRelop() instanceof EqualEqual)
+    			&& !(condExprRelopExpr.getRelop() instanceof UnEqual)){
+    			report_error("Greska: Prilikom poredjenja nizova, relacioni operatori moraju biti != ili ==", condExprRelopExpr);		
+    		}
     	}
     }
     

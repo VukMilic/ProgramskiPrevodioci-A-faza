@@ -1,10 +1,16 @@
 program MJCompiler
 	const int con1=1;
 	
-	int i1, i2;
+	int i1, i2, i3[], i4[];
 	char c1, c2;
 {
-	void main() int i3[];
+	char k()
+	{
+		// tipovi u return naredbi se ne poklapaju
+		return con1;
+	}
+	
+	void main() int i5[][];
 	{
 		// koriscenje nepostojeceg simbola
 		simbolError = i1 + i2;
@@ -17,6 +23,9 @@ program MJCompiler
 		
 		// operacija ++/-- nad tipom koji nije int
 		c1++;
+		
+		// operacija ++/-- nad objektom koji nije promenljiva
+		con1++;
 		
 		// operacije mnozenja i deljenja nad tipovima koji nisu int
 		i1 = con1 * c1;
@@ -46,5 +55,19 @@ program MJCompiler
 		// prilikom poredjenja tipovi nisu kompatibilni
 		if( i1>c1 )		
 			i1 = i2;
+
+		// poredjenje nizova sa losim relacionim simbol
+		if(i3 > i4){
+		}
+		
+		// prilikom alociranja niza, vrednost izmedju zagrada nije int
+		i3 = new int['c'];
+		
+		// prilikom alociranja matrice, nepoklapanje tipova
+		i5 = new char[1][2];
+		
+		// stavljamo zagrade na simbol koji nije niz
+		i1 = i2[0];
+
 	}
 }
