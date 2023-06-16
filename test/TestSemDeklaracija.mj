@@ -11,8 +11,12 @@ program MJCompiler
 	
 {
 	// deklaracije metoda
-	int m1(char cArg, int i4) int i5;
+	int m1(char cArg, int i3) int i5;
 	{
+		// pristup elementu niza
+		i5 = i4[0];
+		print(i4[1]);
+		
 		return i5;
 	}
 	
@@ -23,5 +27,6 @@ program MJCompiler
 	
 	void main()
 	{
+		print(m2());
 	}	
 }
