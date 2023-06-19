@@ -47,6 +47,11 @@ public class Compiler {
 //			File sourceCode = new File("test/TestSemGreskeStatementa.mj");
 //			File sourceCode = new File("test/GenKoda.mj");
 			
+			if(sourceCode.length() > 8*1024){
+				log.error("Greska: Izvorni kod programa ne sme biti veci od 8 KB!");
+				return;
+			}
+			
 			log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 			
 			br = new BufferedReader(new FileReader(sourceCode));
@@ -68,7 +73,7 @@ public class Compiler {
 			log.info("===================================");
 			tsdump();
 			
-			log.info(v.nVars);
+//			log.info(v.nVars);
 			
 			if(!p.errorDetected && v.passed()){
 //				File objFile = new File(args[1]);

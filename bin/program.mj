@@ -1,73 +1,57 @@
-program MJCompiler
-	const int con1=1;
+// Test301
+
+program test301
+
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[], niz2[], a, b;
+	char nizch[];
+	int mat[][];
 	
-	int i1, i2, i3[], i4[];
-	char c1, c2;
 {
-	char k()
+	void main()
+		int bodovi;
+		bool bt;
 	{
-		// tipovi u return naredbi se ne poklapaju
-		return con1;
-	}
-	
-	void main() int i5[][];
-	{
-		// koriscenje nepostojeceg simbola
-		simbolError = i1 + i2;
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi);
+			
 		
-		// operacija dodele pogresnih tipova
-		i1 = c1;
+		niz = new int[3];
+		niz[nula] = jedan;
+		niz[1] = 2;
+		niz[niz[jedan]] = niz[niz[0]] * 3;
+		bodovi = niz[2]/niz[0];
+		print(bodovi);
+		print(niz[2]);
 		
-		// dodela vrednosti konstanti
-		con1 = 5;
+		mat = new int[2][2];
+		mat[0][0] = niz[nula];
+		mat[0][mat[0][0]] = 2;
+		mat[1][jedan - niz[0]] = 5;
+		mat[1][1] = mat[0][0] * mat[0][1];
+		print(mat[1][0]); // 5
+		print(mat[1][1]); // 2
 		
-		// operacija ++/-- nad tipom koji nije int
-		c1++;
+		nizch = new char[3];
+		nizch[0] = 'a';
+		nizch[jedan] = 'b';
+		nizch[pet - 3] = 'c';
+		print(nizch[1]);
+		print(nizch[jedan * 2]);
+			
 		
-		// operacija ++/-- nad objektom koji nije promenljiva
-		con1++;
-		
-		// operacije mnozenja i deljenja nad tipovima koji nisu int
-		i1 = con1 * c1;
-		
-		// operacije sabiranja i oduzimanja nad tipovima koji nisu int
-		i1 = 5 + c2;
-		
-		// kada se navede - (MINUS) ispred simbola koji nije int
-		i1 = -c1;
-		
-		// break i continue se koriste izvan petlji
-		break;
-		continue;
-		
-		// read se poziva nad tipom koji nije int, char ili Bool
-		read(i3);
-		// pozivanje read-a nad konstantom
-		read(con1);
-		
-		// print se poziva nad tipom koji nije int, char ili Bool
-		print(i3);
-		
-		// uslov nije tipa Bool
-		while( i1 )
-			break;
-		
-		// prilikom poredjenja tipovi nisu kompatibilni
-		if( i1>c1 )		
-			i1 = i2;
-
-		// poredjenje nizova sa losim relacionim simbol
-		if(i3 > i4){
-		}
-		
-		// prilikom alociranja niza, vrednost izmedju zagrada nije int
-		i3 = new int['c'];
-		
-		// prilikom alociranja matrice, nepoklapanje tipova
-		i5 = new char[1][2];
-		
-		// stavljamo zagrade na simbol koji nije niz
-		i1 = i2[0];
-
+		read(bodovi);
+		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
+		print(bodovi);
+			
 	}
 }
+
+

@@ -13,6 +13,8 @@ import rs.etf.pp1.symboltable.concepts.*;
 public class SemanticAnalyzer extends VisitorAdaptor {
 
 	int nVars = 0;
+	int localVars = 0;
+	int globalVars = 0;
 	
 	boolean errorDetected = false;
 	boolean errorType = false;
@@ -121,6 +123,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	{
     		report_error("Greska: Ne postoji main funkcija u programu ", null);
     	}
+    	// provera da li broj globalnih promenljivih prelazi 65536
+    	if( globalVars > 65536 )
+    		report_error("Greska: Broj globalnih promenljivih mora biti manji od 65536 ", null);	
     }
 
 	// --------------------------------------------------
@@ -189,6 +194,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         			// ako je u pitanju deklaracija niza
             		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), new Struct(Struct.Array, currentType));
             		nVars++;
+            		localVars++;
             		isArray = 0;
             		report_info("Deklarisan lokalni niz " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
         		} 
@@ -197,6 +203,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         			// ako je u pitanju deklaracija matrice
             		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
             		nVars++;
+            		localVars++;
             		isMatrix = 0;
             		report_info("Deklarisana lokalna matrica " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
         		}
@@ -206,6 +213,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		Obj objPrint = Tab.insert(Obj.Var, variableTypeList.getVarName(), currentType);
             		report_info("Deklarisana lokalna promenljiva " + variableTypeList.getVarName() + " na liniji " + variableTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
             		nVars++;
+            		localVars++;
         		}
         	}else {
         		report_error("Greska: promenljiva " + variableTypeList.getVarName() + " je vec deklarisana! ", variableTypeList);
@@ -229,6 +237,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	    			// ako je u pitanju deklaracija niza
 	        		Obj objPrint = Tab.insert(Obj.Var, oneVarTypeList.getVarName(), new Struct(Struct.Array, currentType));
 	        		nVars++;
+            		localVars++;
 	        		isArray = 0;
 	        		report_info("Deklarisan lokalni niz " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
 	    		}
@@ -237,6 +246,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	    			// ako je u pitanju deklaracija matrice
 	        		Obj objPrint = Tab.insert(Obj.Var, oneVarTypeList.getVarName(), new Struct(Struct.Array, new Struct(Struct.Array, currentType)));
 	        		nVars++;
+            		localVars++;
 	        		isMatrix = 0;
 	        		report_info("Deklarisana lokalna matrica " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
 	    		}	    		
@@ -246,6 +256,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	        		Obj objPrint = Tab.insert(Obj.Var, oneVarTypeList.getVarName(), currentType);
 	        		report_info("Deklarisana lokalna promenljiva " + oneVarTypeList.getVarName() + " na liniji " + oneVarTypeList.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
 	        		nVars++;
+            		localVars++;
 	    		}
 	    	}else {
 	    		report_error("Greska: promenljiva " + oneVarTypeList.getVarName() + " je vec deklarisana! ", oneVarTypeList);
@@ -272,6 +283,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		objPrint.setLevel(0);
             		report_info("Deklarisan globalni niz " + globalVarIdent.getGlobVarName() + " na liniji " + globalVarIdent.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
             		nVars++;
+            		globalVars++;
             		isArray = 0;
         		}
         		else if(isMatrix == 1)
@@ -281,6 +293,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		objPrint.setLevel(0);
             		report_info("Deklarisana globalna matrica " + globalVarIdent.getGlobVarName() + " na liniji " + globalVarIdent.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
             		nVars++;
+            		globalVars++;
             		isMatrix = 0;
         		}
         		else 
@@ -290,6 +303,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
             		objPrint.setLevel(0);
             		report_info("Deklarisana globalna promenljiva " + globalVarIdent.getGlobVarName() + " na liniji " + globalVarIdent.getLine() + ", objektni cvor: " + getKindName(objPrint.getKind()) + " " + objPrint.getName() + ": " + getTypeName(objPrint.getType().getKind()) + ", " + objPrint.getAdr() + ", " + objPrint.getLevel(), null);
             		nVars++;
+            		globalVars++;
         		}
         	}else {
         		report_error("Greska: promenljiva " + globalVarIdent.getGlobVarName() + " je vec deklarisana! ", globalVarIdent);
@@ -313,6 +327,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         		&& (methodDeclaration.getFormPars() instanceof NoFormParam))
         		mainExists = 1;
         	
+        	// proveravamo da li je deklarisano vise lokalnih promenljivih
+        	// nego sto sme (256)
+        	if( localVars > 256)
+        		report_error("Greska: Lokalnih promenljivih ne sme biti vise od 256 " + methodDeclaration.getMethodTypeName().obj.getName(), methodDeclaration);
+        	
+        	localVars = 0;
         	currentMethod = null;
         	retDetected = false;        	
     	} else {
