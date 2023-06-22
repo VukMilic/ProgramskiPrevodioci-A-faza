@@ -1,0 +1,25 @@
+ERROR 19:57:03,689 - Greska: Tip RETURN naredbe se ne poklapa sa tipom Metode na liniji 2
+ERROR 19:57:03,690 - Greska: Simbol simbolError koji se koristi nije deklarisan!  na liniji 16
+ERROR 19:57:03,690 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 19
+ERROR 19:57:03,690 - Greska: ne moze da se uradi dodela vrednosti tipu objekta con1 na liniji 22
+ERROR 19:57:03,690 - Greska: Za operaciju ++ tip objekta c1 mora biti int na liniji 25
+ERROR 19:57:03,690 - Greska: ne moze da se izvrsi operacija ++ nad objektom con1 na liniji 28
+ERROR 19:57:03,690 - Greska: tip za operacije mnozenja i deljenja mora biti int!  na liniji 7
+ERROR 19:57:03,691 - Greska: tip za operacije sabiranja i oduzimanja mora biti int!  na liniji 7
+ERROR 19:57:03,691 - Greska: tip posle minusa mora biti int!  na liniji 37
+ERROR 19:57:03,691 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 37
+ERROR 19:57:03,691 - Greska: BREAK se poziva izvan While ili Foreach petlje
+ERROR 19:57:03,691 - Greska: CONTINUE se poziva izvan While ili Foreach petlje
+ERROR 19:57:03,691 - Greska: READ mora da se pozove nad tipom int, char ili Bool na liniji 44
+ERROR 19:57:03,691 - Greska: READ mora da se pozove nad promenljivom na liniji 46
+ERROR 19:57:03,695 - Greska: PRINT mora da se pozove nad tipom int, char ili Bool na liniji 7
+ERROR 19:57:03,695 - Greska: Uslov mora biti tipa Bool na liniji 7
+ERROR 19:57:03,695 - Greska: Tipovi oba izraza moraju biti kompatibilni u slucaju poredjenja na liniji 4
+ERROR 19:57:03,697 - Greska: Prilikom poredjenja nizova, relacioni operatori moraju biti != ili == na liniji 4
+ERROR 19:57:03,697 - Greska: Tip izmedju zagrada mora biti Int na liniji 64
+ERROR 19:57:03,697 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 64
+ERROR 19:57:03,697 - Greska: tipovi matrica se ne poklapaju prilikom dodele vrednosti!  na liniji 67
+ERROR 19:57:03,698 - Greska: ne smeju se koristiti uglaste zagrade nakon simbola koji nije tipa Array na liniji 70
+ERROR 19:57:03,698 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 70
+
+ERROR 19:57:03,698 - Parsiranje NIJE uspesno zavrseno!

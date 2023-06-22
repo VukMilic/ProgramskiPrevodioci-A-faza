@@ -24,6 +24,9 @@ import rs.etf.pp1.symboltable.visitors.SymbolTableVisitor;
 public class Compiler {
 
 	static {
+		File errorFile = new File("test/izlaz.err");
+		if( errorFile.exists() ) 
+			errorFile.delete();
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
 		Log4JUtils.instance().prepareLogFile(Logger.getRootLogger());
 	}
@@ -38,14 +41,8 @@ public class Compiler {
 		
 		Reader br = null;
 		try {
-//			File sourceCode = new File(args[0]);
-			File sourceCode = new File("test/program.mj");
-//			File sourceCode = new File("test/TestSintaksa.mj");
-//			File sourceCode = new File("test/TestSemDeklaracija.mj");
-//			File sourceCode = new File("test/TestStatementa.mj");
-//			File sourceCode = new File("test/TestSemGreskeDeklaracije.mj");
-//			File sourceCode = new File("test/TestSemGreskeStatementa.mj");
-//			File sourceCode = new File("test/GenKoda.mj");
+			File sourceCode = new File(args[0]);
+//			File sourceCode = new File("test/program.mj");
 			
 			if(sourceCode.length() > 8*1024){
 				log.error("Greska: Izvorni kod programa ne sme biti veci od 8 KB!");
@@ -76,8 +73,8 @@ public class Compiler {
 //			log.info(v.nVars);
 			
 			if(!p.errorDetected && v.passed()){
-//				File objFile = new File(args[1]);
-				File objFile = new File("test/program.obj");
+				File objFile = new File(args[1]);
+//				File objFile = new File("test/program.obj");
 				
 				if( objFile.exists() ) objFile.delete();
 				

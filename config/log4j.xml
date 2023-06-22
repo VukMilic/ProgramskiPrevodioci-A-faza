@@ -17,10 +17,20 @@
 		</layout>
 	</appender>
 	
+	<appender name="errorFile" class="org.apache.log4j.FileAppender">
+    	<param name="file" value="test/izlaz.err"></param>
+    	<param name="threshold" value="ERROR" />
+    	<layout class="org.apache.log4j.PatternLayout">
+        	<param name="ConversionPattern" value="%-5p %d{ABSOLUTE} - %m%n"></param>
+    	</layout>
+	</appender>
+
+	
 	<root>
 		<priority value="debug" />
 		<appender-ref ref="file" />
 		<appender-ref ref="console" />
+		<appender-ref ref="errorFile" />
 	</root>
 
 </log4j:configuration>  

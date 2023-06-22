@@ -1,0 +1,11 @@
+ERROR 19:44:54,914 - 
+Sintaksna greska na liniji 18
+ERROR 19:44:54,915 - Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji 18
+ERROR 19:44:54,916 - 
+Sintaksna greska na liniji 21
+ERROR 19:44:54,917 - Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji 21
+ERROR 19:44:54,943 - 
+Sintaksna greska na liniji 51
+ERROR 19:44:54,943 - Uspesan oporavak od greske pri dodeli vrednosti na liniji 5
+
+ERROR 19:44:54,970 - Parsiranje NIJE uspesno zavrseno!

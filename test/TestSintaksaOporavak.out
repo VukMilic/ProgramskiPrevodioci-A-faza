@@ -1,182 +1,182 @@
-INFO  18:53:56,603 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
-INFO  18:53:56,663 - #2 program
-INFO  18:53:56,663 - #48 MJProgram
-INFO  18:53:56,663 - #5 const
-INFO  18:53:56,664 - #48 int
-INFO  18:53:56,664 - #48 con1
-INFO  18:53:56,665 - #6 =
-INFO  18:53:56,665 - #47 4
-INFO  18:53:56,665 - #7 ;
-INFO  18:53:56,665 - #5 const
-INFO  18:53:56,665 - #48 bool
-INFO  18:53:56,665 - #48 con2
-INFO  18:53:56,665 - #6 =
-INFO  18:53:56,666 - #50 false
-INFO  18:53:56,666 - #7 ;
-INFO  18:53:56,666 - #5 const
-INFO  18:53:56,666 - #48 char
-INFO  18:53:56,666 - #48 con3
-INFO  18:53:56,666 - #6 =
-INFO  18:53:56,666 - #49 'N'
-INFO  18:53:56,666 - #7 ;
-INFO  18:53:56,666 - #11 class
-INFO  18:53:56,674 - #48 K1
-INFO  18:53:56,674 - #3 {
-INFO  18:53:56,676 - #48 int
-INFO  18:53:56,677 - #48 kx1
-INFO  18:53:56,677 - #8 ,
-INFO  18:53:56,678 - #48 kx2
-INFO  18:53:56,678 - #7 ;
-INFO  18:53:56,678 - #3 {
-INFO  18:53:56,679 - #14 void
-INFO  18:53:56,680 - #48 kk
-INFO  18:53:56,680 - #12 (
-INFO  18:53:56,680 - #13 )
-INFO  18:53:56,681 - #48 char
-INFO  18:53:56,681 - #48 c
-INFO  18:53:56,681 - #7 ;
-INFO  18:53:56,681 - #3 {
-INFO  18:53:56,681 - #4 }
-INFO  18:53:56,683 - #4 }
-INFO  18:53:56,683 - #4 }
-INFO  18:53:56,683 - #48 int
-INFO  18:53:56,684 - #48 x1
-INFO  18:53:56,685 - #8 ,
-INFO  18:53:56,685 - #48 x2
-INFO  18:53:56,685 - #7 ;
-INFO  18:53:56,685 - #48 bool
-INFO  18:53:56,686 - #48 b1
-INFO  18:53:56,686 - #8 ,
-INFO  18:53:56,686 - #48 b2
-INFO  18:53:56,686 - #8 ,
-INFO  18:53:56,686 - #47 1
-ERROR 18:53:56,686 - 
+INFO  19:44:54,842 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\TestSintaksaOporavak.mj
+INFO  19:44:54,901 - #2 program
+INFO  19:44:54,901 - #48 MJProgram
+INFO  19:44:54,901 - #5 const
+INFO  19:44:54,903 - #48 int
+INFO  19:44:54,903 - #48 con1
+INFO  19:44:54,904 - #6 =
+INFO  19:44:54,904 - #47 4
+INFO  19:44:54,904 - #7 ;
+INFO  19:44:54,904 - #5 const
+INFO  19:44:54,904 - #48 bool
+INFO  19:44:54,904 - #48 con2
+INFO  19:44:54,904 - #6 =
+INFO  19:44:54,905 - #50 false
+INFO  19:44:54,905 - #7 ;
+INFO  19:44:54,905 - #5 const
+INFO  19:44:54,905 - #48 char
+INFO  19:44:54,905 - #48 con3
+INFO  19:44:54,905 - #6 =
+INFO  19:44:54,905 - #49 'N'
+INFO  19:44:54,905 - #7 ;
+INFO  19:44:54,905 - #11 class
+INFO  19:44:54,906 - #48 K1
+INFO  19:44:54,906 - #3 {
+INFO  19:44:54,906 - #48 int
+INFO  19:44:54,907 - #48 kx1
+INFO  19:44:54,907 - #8 ,
+INFO  19:44:54,908 - #48 kx2
+INFO  19:44:54,908 - #7 ;
+INFO  19:44:54,909 - #3 {
+INFO  19:44:54,909 - #14 void
+INFO  19:44:54,910 - #48 kk
+INFO  19:44:54,910 - #12 (
+INFO  19:44:54,910 - #13 )
+INFO  19:44:54,911 - #48 char
+INFO  19:44:54,911 - #48 c
+INFO  19:44:54,911 - #7 ;
+INFO  19:44:54,911 - #3 {
+INFO  19:44:54,911 - #4 }
+INFO  19:44:54,911 - #4 }
+INFO  19:44:54,912 - #4 }
+INFO  19:44:54,912 - #48 int
+INFO  19:44:54,913 - #48 x1
+INFO  19:44:54,913 - #8 ,
+INFO  19:44:54,913 - #48 x2
+INFO  19:44:54,913 - #7 ;
+INFO  19:44:54,913 - #48 bool
+INFO  19:44:54,913 - #48 b1
+INFO  19:44:54,914 - #8 ,
+INFO  19:44:54,914 - #48 b2
+INFO  19:44:54,914 - #8 ,
+INFO  19:44:54,914 - #47 1
+ERROR 19:44:54,914 - 
 Sintaksna greska na liniji 18
-INFO  18:53:56,686 - #48 GRESKA
-INFO  18:53:56,686 - #7 ;
-INFO  18:53:56,686 - #48 int
-INFO  18:53:56,687 - #48 i1
-INFO  18:53:56,687 - #8 ,
-ERROR 18:53:56,687 - Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji 18
-INFO  18:53:56,688 - #47 2
-ERROR 18:53:56,688 - 
+INFO  19:44:54,914 - #48 GRESKA
+INFO  19:44:54,914 - #7 ;
+INFO  19:44:54,914 - #48 int
+INFO  19:44:54,914 - #48 i1
+INFO  19:44:54,915 - #8 ,
+ERROR 19:44:54,915 - Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji 18
+INFO  19:44:54,916 - #47 2
+ERROR 19:44:54,916 - 
 Sintaksna greska na liniji 21
-INFO  18:53:56,688 - #48 GRESKA
-INFO  18:53:56,688 - #8 ,
-INFO  18:53:56,688 - #48 i3
-INFO  18:53:56,689 - #7 ;
-INFO  18:53:56,689 - #3 {
-ERROR 18:53:56,689 - Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji 21
-INFO  18:53:56,689 - #48 int
-INFO  18:53:56,689 - #48 k
-INFO  18:53:56,689 - #12 (
-INFO  18:53:56,689 - #48 int
-INFO  18:53:56,689 - #48 fp
-INFO  18:53:56,689 - #13 )
-INFO  18:53:56,690 - #48 int
-INFO  18:53:56,690 - #48 i4
-INFO  18:53:56,690 - #7 ;
-INFO  18:53:56,690 - #48 char
-INFO  18:53:56,691 - #48 c1
-INFO  18:53:56,691 - #7 ;
-INFO  18:53:56,691 - #48 bool
-INFO  18:53:56,691 - #48 b3
-INFO  18:53:56,691 - #7 ;
-INFO  18:53:56,691 - #3 {
-INFO  18:53:56,691 - #48 x1
-INFO  18:53:56,691 - #6 =
-INFO  18:53:56,691 - #48 con1
-INFO  18:53:56,693 - #36 +
-INFO  18:53:56,694 - #47 5
-INFO  18:53:56,696 - #37 -
-INFO  18:53:56,696 - #48 x2
-INFO  18:53:56,696 - #7 ;
-INFO  18:53:56,697 - #48 x1
-INFO  18:53:56,697 - #24 ++
-INFO  18:53:56,697 - #7 ;
-INFO  18:53:56,697 - #21 if
-INFO  18:53:56,697 - #12 (
-INFO  18:53:56,697 - #48 i1
-INFO  18:53:56,698 - #32 >
-INFO  18:53:56,698 - #48 x1
-INFO  18:53:56,700 - #13 )
-INFO  18:53:56,701 - #48 i1
-INFO  18:53:56,701 - #6 =
-INFO  18:53:56,701 - #37 -
-INFO  18:53:56,701 - #47 1
-INFO  18:53:56,702 - #7 ;
-INFO  18:53:56,702 - #23 else
-INFO  18:53:56,702 - #48 x1
-INFO  18:53:56,702 - #6 =
-INFO  18:53:56,702 - #48 i1
-INFO  18:53:56,702 - #7 ;
-INFO  18:53:56,702 - #22 while
-INFO  18:53:56,702 - #12 (
-INFO  18:53:56,704 - #48 i1
-INFO  18:53:56,704 - #30 ==
-INFO  18:53:56,704 - #48 x1
-INFO  18:53:56,704 - #26 ||
-INFO  18:53:56,704 - #48 i1
-INFO  18:53:56,705 - #34 <
-INFO  18:53:56,705 - #48 x1
-INFO  18:53:56,705 - #13 )
-INFO  18:53:56,705 - #21 if
-INFO  18:53:56,705 - #12 (
-INFO  18:53:56,705 - #48 i1
-INFO  18:53:56,706 - #32 >
-INFO  18:53:56,706 - #48 x2
-INFO  18:53:56,706 - #13 )
-INFO  18:53:56,706 - #17 continue
-INFO  18:53:56,706 - #7 ;
-INFO  18:53:56,706 - #23 else
-INFO  18:53:56,707 - #16 break
-INFO  18:53:56,707 - #7 ;
-INFO  18:53:56,707 - #18 return
-INFO  18:53:56,711 - #48 i4
-INFO  18:53:56,711 - #7 ;
-INFO  18:53:56,711 - #4 }
-INFO  18:53:56,711 - #14 void
-INFO  18:53:56,711 - #48 main
-INFO  18:53:56,711 - #12 (
-INFO  18:53:56,711 - #13 )
-INFO  18:53:56,711 - #48 char
-INFO  18:53:56,711 - #48 c2
-INFO  18:53:56,711 - #8 ,
-INFO  18:53:56,711 - #48 c3
-INFO  18:53:56,711 - #7 ;
-INFO  18:53:56,711 - #3 {
-INFO  18:53:56,711 - #19 read
-INFO  18:53:56,711 - #12 (
-INFO  18:53:56,711 - #48 x1
-INFO  18:53:56,711 - #13 )
-INFO  18:53:56,711 - #7 ;
-INFO  18:53:56,711 - #20 print
-INFO  18:53:56,711 - #12 (
-INFO  18:53:56,712 - #48 c2
-INFO  18:53:56,712 - #13 )
-INFO  18:53:56,712 - #7 ;
-INFO  18:53:56,713 - #48 k
-INFO  18:53:56,713 - #12 (
-INFO  18:53:56,713 - #48 x1
-INFO  18:53:56,713 - #13 )
-INFO  18:53:56,715 - #7 ;
-INFO  18:53:56,715 - #48 x2
-INFO  18:53:56,715 - #6 =
-INFO  18:53:56,715 - #48 x1
-INFO  18:53:56,715 - #38 *
-INFO  18:53:56,715 - #48 x2
-INFO  18:53:56,717 - #36 +
-INFO  18:53:56,717 - #47 5
-INFO  18:53:56,717 - #37 -
-INFO  18:53:56,717 - #7 ;
-ERROR 18:53:56,717 - 
+INFO  19:44:54,916 - #48 GRESKA
+INFO  19:44:54,917 - #8 ,
+INFO  19:44:54,917 - #48 i3
+INFO  19:44:54,917 - #7 ;
+INFO  19:44:54,917 - #3 {
+ERROR 19:44:54,917 - Uspesan oporavak od greske pri deklaraciji globalne promenljive u liniji 21
+INFO  19:44:54,917 - #48 int
+INFO  19:44:54,917 - #48 k
+INFO  19:44:54,917 - #12 (
+INFO  19:44:54,917 - #48 int
+INFO  19:44:54,917 - #48 fp
+INFO  19:44:54,918 - #13 )
+INFO  19:44:54,919 - #48 int
+INFO  19:44:54,919 - #48 i4
+INFO  19:44:54,919 - #7 ;
+INFO  19:44:54,919 - #48 char
+INFO  19:44:54,919 - #48 c1
+INFO  19:44:54,919 - #7 ;
+INFO  19:44:54,919 - #48 bool
+INFO  19:44:54,919 - #48 b3
+INFO  19:44:54,919 - #7 ;
+INFO  19:44:54,919 - #3 {
+INFO  19:44:54,919 - #48 x1
+INFO  19:44:54,919 - #6 =
+INFO  19:44:54,919 - #48 con1
+INFO  19:44:54,921 - #36 +
+INFO  19:44:54,923 - #47 5
+INFO  19:44:54,924 - #37 -
+INFO  19:44:54,924 - #48 x2
+INFO  19:44:54,924 - #7 ;
+INFO  19:44:54,925 - #48 x1
+INFO  19:44:54,925 - #24 ++
+INFO  19:44:54,925 - #7 ;
+INFO  19:44:54,925 - #21 if
+INFO  19:44:54,925 - #12 (
+INFO  19:44:54,925 - #48 i1
+INFO  19:44:54,925 - #32 >
+INFO  19:44:54,925 - #48 x1
+INFO  19:44:54,926 - #13 )
+INFO  19:44:54,927 - #48 i1
+INFO  19:44:54,927 - #6 =
+INFO  19:44:54,927 - #37 -
+INFO  19:44:54,927 - #47 1
+INFO  19:44:54,928 - #7 ;
+INFO  19:44:54,928 - #23 else
+INFO  19:44:54,928 - #48 x1
+INFO  19:44:54,928 - #6 =
+INFO  19:44:54,928 - #48 i1
+INFO  19:44:54,928 - #7 ;
+INFO  19:44:54,928 - #22 while
+INFO  19:44:54,928 - #12 (
+INFO  19:44:54,929 - #48 i1
+INFO  19:44:54,929 - #30 ==
+INFO  19:44:54,929 - #48 x1
+INFO  19:44:54,930 - #26 ||
+INFO  19:44:54,930 - #48 i1
+INFO  19:44:54,930 - #34 <
+INFO  19:44:54,930 - #48 x1
+INFO  19:44:54,930 - #13 )
+INFO  19:44:54,930 - #21 if
+INFO  19:44:54,930 - #12 (
+INFO  19:44:54,931 - #48 i1
+INFO  19:44:54,931 - #32 >
+INFO  19:44:54,931 - #48 x2
+INFO  19:44:54,931 - #13 )
+INFO  19:44:54,931 - #17 continue
+INFO  19:44:54,931 - #7 ;
+INFO  19:44:54,931 - #23 else
+INFO  19:44:54,932 - #16 break
+INFO  19:44:54,932 - #7 ;
+INFO  19:44:54,932 - #18 return
+INFO  19:44:54,934 - #48 i4
+INFO  19:44:54,934 - #7 ;
+INFO  19:44:54,934 - #4 }
+INFO  19:44:54,937 - #14 void
+INFO  19:44:54,938 - #48 main
+INFO  19:44:54,938 - #12 (
+INFO  19:44:54,938 - #13 )
+INFO  19:44:54,938 - #48 char
+INFO  19:44:54,938 - #48 c2
+INFO  19:44:54,938 - #8 ,
+INFO  19:44:54,938 - #48 c3
+INFO  19:44:54,938 - #7 ;
+INFO  19:44:54,938 - #3 {
+INFO  19:44:54,938 - #19 read
+INFO  19:44:54,938 - #12 (
+INFO  19:44:54,938 - #48 x1
+INFO  19:44:54,938 - #13 )
+INFO  19:44:54,938 - #7 ;
+INFO  19:44:54,938 - #20 print
+INFO  19:44:54,938 - #12 (
+INFO  19:44:54,938 - #48 c2
+INFO  19:44:54,938 - #13 )
+INFO  19:44:54,939 - #7 ;
+INFO  19:44:54,939 - #48 k
+INFO  19:44:54,939 - #12 (
+INFO  19:44:54,939 - #48 x1
+INFO  19:44:54,939 - #13 )
+INFO  19:44:54,941 - #7 ;
+INFO  19:44:54,941 - #48 x2
+INFO  19:44:54,941 - #6 =
+INFO  19:44:54,941 - #48 x1
+INFO  19:44:54,941 - #38 *
+INFO  19:44:54,941 - #48 x2
+INFO  19:44:54,942 - #36 +
+INFO  19:44:54,942 - #47 5
+INFO  19:44:54,942 - #37 -
+INFO  19:44:54,942 - #7 ;
+ERROR 19:44:54,943 - 
 Sintaksna greska na liniji 51
-INFO  18:53:56,717 - #18 return
-INFO  18:53:56,717 - #7 ;
-INFO  18:53:56,717 - #4 }
-ERROR 18:53:56,717 - Uspesan oporavak od greske pri dodeli vrednosti na liniji 5
-INFO  18:53:56,719 - #4 }
-INFO  18:53:56,730 - Program(
+INFO  19:44:54,943 - #18 return
+INFO  19:44:54,943 - #7 ;
+INFO  19:44:54,943 - #4 }
+ERROR 19:44:54,943 - Uspesan oporavak od greske pri dodeli vrednosti na liniji 5
+INFO  19:44:54,945 - #4 }
+INFO  19:44:54,957 - Program(
   ProgName(
    MJProgram
   ) [ProgName]
@@ -825,46 +825,88 @@ INFO  18:53:56,730 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  18:53:56,731 - ===================================
-INFO  18:53:56,736 - Definisana konstanta con1 na liniji 2, objektni cvor: Con con1: Int, 4, 0
-INFO  18:53:56,738 - Definisana konstanta con2 na liniji 3, objektni cvor: Con con2: Bool, 0, 0
-INFO  18:53:56,738 - Definisana konstanta con3 na liniji 4, objektni cvor: Con con3: Char, 78, 0
-INFO  18:53:56,738 - Deklarisana lokalna promenljiva kx1 na liniji 7, objektni cvor: Var kx1: Int, 0, 0
-INFO  18:53:56,738 - Deklarisana lokalna promenljiva kx2 na liniji 7, objektni cvor: Var kx2: Int, 1, 0
-INFO  18:53:56,738 - Deklarisana lokalna promenljiva c na liniji 9, objektni cvor: Var c: Char, 0, 1
-INFO  18:53:56,738 - Deklarisana globalna promenljiva x1 na liniji 15, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,738 - Deklarisana globalna promenljiva x2 na liniji 15, objektni cvor: Var x2: Int, 3, 0
-INFO  18:53:56,738 - Deklarisana globalna promenljiva b1 na liniji 18, objektni cvor: Var b1: Bool, 4, 0
-INFO  18:53:56,738 - Deklarisana globalna promenljiva b2 na liniji 18, objektni cvor: Var b2: Bool, 5, 0
-INFO  18:53:56,739 - Deklarisana globalna promenljiva i1 na liniji 21, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,739 - Deklarisana globalna promenljiva i3 na liniji 21, objektni cvor: Var i3: Int, 7, 0
-INFO  18:53:56,739 - Deklarisana lokalna promenljiva fp na liniji 24, objektni cvor: Var fp: Int, 0, 1
-INFO  18:53:56,739 - Deklarisana lokalna promenljiva i4 na liniji 24, objektni cvor: Var i4: Int, 1, 1
-INFO  18:53:56,739 - Deklarisana lokalna promenljiva c1 na liniji 24, objektni cvor: Var c1: Char, 2, 1
-INFO  18:53:56,739 - Deklarisana lokalna promenljiva b3 na liniji 24, objektni cvor: Var b3: Bool, 3, 1
-INFO  18:53:56,739 - Simbol x1 se koristi na liniji 26, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,739 - Simbol con1 se koristi na liniji 26, objektni cvor: Con con1: Int, 4, 0
-INFO  18:53:56,739 - Simbol x2 se koristi na liniji 26, objektni cvor: Var x2: Int, 3, 0
-INFO  18:53:56,739 - Simbol x1 se koristi na liniji 27, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,739 - Simbol i1 se koristi na liniji 29, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,739 - Simbol x1 se koristi na liniji 29, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,739 - Simbol i1 se koristi na liniji 30, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,739 - Simbol x1 se koristi na liniji 32, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,739 - Simbol i1 se koristi na liniji 32, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,740 - Simbol i1 se koristi na liniji 34, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,740 - Simbol x1 se koristi na liniji 34, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,740 - Simbol i1 se koristi na liniji 34, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,740 - Simbol x1 se koristi na liniji 34, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,740 - Simbol i1 se koristi na liniji 35, objektni cvor: Var i1: Int, 6, 0
-INFO  18:53:56,740 - Simbol x2 se koristi na liniji 35, objektni cvor: Var x2: Int, 3, 0
-INFO  18:53:56,740 - Simbol i4 se koristi na liniji 40, objektni cvor: Var i4: Int, 1, 1
-INFO  18:53:56,740 - Deklarisana lokalna promenljiva c2 na liniji 43, objektni cvor: Var c2: Char, 0, 1
-INFO  18:53:56,740 - Deklarisana lokalna promenljiva c3 na liniji 43, objektni cvor: Var c3: Char, 1, 1
-INFO  18:53:56,740 - Simbol x1 se koristi na liniji 45, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,740 - Simbol c2 se koristi na liniji 46, objektni cvor: Var c2: Char, 0, 1
-INFO  18:53:56,740 - Simbol k se koristi na liniji 48, objektni cvor: Meth k: Int, 0, 0
-INFO  18:53:56,740 - Simbol x1 se koristi na liniji 48, objektni cvor: Var x1: Int, 2, 0
-INFO  18:53:56,740 - Funkcija k se uspesno poziva na liniji 48
-INFO  18:53:56,740 - Simbol x2 se koristi na liniji 51, objektni cvor: Var x2: Int, 3, 0
-INFO  18:53:56,740 - ===================================
-ERROR 18:53:56,741 - Parsiranje NIJE uspesno zavrseno!
+INFO  19:44:54,958 - ===================================
+INFO  19:44:54,962 - Definisana konstanta con1 na liniji 2, objektni cvor: Con con1: Int, 4, 0
+INFO  19:44:54,964 - Definisana konstanta con2 na liniji 3, objektni cvor: Con con2: Bool, 0, 0
+INFO  19:44:54,964 - Definisana konstanta con3 na liniji 4, objektni cvor: Con con3: Char, 78, 0
+INFO  19:44:54,964 - Deklarisana lokalna promenljiva kx1 na liniji 7, objektni cvor: Var kx1: Int, 0, 0
+INFO  19:44:54,964 - Deklarisana lokalna promenljiva kx2 na liniji 7, objektni cvor: Var kx2: Int, 1, 0
+INFO  19:44:54,964 - Deklarisana lokalna promenljiva c na liniji 9, objektni cvor: Var c: Char, 0, 1
+INFO  19:44:54,964 - Deklarisana globalna promenljiva x1 na liniji 15, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,964 - Deklarisana globalna promenljiva x2 na liniji 15, objektni cvor: Var x2: Int, 3, 0
+INFO  19:44:54,964 - Deklarisana globalna promenljiva b1 na liniji 18, objektni cvor: Var b1: Bool, 4, 0
+INFO  19:44:54,964 - Deklarisana globalna promenljiva b2 na liniji 18, objektni cvor: Var b2: Bool, 5, 0
+INFO  19:44:54,965 - Deklarisana globalna promenljiva i1 na liniji 21, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,965 - Deklarisana globalna promenljiva i3 na liniji 21, objektni cvor: Var i3: Int, 7, 0
+INFO  19:44:54,965 - Deklarisana lokalna promenljiva fp na liniji 24, objektni cvor: Var fp: Int, 0, 1
+INFO  19:44:54,965 - Deklarisana lokalna promenljiva i4 na liniji 24, objektni cvor: Var i4: Int, 1, 1
+INFO  19:44:54,965 - Deklarisana lokalna promenljiva c1 na liniji 24, objektni cvor: Var c1: Char, 2, 1
+INFO  19:44:54,965 - Deklarisana lokalna promenljiva b3 na liniji 24, objektni cvor: Var b3: Bool, 3, 1
+INFO  19:44:54,965 - Simbol x1 se koristi na liniji 26, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,965 - Simbol con1 se koristi na liniji 26, objektni cvor: Con con1: Int, 4, 0
+INFO  19:44:54,966 - Simbol x2 se koristi na liniji 26, objektni cvor: Var x2: Int, 3, 0
+INFO  19:44:54,966 - Simbol x1 se koristi na liniji 27, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,966 - Simbol i1 se koristi na liniji 29, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,966 - Simbol x1 se koristi na liniji 29, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,966 - Simbol i1 se koristi na liniji 30, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,966 - Simbol x1 se koristi na liniji 32, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,966 - Simbol i1 se koristi na liniji 32, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,967 - Simbol i1 se koristi na liniji 34, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,967 - Simbol x1 se koristi na liniji 34, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,967 - Simbol i1 se koristi na liniji 34, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,967 - Simbol x1 se koristi na liniji 34, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,967 - Simbol i1 se koristi na liniji 35, objektni cvor: Var i1: Int, 6, 0
+INFO  19:44:54,967 - Simbol x2 se koristi na liniji 35, objektni cvor: Var x2: Int, 3, 0
+INFO  19:44:54,967 - Simbol i4 se koristi na liniji 40, objektni cvor: Var i4: Int, 1, 1
+INFO  19:44:54,967 - Deklarisana lokalna promenljiva c2 na liniji 43, objektni cvor: Var c2: Char, 0, 1
+INFO  19:44:54,967 - Deklarisana lokalna promenljiva c3 na liniji 43, objektni cvor: Var c3: Char, 1, 1
+INFO  19:44:54,967 - Simbol x1 se koristi na liniji 45, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,968 - Simbol c2 se koristi na liniji 46, objektni cvor: Var c2: Char, 0, 1
+INFO  19:44:54,968 - Simbol k se koristi na liniji 48, objektni cvor: Meth k: Int, 0, 0
+INFO  19:44:54,968 - Simbol x1 se koristi na liniji 48, objektni cvor: Var x1: Int, 2, 0
+INFO  19:44:54,968 - Funkcija k se uspesno poziva na liniji 48
+INFO  19:44:54,968 - Simbol x2 se koristi na liniji 51, objektni cvor: Var x2: Int, 3, 0
+INFO  19:44:54,968 - ===================================
+=====================SYMBOL TABLE DUMP=========================
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: bool, -1, -1 
+Prog MJProgram: notype, 0, 1 
+   Con con1: int, 4, 0 
+   Con con2: bool, 0, 0 
+   Con con3: char, 78, 0 
+   Var kx1: int, 0, 0 
+   Var kx2: int, 1, 0 
+   Meth kk: notype, 0, 0 
+      Var c: char, 0, 1 
+
+   Var x1: int, 2, 0 
+   Var x2: int, 3, 0 
+   Var b1: bool, 4, 0 
+   Var b2: bool, 5, 0 
+   Var i1: int, 6, 0 
+   Var i3: int, 7, 0 
+   Meth k: int, 0, 0 
+      Var fp: int, 0, 1 
+      Var i4: int, 1, 1 
+      Var c1: char, 2, 1 
+      Var b3: bool, 3, 1 
+
+   Meth main: notype, 0, 0 
+      Var c2: char, 0, 1 
+      Var c3: char, 1, 1 
+
+
+
+ERROR 19:44:54,970 - Parsiranje NIJE uspesno zavrseno!
