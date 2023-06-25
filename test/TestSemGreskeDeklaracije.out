@@ -1,52 +1,52 @@
-INFO  19:54:41,828 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\TestSemGreskeDeklaracije.mj
-INFO  19:54:41,894 - #2 program
-INFO  19:54:41,894 - #48 MJCompiler
-INFO  19:54:41,894 - #48 TypeError
-INFO  19:54:41,895 - #48 i1
-INFO  19:54:41,896 - #7 ;
-INFO  19:54:41,898 - #48 int
-INFO  19:54:41,898 - #48 i
-INFO  19:54:41,898 - #7 ;
-INFO  19:54:41,898 - #48 char
-INFO  19:54:41,898 - #48 i
-INFO  19:54:41,898 - #7 ;
-INFO  19:54:41,899 - #5 const
-INFO  19:54:41,899 - #48 int
-INFO  19:54:41,899 - #48 con1
-INFO  19:54:41,899 - #6 =
-INFO  19:54:41,899 - #50 false
-INFO  19:54:41,899 - #7 ;
-INFO  19:54:41,899 - #5 const
-INFO  19:54:41,899 - #48 bool
-INFO  19:54:41,899 - #48 con1
-INFO  19:54:41,900 - #6 =
-INFO  19:54:41,900 - #50 true
-INFO  19:54:41,900 - #7 ;
-INFO  19:54:41,900 - #5 const
-INFO  19:54:41,900 - #48 char
-INFO  19:54:41,900 - #48 con1
-INFO  19:54:41,900 - #6 =
-INFO  19:54:41,900 - #49 'H'
-INFO  19:54:41,900 - #7 ;
-INFO  19:54:41,900 - #3 {
-INFO  19:54:41,900 - #14 void
-INFO  19:54:41,901 - #48 main
-INFO  19:54:41,901 - #12 (
-INFO  19:54:41,902 - #13 )
-INFO  19:54:41,902 - #48 TypeError
-INFO  19:54:41,903 - #48 i1
-INFO  19:54:41,903 - #7 ;
-INFO  19:54:41,903 - #48 int
-INFO  19:54:41,905 - #48 i
-INFO  19:54:41,905 - #7 ;
-INFO  19:54:41,905 - #3 {
-INFO  19:54:41,905 - #48 i
-INFO  19:54:41,906 - #6 =
-INFO  19:54:41,906 - #48 nepostojeca
-INFO  19:54:41,908 - #7 ;
-INFO  19:54:41,910 - #4 }
-INFO  19:54:41,910 - #4 }
-INFO  19:54:41,916 - Program(
+INFO  17:35:26,881 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  17:35:26,921 - #2 program
+INFO  17:35:26,921 - #48 MJCompiler
+INFO  17:35:26,921 - #48 TypeError
+INFO  17:35:26,922 - #48 i1
+INFO  17:35:26,923 - #7 ;
+INFO  17:35:26,923 - #48 int
+INFO  17:35:26,924 - #48 i
+INFO  17:35:26,924 - #7 ;
+INFO  17:35:26,924 - #48 char
+INFO  17:35:26,924 - #48 i
+INFO  17:35:26,924 - #7 ;
+INFO  17:35:26,924 - #5 const
+INFO  17:35:26,924 - #48 int
+INFO  17:35:26,924 - #48 con1
+INFO  17:35:26,924 - #6 =
+INFO  17:35:26,924 - #50 false
+INFO  17:35:26,924 - #7 ;
+INFO  17:35:26,925 - #5 const
+INFO  17:35:26,925 - #48 bool
+INFO  17:35:26,925 - #48 con1
+INFO  17:35:26,925 - #6 =
+INFO  17:35:26,927 - #50 true
+INFO  17:35:26,927 - #7 ;
+INFO  17:35:26,927 - #5 const
+INFO  17:35:26,927 - #48 char
+INFO  17:35:26,927 - #48 con1
+INFO  17:35:26,927 - #6 =
+INFO  17:35:26,927 - #49 'H'
+INFO  17:35:26,927 - #7 ;
+INFO  17:35:26,927 - #3 {
+INFO  17:35:26,927 - #14 void
+INFO  17:35:26,928 - #48 main
+INFO  17:35:26,928 - #12 (
+INFO  17:35:26,928 - #13 )
+INFO  17:35:26,929 - #48 TypeError
+INFO  17:35:26,930 - #48 i1
+INFO  17:35:26,930 - #7 ;
+INFO  17:35:26,930 - #48 int
+INFO  17:35:26,931 - #48 i
+INFO  17:35:26,931 - #7 ;
+INFO  17:35:26,931 - #3 {
+INFO  17:35:26,931 - #48 i
+INFO  17:35:26,931 - #6 =
+INFO  17:35:26,931 - #48 nepostojeca
+INFO  17:35:26,932 - #7 ;
+INFO  17:35:26,933 - #4 }
+INFO  17:35:26,934 - #4 }
+INFO  17:35:26,940 - Program(
   ProgName(
    MJCompiler
   ) [ProgName]
@@ -205,19 +205,19 @@ INFO  19:54:41,916 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  19:54:41,917 - ===================================
-ERROR 19:54:41,921 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 3
-INFO  19:54:41,921 - Deklarisana globalna promenljiva i na liniji 4, objektni cvor: Var i: Int, 0, 0
-ERROR 19:54:41,921 - Greska: promenljiva i je vec deklarisana!  na liniji 5
-ERROR 19:54:41,921 - Greska: ocekivan tip konstante con1 je Bool!  na liniji 8
-INFO  19:54:41,923 - Definisana konstanta con1 na liniji 9, objektni cvor: Con con1: Bool, 1, 0
-ERROR 19:54:41,923 - Greska: konstanta con1 je vec deklarisana!  na liniji 10
-ERROR 19:54:41,924 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 14
-INFO  19:54:41,924 - Deklarisana lokalna promenljiva i na liniji 14, objektni cvor: Var i: Int, 0, 1
-INFO  19:54:41,924 - Simbol i se koristi na liniji 17, objektni cvor: Var i: Int, 0, 1
-ERROR 19:54:41,924 - Greska: Simbol nepostojeca koji se koristi nije deklarisan!  na liniji 17
-ERROR 19:54:41,924 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 17
-INFO  19:54:41,924 - ===================================
+INFO  17:35:26,940 - ===================================
+ERROR 17:35:26,944 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 3
+INFO  17:35:26,944 - Deklarisana globalna promenljiva i na liniji 4, objektni cvor: Var i: Int, 0, 0
+ERROR 17:35:26,945 - Greska: promenljiva i je vec deklarisana!  na liniji 5
+ERROR 17:35:26,945 - Greska: ocekivan tip konstante con1 je Bool!  na liniji 8
+INFO  17:35:26,946 - Definisana konstanta con1 na liniji 9, objektni cvor: Con con1: Bool, 1, 0
+ERROR 17:35:26,946 - Greska: konstanta con1 je vec deklarisana!  na liniji 10
+ERROR 17:35:26,946 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 14
+INFO  17:35:26,947 - Deklarisana lokalna promenljiva i na liniji 14, objektni cvor: Var i: Int, 0, 1
+INFO  17:35:26,947 - Simbol i se koristi na liniji 17, objektni cvor: Var i: Int, 0, 1
+ERROR 17:35:26,947 - Greska: Simbol nepostojeca koji se koristi nije deklarisan!  na liniji 17
+ERROR 17:35:26,947 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 17
+INFO  17:35:26,948 - ===================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -241,4 +241,4 @@ Prog MJCompiler: notype, 0, 1
 
 
 
-ERROR 19:54:41,925 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:35:26,948 - Parsiranje NIJE uspesno zavrseno!

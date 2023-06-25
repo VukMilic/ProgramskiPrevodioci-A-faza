@@ -2,12 +2,12 @@ program MJCompiler
 	int i1, i2[][];
 	const int i3=3;
 {
-	int k()
+	int k(char c)
 	{
 		i1 = 1;
 		return i1;
 	}
-	void main() bool b1, b2;
+	void main() bool b1, b2; char c;
 	{
 		b1 = true;
 		b2 = false;
@@ -25,6 +25,7 @@ program MJCompiler
 			} else {
 				print( i1 + i2[0][0] );
 				i2[0][0] = -5 + i1*2 + i3;
+				k(c);
 				break;
 			}
 			b1 = false;

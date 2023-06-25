@@ -1,160 +1,170 @@
-INFO  19:35:22,683 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\TestSemStatementa.mj
-INFO  19:35:22,742 - #2 program
-INFO  19:35:22,743 - #48 MJCompiler
-INFO  19:35:22,743 - #48 int
-INFO  19:35:22,744 - #48 i1
-INFO  19:35:22,744 - #8 ,
-INFO  19:35:22,746 - #48 i2
-INFO  19:35:22,746 - #9 [
-INFO  19:35:22,746 - #10 ]
-INFO  19:35:22,746 - #9 [
-INFO  19:35:22,746 - #10 ]
-INFO  19:35:22,746 - #7 ;
-INFO  19:35:22,747 - #5 const
-INFO  19:35:22,747 - #48 int
-INFO  19:35:22,747 - #48 i3
-INFO  19:35:22,747 - #6 =
-INFO  19:35:22,747 - #47 3
-INFO  19:35:22,747 - #7 ;
-INFO  19:35:22,748 - #3 {
-INFO  19:35:22,748 - #48 int
-INFO  19:35:22,749 - #48 k
-INFO  19:35:22,749 - #12 (
-INFO  19:35:22,751 - #13 )
-INFO  19:35:22,752 - #3 {
-INFO  19:35:22,754 - #48 i1
-INFO  19:35:22,754 - #6 =
-INFO  19:35:22,754 - #47 1
-INFO  19:35:22,756 - #7 ;
-INFO  19:35:22,758 - #18 return
-INFO  19:35:22,758 - #48 i1
-INFO  19:35:22,759 - #7 ;
-INFO  19:35:22,759 - #4 }
-INFO  19:35:22,759 - #14 void
-INFO  19:35:22,759 - #48 main
-INFO  19:35:22,759 - #12 (
-INFO  19:35:22,760 - #13 )
-INFO  19:35:22,760 - #48 bool
-INFO  19:35:22,760 - #48 b1
-INFO  19:35:22,760 - #8 ,
-INFO  19:35:22,760 - #48 b2
-INFO  19:35:22,760 - #7 ;
-INFO  19:35:22,760 - #3 {
-INFO  19:35:22,761 - #48 b1
-INFO  19:35:22,761 - #6 =
-INFO  19:35:22,761 - #50 true
-INFO  19:35:22,761 - #7 ;
-INFO  19:35:22,761 - #48 b2
-INFO  19:35:22,761 - #6 =
-INFO  19:35:22,761 - #50 false
-INFO  19:35:22,762 - #7 ;
-INFO  19:35:22,762 - #48 i1
-INFO  19:35:22,762 - #6 =
-INFO  19:35:22,762 - #47 5
-INFO  19:35:22,762 - #7 ;
-INFO  19:35:22,762 - #48 i2
-INFO  19:35:22,762 - #6 =
-INFO  19:35:22,762 - #28 new
-INFO  19:35:22,762 - #48 int
-INFO  19:35:22,762 - #9 [
-INFO  19:35:22,762 - #47 2
-INFO  19:35:22,762 - #10 ]
-INFO  19:35:22,762 - #9 [
-INFO  19:35:22,762 - #47 2
-INFO  19:35:22,762 - #10 ]
-INFO  19:35:22,763 - #7 ;
-INFO  19:35:22,763 - #48 i2
-INFO  19:35:22,763 - #9 [
-INFO  19:35:22,763 - #47 0
-INFO  19:35:22,763 - #10 ]
-INFO  19:35:22,763 - #9 [
-INFO  19:35:22,763 - #47 0
-INFO  19:35:22,763 - #10 ]
-INFO  19:35:22,764 - #6 =
-INFO  19:35:22,764 - #47 4
-INFO  19:35:22,764 - #7 ;
-INFO  19:35:22,764 - #22 while
-INFO  19:35:22,764 - #12 (
-INFO  19:35:22,767 - #48 b1
-INFO  19:35:22,767 - #26 ||
-INFO  19:35:22,767 - #48 b2
-INFO  19:35:22,767 - #13 )
-INFO  19:35:22,767 - #3 {
-INFO  19:35:22,767 - #21 if
-INFO  19:35:22,768 - #12 (
-INFO  19:35:22,768 - #48 i2
-INFO  19:35:22,768 - #9 [
-INFO  19:35:22,768 - #47 0
-INFO  19:35:22,768 - #10 ]
-INFO  19:35:22,768 - #9 [
-INFO  19:35:22,768 - #47 0
-INFO  19:35:22,768 - #10 ]
-INFO  19:35:22,768 - #32 >
-INFO  19:35:22,768 - #48 i1
-INFO  19:35:22,771 - #13 )
-INFO  19:35:22,771 - #3 {
-INFO  19:35:22,771 - #19 read
-INFO  19:35:22,772 - #12 (
-INFO  19:35:22,772 - #48 i1
-INFO  19:35:22,772 - #13 )
-INFO  19:35:22,772 - #7 ;
-INFO  19:35:22,772 - #48 i2
-INFO  19:35:22,772 - #9 [
-INFO  19:35:22,772 - #47 0
-INFO  19:35:22,772 - #10 ]
-INFO  19:35:22,772 - #9 [
-INFO  19:35:22,772 - #47 0
-INFO  19:35:22,772 - #10 ]
-INFO  19:35:22,772 - #25 --
-INFO  19:35:22,772 - #7 ;
-INFO  19:35:22,772 - #17 continue
-INFO  19:35:22,772 - #7 ;
-INFO  19:35:22,772 - #4 }
-INFO  19:35:22,773 - #23 else
-INFO  19:35:22,773 - #3 {
-INFO  19:35:22,773 - #20 print
-INFO  19:35:22,773 - #12 (
-INFO  19:35:22,773 - #48 i1
-INFO  19:35:22,773 - #36 +
-INFO  19:35:22,774 - #48 i2
-INFO  19:35:22,775 - #9 [
-INFO  19:35:22,775 - #47 0
-INFO  19:35:22,775 - #10 ]
-INFO  19:35:22,775 - #9 [
-INFO  19:35:22,775 - #47 0
-INFO  19:35:22,775 - #10 ]
-INFO  19:35:22,775 - #13 )
-INFO  19:35:22,776 - #7 ;
-INFO  19:35:22,776 - #48 i2
-INFO  19:35:22,776 - #9 [
-INFO  19:35:22,776 - #47 0
-INFO  19:35:22,776 - #10 ]
-INFO  19:35:22,776 - #9 [
-INFO  19:35:22,776 - #47 0
-INFO  19:35:22,776 - #10 ]
-INFO  19:35:22,777 - #6 =
-INFO  19:35:22,777 - #37 -
-INFO  19:35:22,777 - #47 5
-INFO  19:35:22,777 - #36 +
-INFO  19:35:22,777 - #48 i1
-INFO  19:35:22,777 - #38 *
-INFO  19:35:22,778 - #47 2
-INFO  19:35:22,779 - #36 +
-INFO  19:35:22,779 - #48 i3
-INFO  19:35:22,779 - #7 ;
-INFO  19:35:22,779 - #16 break
-INFO  19:35:22,779 - #7 ;
-INFO  19:35:22,779 - #4 }
-INFO  19:35:22,780 - #48 b1
-INFO  19:35:22,781 - #6 =
-INFO  19:35:22,781 - #50 false
-INFO  19:35:22,781 - #7 ;
-INFO  19:35:22,781 - #4 }
-INFO  19:35:22,781 - #18 return
-INFO  19:35:22,781 - #7 ;
-INFO  19:35:22,782 - #4 }
-INFO  19:35:22,782 - #4 }
-INFO  19:35:22,791 - Program(
+INFO  19:52:40,654 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  19:52:40,762 - #2 program
+INFO  19:52:40,762 - #48 MJCompiler
+INFO  19:52:40,763 - #48 int
+INFO  19:52:40,764 - #48 i1
+INFO  19:52:40,765 - #8 ,
+INFO  19:52:40,767 - #48 i2
+INFO  19:52:40,767 - #9 [
+INFO  19:52:40,767 - #10 ]
+INFO  19:52:40,767 - #9 [
+INFO  19:52:40,768 - #10 ]
+INFO  19:52:40,768 - #7 ;
+INFO  19:52:40,769 - #5 const
+INFO  19:52:40,769 - #48 int
+INFO  19:52:40,770 - #48 i3
+INFO  19:52:40,770 - #6 =
+INFO  19:52:40,770 - #47 3
+INFO  19:52:40,770 - #7 ;
+INFO  19:52:40,770 - #3 {
+INFO  19:52:40,771 - #48 int
+INFO  19:52:40,772 - #48 k
+INFO  19:52:40,773 - #12 (
+INFO  19:52:40,773 - #48 char
+INFO  19:52:40,781 - #48 c
+INFO  19:52:40,781 - #13 )
+INFO  19:52:40,784 - #3 {
+INFO  19:52:40,786 - #48 i1
+INFO  19:52:40,788 - #6 =
+INFO  19:52:40,788 - #47 1
+INFO  19:52:40,794 - #7 ;
+INFO  19:52:40,798 - #18 return
+INFO  19:52:40,801 - #48 i1
+INFO  19:52:40,801 - #7 ;
+INFO  19:52:40,802 - #4 }
+INFO  19:52:40,802 - #14 void
+INFO  19:52:40,803 - #48 main
+INFO  19:52:40,804 - #12 (
+INFO  19:52:40,805 - #13 )
+INFO  19:52:40,806 - #48 bool
+INFO  19:52:40,806 - #48 b1
+INFO  19:52:40,808 - #8 ,
+INFO  19:52:40,808 - #48 b2
+INFO  19:52:40,808 - #7 ;
+INFO  19:52:40,809 - #48 char
+INFO  19:52:40,812 - #48 c
+INFO  19:52:40,812 - #7 ;
+INFO  19:52:40,813 - #3 {
+INFO  19:52:40,814 - #48 b1
+INFO  19:52:40,814 - #6 =
+INFO  19:52:40,814 - #50 true
+INFO  19:52:40,814 - #7 ;
+INFO  19:52:40,815 - #48 b2
+INFO  19:52:40,815 - #6 =
+INFO  19:52:40,816 - #50 false
+INFO  19:52:40,816 - #7 ;
+INFO  19:52:40,816 - #48 i1
+INFO  19:52:40,818 - #6 =
+INFO  19:52:40,818 - #47 5
+INFO  19:52:40,818 - #7 ;
+INFO  19:52:40,819 - #48 i2
+INFO  19:52:40,819 - #6 =
+INFO  19:52:40,819 - #28 new
+INFO  19:52:40,819 - #48 int
+INFO  19:52:40,820 - #9 [
+INFO  19:52:40,820 - #47 2
+INFO  19:52:40,820 - #10 ]
+INFO  19:52:40,820 - #9 [
+INFO  19:52:40,821 - #47 2
+INFO  19:52:40,821 - #10 ]
+INFO  19:52:40,821 - #7 ;
+INFO  19:52:40,821 - #48 i2
+INFO  19:52:40,821 - #9 [
+INFO  19:52:40,822 - #47 0
+INFO  19:52:40,822 - #10 ]
+INFO  19:52:40,822 - #9 [
+INFO  19:52:40,823 - #47 0
+INFO  19:52:40,824 - #10 ]
+INFO  19:52:40,824 - #6 =
+INFO  19:52:40,824 - #47 4
+INFO  19:52:40,825 - #7 ;
+INFO  19:52:40,825 - #22 while
+INFO  19:52:40,825 - #12 (
+INFO  19:52:40,830 - #48 b1
+INFO  19:52:40,830 - #26 ||
+INFO  19:52:40,831 - #48 b2
+INFO  19:52:40,832 - #13 )
+INFO  19:52:40,834 - #3 {
+INFO  19:52:40,834 - #21 if
+INFO  19:52:40,834 - #12 (
+INFO  19:52:40,835 - #48 i2
+INFO  19:52:40,835 - #9 [
+INFO  19:52:40,835 - #47 0
+INFO  19:52:40,835 - #10 ]
+INFO  19:52:40,835 - #9 [
+INFO  19:52:40,836 - #47 0
+INFO  19:52:40,837 - #10 ]
+INFO  19:52:40,837 - #32 >
+INFO  19:52:40,837 - #48 i1
+INFO  19:52:40,840 - #13 )
+INFO  19:52:40,842 - #3 {
+INFO  19:52:40,842 - #19 read
+INFO  19:52:40,842 - #12 (
+INFO  19:52:40,843 - #48 i1
+INFO  19:52:40,843 - #13 )
+INFO  19:52:40,843 - #7 ;
+INFO  19:52:40,843 - #48 i2
+INFO  19:52:40,844 - #9 [
+INFO  19:52:40,844 - #47 0
+INFO  19:52:40,844 - #10 ]
+INFO  19:52:40,844 - #9 [
+INFO  19:52:40,844 - #47 0
+INFO  19:52:40,845 - #10 ]
+INFO  19:52:40,845 - #25 --
+INFO  19:52:40,846 - #7 ;
+INFO  19:52:40,846 - #17 continue
+INFO  19:52:40,846 - #7 ;
+INFO  19:52:40,846 - #4 }
+INFO  19:52:40,848 - #23 else
+INFO  19:52:40,849 - #3 {
+INFO  19:52:40,849 - #20 print
+INFO  19:52:40,849 - #12 (
+INFO  19:52:40,849 - #48 i1
+INFO  19:52:40,849 - #36 +
+INFO  19:52:40,849 - #48 i2
+INFO  19:52:40,853 - #9 [
+INFO  19:52:40,853 - #47 0
+INFO  19:52:40,854 - #10 ]
+INFO  19:52:40,854 - #9 [
+INFO  19:52:40,854 - #47 0
+INFO  19:52:40,854 - #10 ]
+INFO  19:52:40,854 - #13 )
+INFO  19:52:40,857 - #7 ;
+INFO  19:52:40,871 - #48 i2
+INFO  19:52:40,871 - #9 [
+INFO  19:52:40,871 - #47 0
+INFO  19:52:40,871 - #10 ]
+INFO  19:52:40,872 - #9 [
+INFO  19:52:40,872 - #47 0
+INFO  19:52:40,872 - #10 ]
+INFO  19:52:40,872 - #6 =
+INFO  19:52:40,872 - #37 -
+INFO  19:52:40,872 - #47 5
+INFO  19:52:40,874 - #36 +
+INFO  19:52:40,875 - #48 i1
+INFO  19:52:40,875 - #38 *
+INFO  19:52:40,875 - #47 2
+INFO  19:52:40,880 - #36 +
+INFO  19:52:40,881 - #48 i3
+INFO  19:52:40,881 - #7 ;
+INFO  19:52:40,881 - #48 k
+INFO  19:52:40,881 - #12 (
+INFO  19:52:40,882 - #48 c
+INFO  19:52:40,882 - #13 )
+INFO  19:52:40,886 - #7 ;
+INFO  19:52:40,886 - #16 break
+INFO  19:52:40,887 - #7 ;
+INFO  19:52:40,887 - #4 }
+INFO  19:52:40,889 - #48 b1
+INFO  19:52:40,889 - #6 =
+INFO  19:52:40,890 - #50 false
+INFO  19:52:40,891 - #7 ;
+INFO  19:52:40,891 - #4 }
+INFO  19:52:40,891 - #18 return
+INFO  19:52:40,891 - #7 ;
+INFO  19:52:40,894 - #4 }
+INFO  19:52:40,894 - #4 }
+INFO  19:52:40,933 - Program(
   ProgName(
    MJCompiler
   ) [ProgName]
@@ -207,8 +217,18 @@ INFO  19:35:22,791 - Program(
           ) [Type]
          k
         ) [MethTypeName]
-        NoFormParam(
-        ) [NoFormParam]
+        FormParams(
+          SingleFormalParamDecl(
+            FormalParamDecl(
+              Type(
+               char
+              ) [Type]
+             c
+              NoSquareBrackets(
+              ) [NoSquareBrackets]
+            ) [FormalParamDecl]
+          ) [SingleFormalParamDecl]
+        ) [FormParams]
         NoVarDecl(
         ) [NoVarDecl]
         Statements(
@@ -267,22 +287,34 @@ INFO  19:35:22,791 - Program(
       NoFormParam(
       ) [NoFormParam]
       VarDeclarations(
-        NoVarDecl(
-        ) [NoVarDecl]
-        VarDecl(
-          Type(
-           bool
-          ) [Type]
-          VariableTypeList(
-            OneVarType(
-             b1
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             bool
+            ) [Type]
+            VariableTypeList(
+              OneVarType(
+               b1
+                NoSquareBrackets(
+                ) [NoSquareBrackets]
+              ) [OneVarType]
+             b2
               NoSquareBrackets(
               ) [NoSquareBrackets]
-            ) [OneVarType]
-           b2
+            ) [VariableTypeList]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+          OneVarType(
+           c
             NoSquareBrackets(
             ) [NoSquareBrackets]
-          ) [VariableTypeList]
+          ) [OneVarType]
         ) [VarDecl]
       ) [VarDeclarations]
       Statements(
@@ -645,33 +677,48 @@ INFO  19:35:22,791 - Program(
                         Statements(
                           Statements(
                             Statements(
-                              NoStmt(
-                              ) [NoStmt]
-                              PrintStmt(
-                                Expression(
-                                  MinusNot(
-                                  ) [MinusNot]
-                                  Terminal(
-                                    FactorDesignator(
-                                      DesignatorIdent(
-                                       i1
-                                      ) [DesignatorIdent]
-                                    ) [FactorDesignator]
-                                    NoMulopFactList(
-                                    ) [NoMulopFactList]
-                                  ) [Terminal]
-                                  AddopTerminalList(
-                                    NoAddopTermList(
-                                    ) [NoAddopTermList]
-                                    Plus(
-                                    ) [Plus]
+                              Statements(
+                                NoStmt(
+                                ) [NoStmt]
+                                PrintStmt(
+                                  Expression(
+                                    MinusNot(
+                                    ) [MinusNot]
                                     Terminal(
                                       FactorDesignator(
-                                        DesignatorBrackets(
+                                        DesignatorIdent(
+                                         i1
+                                        ) [DesignatorIdent]
+                                      ) [FactorDesignator]
+                                      NoMulopFactList(
+                                      ) [NoMulopFactList]
+                                    ) [Terminal]
+                                    AddopTerminalList(
+                                      NoAddopTermList(
+                                      ) [NoAddopTermList]
+                                      Plus(
+                                      ) [Plus]
+                                      Terminal(
+                                        FactorDesignator(
                                           DesignatorBrackets(
-                                            DesignatorIdent(
-                                             i2
-                                            ) [DesignatorIdent]
+                                            DesignatorBrackets(
+                                              DesignatorIdent(
+                                               i2
+                                              ) [DesignatorIdent]
+                                              Expression(
+                                                MinusNot(
+                                                ) [MinusNot]
+                                                Terminal(
+                                                  FactorNumConst(
+                                                   0
+                                                  ) [FactorNumConst]
+                                                  NoMulopFactList(
+                                                  ) [NoMulopFactList]
+                                                ) [Terminal]
+                                                NoAddopTermList(
+                                                ) [NoAddopTermList]
+                                              ) [Expression]
+                                            ) [DesignatorBrackets]
                                             Expression(
                                               MinusNot(
                                               ) [MinusNot]
@@ -686,37 +733,37 @@ INFO  19:35:22,791 - Program(
                                               ) [NoAddopTermList]
                                             ) [Expression]
                                           ) [DesignatorBrackets]
-                                          Expression(
-                                            MinusNot(
-                                            ) [MinusNot]
-                                            Terminal(
-                                              FactorNumConst(
-                                               0
-                                              ) [FactorNumConst]
-                                              NoMulopFactList(
-                                              ) [NoMulopFactList]
-                                            ) [Terminal]
-                                            NoAddopTermList(
-                                            ) [NoAddopTermList]
-                                          ) [Expression]
-                                        ) [DesignatorBrackets]
-                                      ) [FactorDesignator]
-                                      NoMulopFactList(
-                                      ) [NoMulopFactList]
-                                    ) [Terminal]
-                                  ) [AddopTerminalList]
-                                ) [Expression]
-                                NoCommaNumConst(
-                                ) [NoCommaNumConst]
-                              ) [PrintStmt]
-                            ) [Statements]
-                            Assignment(
-                              DesignatorAssignOp(
-                                DesignatorBrackets(
+                                        ) [FactorDesignator]
+                                        NoMulopFactList(
+                                        ) [NoMulopFactList]
+                                      ) [Terminal]
+                                    ) [AddopTerminalList]
+                                  ) [Expression]
+                                  NoCommaNumConst(
+                                  ) [NoCommaNumConst]
+                                ) [PrintStmt]
+                              ) [Statements]
+                              Assignment(
+                                DesignatorAssignOp(
                                   DesignatorBrackets(
-                                    DesignatorIdent(
-                                     i2
-                                    ) [DesignatorIdent]
+                                    DesignatorBrackets(
+                                      DesignatorIdent(
+                                       i2
+                                      ) [DesignatorIdent]
+                                      Expression(
+                                        MinusNot(
+                                        ) [MinusNot]
+                                        Terminal(
+                                          FactorNumConst(
+                                           0
+                                          ) [FactorNumConst]
+                                          NoMulopFactList(
+                                          ) [NoMulopFactList]
+                                        ) [Terminal]
+                                        NoAddopTermList(
+                                        ) [NoAddopTermList]
+                                      ) [Expression]
+                                    ) [DesignatorBrackets]
                                     Expression(
                                       MinusNot(
                                       ) [MinusNot]
@@ -731,69 +778,84 @@ INFO  19:35:22,791 - Program(
                                       ) [NoAddopTermList]
                                     ) [Expression]
                                   ) [DesignatorBrackets]
+                                  AssignOp(
+                                  ) [AssignOp]
                                   Expression(
-                                    MinusNot(
-                                    ) [MinusNot]
+                                    MinusOr(
+                                    ) [MinusOr]
                                     Terminal(
                                       FactorNumConst(
-                                       0
+                                       5
                                       ) [FactorNumConst]
                                       NoMulopFactList(
                                       ) [NoMulopFactList]
                                     ) [Terminal]
-                                    NoAddopTermList(
-                                    ) [NoAddopTermList]
-                                  ) [Expression]
-                                ) [DesignatorBrackets]
-                                AssignOp(
-                                ) [AssignOp]
-                                Expression(
-                                  MinusOr(
-                                  ) [MinusOr]
-                                  Terminal(
-                                    FactorNumConst(
-                                     5
-                                    ) [FactorNumConst]
-                                    NoMulopFactList(
-                                    ) [NoMulopFactList]
-                                  ) [Terminal]
-                                  AddopTerminalList(
                                     AddopTerminalList(
-                                      NoAddopTermList(
-                                      ) [NoAddopTermList]
+                                      AddopTerminalList(
+                                        NoAddopTermList(
+                                        ) [NoAddopTermList]
+                                        Plus(
+                                        ) [Plus]
+                                        Terminal(
+                                          FactorDesignator(
+                                            DesignatorIdent(
+                                             i1
+                                            ) [DesignatorIdent]
+                                          ) [FactorDesignator]
+                                          MulopFactorList(
+                                            NoMulopFactList(
+                                            ) [NoMulopFactList]
+                                            Mul(
+                                            ) [Mul]
+                                            FactorNumConst(
+                                             2
+                                            ) [FactorNumConst]
+                                          ) [MulopFactorList]
+                                        ) [Terminal]
+                                      ) [AddopTerminalList]
                                       Plus(
                                       ) [Plus]
                                       Terminal(
                                         FactorDesignator(
                                           DesignatorIdent(
-                                           i1
+                                           i3
                                           ) [DesignatorIdent]
                                         ) [FactorDesignator]
-                                        MulopFactorList(
-                                          NoMulopFactList(
-                                          ) [NoMulopFactList]
-                                          Mul(
-                                          ) [Mul]
-                                          FactorNumConst(
-                                           2
-                                          ) [FactorNumConst]
-                                        ) [MulopFactorList]
+                                        NoMulopFactList(
+                                        ) [NoMulopFactList]
                                       ) [Terminal]
                                     ) [AddopTerminalList]
-                                    Plus(
-                                    ) [Plus]
-                                    Terminal(
-                                      FactorDesignator(
-                                        DesignatorIdent(
-                                         i3
-                                        ) [DesignatorIdent]
-                                      ) [FactorDesignator]
-                                      NoMulopFactList(
-                                      ) [NoMulopFactList]
-                                    ) [Terminal]
-                                  ) [AddopTerminalList]
-                                ) [Expression]
-                              ) [DesignatorAssignOp]
+                                  ) [Expression]
+                                ) [DesignatorAssignOp]
+                              ) [Assignment]
+                            ) [Statements]
+                            Assignment(
+                              DesignatorActPars(
+                                DesignatorIdent(
+                                 k
+                                ) [DesignatorIdent]
+                                ActParameters(
+                                  ActParams(
+                                    Expression(
+                                      MinusNot(
+                                      ) [MinusNot]
+                                      Terminal(
+                                        FactorDesignator(
+                                          DesignatorIdent(
+                                           c
+                                          ) [DesignatorIdent]
+                                        ) [FactorDesignator]
+                                        NoMulopFactList(
+                                        ) [NoMulopFactList]
+                                      ) [Terminal]
+                                      NoAddopTermList(
+                                      ) [NoAddopTermList]
+                                    ) [Expression]
+                                    NoExprList(
+                                    ) [NoExprList]
+                                  ) [ActParams]
+                                ) [ActParameters]
+                              ) [DesignatorActPars]
                             ) [Assignment]
                           ) [Statements]
                           BreakStmt(
@@ -837,32 +899,37 @@ INFO  19:35:22,791 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  19:35:22,792 - ===================================
-INFO  19:35:22,796 - Deklarisana globalna promenljiva i1 na liniji 2, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,796 - Deklarisana globalna matrica i2 na liniji 2, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,796 - Definisana konstanta i3 na liniji 3, objektni cvor: Con i3: Int, 3, 0
-INFO  19:35:22,796 - Simbol i1 se koristi na liniji 7, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,796 - Simbol i1 se koristi na liniji 8, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,796 - Deklarisana lokalna promenljiva b1 na liniji 10, objektni cvor: Var b1: Bool, 0, 1
-INFO  19:35:22,796 - Deklarisana lokalna promenljiva b2 na liniji 10, objektni cvor: Var b2: Bool, 1, 1
-INFO  19:35:22,796 - Simbol b1 se koristi na liniji 12, objektni cvor: Var b1: Bool, 0, 1
-INFO  19:35:22,798 - Simbol b2 se koristi na liniji 13, objektni cvor: Var b2: Bool, 1, 1
-INFO  19:35:22,798 - Simbol i1 se koristi na liniji 14, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,798 - Simbol i2 se koristi na liniji 15, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,798 - Simbol i2 se koristi na liniji 17, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,798 - Simbol b1 se koristi na liniji 19, objektni cvor: Var b1: Bool, 0, 1
-INFO  19:35:22,798 - Simbol b2 se koristi na liniji 19, objektni cvor: Var b2: Bool, 1, 1
-INFO  19:35:22,798 - Simbol i2 se koristi na liniji 21, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,798 - Simbol i1 se koristi na liniji 21, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,798 - Simbol i1 se koristi na liniji 22, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,798 - Simbol i2 se koristi na liniji 23, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,798 - Simbol i1 se koristi na liniji 26, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,799 - Simbol i2 se koristi na liniji 26, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,799 - Simbol i2 se koristi na liniji 27, objektni cvor: Var i2: Array, 1, 0
-INFO  19:35:22,799 - Simbol i1 se koristi na liniji 27, objektni cvor: Var i1: Int, 0, 0
-INFO  19:35:22,799 - Simbol i3 se koristi na liniji 27, objektni cvor: Con i3: Int, 3, 0
-INFO  19:35:22,799 - Simbol b1 se koristi na liniji 30, objektni cvor: Var b1: Bool, 0, 1
-INFO  19:35:22,799 - ===================================
+INFO  19:52:40,939 - ===================================
+INFO  19:52:40,956 - Deklarisana globalna promenljiva i1 na liniji 2, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,957 - Deklarisana globalna matrica i2 na liniji 2, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,957 - Definisana konstanta i3 na liniji 3, objektni cvor: Con i3: Int, 3, 0
+INFO  19:52:40,959 - Deklarisana lokalna promenljiva c na liniji 5, objektni cvor: Var c: Char, 0, 1
+INFO  19:52:40,960 - Simbol i1 se koristi na liniji 7, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,961 - Simbol i1 se koristi na liniji 8, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,962 - Deklarisana funkcija k na liniji 5, objektni cvor: Meth k: Int, 0, 0
+INFO  19:52:40,962 - Deklarisana lokalna promenljiva b1 na liniji 10, objektni cvor: Var b1: Bool, 0, 1
+INFO  19:52:40,963 - Deklarisana lokalna promenljiva b2 na liniji 10, objektni cvor: Var b2: Bool, 1, 1
+INFO  19:52:40,963 - Deklarisana lokalna promenljiva c na liniji 10, objektni cvor: Var c: Char, 2, 1
+INFO  19:52:40,964 - Simbol b1 se koristi na liniji 12, objektni cvor: Var b1: Bool, 0, 1
+INFO  19:52:40,970 - Simbol b2 se koristi na liniji 13, objektni cvor: Var b2: Bool, 1, 1
+INFO  19:52:40,970 - Simbol i1 se koristi na liniji 14, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,971 - Simbol i2 se koristi na liniji 15, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,971 - Simbol i2 se koristi na liniji 17, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,971 - Simbol b1 se koristi na liniji 19, objektni cvor: Var b1: Bool, 0, 1
+INFO  19:52:40,972 - Simbol b2 se koristi na liniji 19, objektni cvor: Var b2: Bool, 1, 1
+INFO  19:52:40,972 - Simbol i2 se koristi na liniji 21, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,973 - Simbol i1 se koristi na liniji 21, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,974 - Simbol i1 se koristi na liniji 22, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,974 - Simbol i2 se koristi na liniji 23, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,975 - Simbol i1 se koristi na liniji 26, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,975 - Simbol i2 se koristi na liniji 26, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,976 - Simbol i2 se koristi na liniji 27, objektni cvor: Var i2: Matrix of Int, 1, 0
+INFO  19:52:40,977 - Simbol i1 se koristi na liniji 27, objektni cvor: Var i1: Int, 0, 0
+INFO  19:52:40,977 - Simbol i3 se koristi na liniji 27, objektni cvor: Con i3: Int, 3, 0
+INFO  19:52:40,977 - Simbol k se koristi na liniji 28, objektni cvor: Meth k: Int, 0, 0
+INFO  19:52:40,978 - Simbol c se koristi na liniji 28, objektni cvor: Var c: Char, 2, 1
+INFO  19:52:40,979 - Simbol b1 se koristi na liniji 31, objektni cvor: Var b1: Bool, 0, 1
+INFO  19:52:40,979 - ===================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -883,11 +950,13 @@ Prog MJCompiler: notype, 0, 1
    Var i2: Matrix of int, 1, 0 
    Con i3: int, 3, 0 
    Meth k: int, 0, 0 
+      Var c: char, 0, 1 
 
    Meth main: notype, 0, 0 
       Var b1: bool, 0, 1 
       Var b2: bool, 1, 1 
+      Var c: char, 2, 1 
 
 
 
-INFO  19:35:22,800 - Parsiranje uspesno zavrseno!
+INFO  19:52:41,037 - Parsiranje uspesno zavrseno!

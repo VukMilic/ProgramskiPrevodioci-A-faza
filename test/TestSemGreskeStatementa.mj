@@ -4,7 +4,7 @@ program MJCompiler
 	int i1, i2, i3[], i4[];
 	char c1, c2;
 {
-	char k()
+	char k(char c)
 	{
 		// tipovi u return naredbi se ne poklapaju
 		return con1;
@@ -12,6 +12,9 @@ program MJCompiler
 	
 	void main() int i5[][];
 	{
+		// pozvana funkcija sa pogresnim argumentom
+		k(i1);
+		
 		// koriscenje nepostojeceg simbola
 		simbolError = i1 + i2;
 		

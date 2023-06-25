@@ -1,138 +1,138 @@
-INFO  19:33:29,436 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\TestSemDeklaracija.mj
-INFO  19:33:29,502 - #2 program
-INFO  19:33:29,502 - #48 MJCompiler
-INFO  19:33:29,503 - #5 const
-INFO  19:33:29,504 - #48 int
-INFO  19:33:29,505 - #48 i1
-INFO  19:33:29,505 - #6 =
-INFO  19:33:29,505 - #47 1
-INFO  19:33:29,506 - #8 ,
-INFO  19:33:29,506 - #48 i2
-INFO  19:33:29,506 - #6 =
-INFO  19:33:29,506 - #47 2
-INFO  19:33:29,506 - #7 ;
-INFO  19:33:29,506 - #5 const
-INFO  19:33:29,506 - #48 char
-INFO  19:33:29,507 - #48 c1
-INFO  19:33:29,507 - #6 =
-INFO  19:33:29,507 - #49 'c'
-INFO  19:33:29,507 - #8 ,
-INFO  19:33:29,507 - #48 c2
-INFO  19:33:29,507 - #6 =
-INFO  19:33:29,507 - #49 's'
-INFO  19:33:29,515 - #7 ;
-INFO  19:33:29,515 - #5 const
-INFO  19:33:29,515 - #48 bool
-INFO  19:33:29,515 - #48 b1
-INFO  19:33:29,515 - #6 =
-INFO  19:33:29,515 - #50 true
-INFO  19:33:29,515 - #8 ,
-INFO  19:33:29,516 - #48 b2
-INFO  19:33:29,516 - #6 =
-INFO  19:33:29,516 - #50 false
-INFO  19:33:29,516 - #7 ;
-INFO  19:33:29,516 - #48 int
-INFO  19:33:29,516 - #48 i3
-INFO  19:33:29,516 - #8 ,
-INFO  19:33:29,518 - #48 i4
-INFO  19:33:29,518 - #9 [
-INFO  19:33:29,518 - #10 ]
-INFO  19:33:29,518 - #8 ,
-INFO  19:33:29,518 - #48 i5
-INFO  19:33:29,519 - #9 [
-INFO  19:33:29,519 - #10 ]
-INFO  19:33:29,519 - #9 [
-INFO  19:33:29,519 - #10 ]
-INFO  19:33:29,519 - #7 ;
-INFO  19:33:29,520 - #48 char
-INFO  19:33:29,521 - #48 c3
-INFO  19:33:29,521 - #8 ,
-INFO  19:33:29,521 - #48 c4
-INFO  19:33:29,521 - #9 [
-INFO  19:33:29,521 - #10 ]
-INFO  19:33:29,521 - #8 ,
-INFO  19:33:29,521 - #48 c5
-INFO  19:33:29,522 - #9 [
-INFO  19:33:29,522 - #10 ]
-INFO  19:33:29,522 - #9 [
-INFO  19:33:29,522 - #10 ]
-INFO  19:33:29,522 - #7 ;
-INFO  19:33:29,522 - #48 bool
-INFO  19:33:29,522 - #48 b3
-INFO  19:33:29,522 - #8 ,
-INFO  19:33:29,522 - #48 b4
-INFO  19:33:29,523 - #9 [
-INFO  19:33:29,523 - #10 ]
-INFO  19:33:29,523 - #8 ,
-INFO  19:33:29,523 - #48 b5
-INFO  19:33:29,523 - #9 [
-INFO  19:33:29,523 - #10 ]
-INFO  19:33:29,523 - #9 [
-INFO  19:33:29,523 - #10 ]
-INFO  19:33:29,523 - #7 ;
-INFO  19:33:29,523 - #3 {
-INFO  19:33:29,523 - #48 int
-INFO  19:33:29,525 - #48 m1
-INFO  19:33:29,525 - #12 (
-INFO  19:33:29,525 - #48 char
-INFO  19:33:29,525 - #48 cArg
-INFO  19:33:29,525 - #8 ,
-INFO  19:33:29,526 - #48 int
-INFO  19:33:29,526 - #48 i3
-INFO  19:33:29,526 - #13 )
-INFO  19:33:29,526 - #48 int
-INFO  19:33:29,527 - #48 i5
-INFO  19:33:29,527 - #7 ;
-INFO  19:33:29,528 - #3 {
-INFO  19:33:29,529 - #48 i5
-INFO  19:33:29,530 - #6 =
-INFO  19:33:29,530 - #48 i4
-INFO  19:33:29,532 - #9 [
-INFO  19:33:29,532 - #47 0
-INFO  19:33:29,532 - #10 ]
-INFO  19:33:29,534 - #7 ;
-INFO  19:33:29,534 - #20 print
-INFO  19:33:29,535 - #12 (
-INFO  19:33:29,535 - #48 i4
-INFO  19:33:29,535 - #9 [
-INFO  19:33:29,535 - #47 1
-INFO  19:33:29,535 - #10 ]
-INFO  19:33:29,535 - #13 )
-INFO  19:33:29,536 - #7 ;
-INFO  19:33:29,536 - #18 return
-INFO  19:33:29,536 - #48 i5
-INFO  19:33:29,536 - #7 ;
-INFO  19:33:29,536 - #4 }
-INFO  19:33:29,537 - #48 char
-INFO  19:33:29,537 - #48 m2
-INFO  19:33:29,537 - #12 (
-INFO  19:33:29,537 - #13 )
-INFO  19:33:29,538 - #48 char
-INFO  19:33:29,538 - #48 c6
-INFO  19:33:29,538 - #7 ;
-INFO  19:33:29,538 - #48 bool
-INFO  19:33:29,538 - #48 b6
-INFO  19:33:29,538 - #7 ;
-INFO  19:33:29,538 - #3 {
-INFO  19:33:29,538 - #18 return
-INFO  19:33:29,538 - #48 c6
-INFO  19:33:29,538 - #7 ;
-INFO  19:33:29,538 - #4 }
-INFO  19:33:29,538 - #14 void
-INFO  19:33:29,538 - #48 main
-INFO  19:33:29,538 - #12 (
-INFO  19:33:29,539 - #13 )
-INFO  19:33:29,539 - #3 {
-INFO  19:33:29,539 - #20 print
-INFO  19:33:29,539 - #12 (
-INFO  19:33:29,539 - #48 m2
-INFO  19:33:29,539 - #12 (
-INFO  19:33:29,539 - #13 )
-INFO  19:33:29,540 - #13 )
-INFO  19:33:29,540 - #7 ;
-INFO  19:33:29,540 - #4 }
-INFO  19:33:29,540 - #4 }
-INFO  19:33:29,551 - Program(
+INFO  19:48:52,306 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  19:48:52,368 - #2 program
+INFO  19:48:52,368 - #48 MJCompiler
+INFO  19:48:52,368 - #5 const
+INFO  19:48:52,369 - #48 int
+INFO  19:48:52,370 - #48 i1
+INFO  19:48:52,370 - #6 =
+INFO  19:48:52,370 - #47 1
+INFO  19:48:52,371 - #8 ,
+INFO  19:48:52,371 - #48 i2
+INFO  19:48:52,371 - #6 =
+INFO  19:48:52,371 - #47 2
+INFO  19:48:52,371 - #7 ;
+INFO  19:48:52,371 - #5 const
+INFO  19:48:52,372 - #48 char
+INFO  19:48:52,372 - #48 c1
+INFO  19:48:52,372 - #6 =
+INFO  19:48:52,372 - #49 'c'
+INFO  19:48:52,372 - #8 ,
+INFO  19:48:52,372 - #48 c2
+INFO  19:48:52,372 - #6 =
+INFO  19:48:52,373 - #49 's'
+INFO  19:48:52,380 - #7 ;
+INFO  19:48:52,380 - #5 const
+INFO  19:48:52,381 - #48 bool
+INFO  19:48:52,381 - #48 b1
+INFO  19:48:52,381 - #6 =
+INFO  19:48:52,381 - #50 true
+INFO  19:48:52,381 - #8 ,
+INFO  19:48:52,381 - #48 b2
+INFO  19:48:52,381 - #6 =
+INFO  19:48:52,381 - #50 false
+INFO  19:48:52,381 - #7 ;
+INFO  19:48:52,382 - #48 int
+INFO  19:48:52,382 - #48 i3
+INFO  19:48:52,382 - #8 ,
+INFO  19:48:52,385 - #48 i4
+INFO  19:48:52,385 - #9 [
+INFO  19:48:52,385 - #10 ]
+INFO  19:48:52,385 - #8 ,
+INFO  19:48:52,385 - #48 i5
+INFO  19:48:52,385 - #9 [
+INFO  19:48:52,385 - #10 ]
+INFO  19:48:52,385 - #9 [
+INFO  19:48:52,385 - #10 ]
+INFO  19:48:52,385 - #7 ;
+INFO  19:48:52,386 - #48 char
+INFO  19:48:52,386 - #48 c3
+INFO  19:48:52,387 - #8 ,
+INFO  19:48:52,387 - #48 c4
+INFO  19:48:52,387 - #9 [
+INFO  19:48:52,387 - #10 ]
+INFO  19:48:52,387 - #8 ,
+INFO  19:48:52,387 - #48 c5
+INFO  19:48:52,387 - #9 [
+INFO  19:48:52,387 - #10 ]
+INFO  19:48:52,387 - #9 [
+INFO  19:48:52,387 - #10 ]
+INFO  19:48:52,388 - #7 ;
+INFO  19:48:52,388 - #48 bool
+INFO  19:48:52,388 - #48 b3
+INFO  19:48:52,388 - #8 ,
+INFO  19:48:52,388 - #48 b4
+INFO  19:48:52,388 - #9 [
+INFO  19:48:52,388 - #10 ]
+INFO  19:48:52,388 - #8 ,
+INFO  19:48:52,388 - #48 b5
+INFO  19:48:52,388 - #9 [
+INFO  19:48:52,388 - #10 ]
+INFO  19:48:52,389 - #9 [
+INFO  19:48:52,389 - #10 ]
+INFO  19:48:52,389 - #7 ;
+INFO  19:48:52,389 - #3 {
+INFO  19:48:52,389 - #48 int
+INFO  19:48:52,390 - #48 m1
+INFO  19:48:52,390 - #12 (
+INFO  19:48:52,390 - #48 char
+INFO  19:48:52,390 - #48 cArg
+INFO  19:48:52,390 - #8 ,
+INFO  19:48:52,392 - #48 int
+INFO  19:48:52,392 - #48 i3
+INFO  19:48:52,392 - #13 )
+INFO  19:48:52,392 - #48 int
+INFO  19:48:52,393 - #48 i5
+INFO  19:48:52,393 - #7 ;
+INFO  19:48:52,393 - #3 {
+INFO  19:48:52,394 - #48 i5
+INFO  19:48:52,395 - #6 =
+INFO  19:48:52,396 - #48 i4
+INFO  19:48:52,398 - #9 [
+INFO  19:48:52,398 - #47 0
+INFO  19:48:52,398 - #10 ]
+INFO  19:48:52,400 - #7 ;
+INFO  19:48:52,400 - #20 print
+INFO  19:48:52,401 - #12 (
+INFO  19:48:52,401 - #48 i4
+INFO  19:48:52,401 - #9 [
+INFO  19:48:52,401 - #47 1
+INFO  19:48:52,401 - #10 ]
+INFO  19:48:52,401 - #13 )
+INFO  19:48:52,402 - #7 ;
+INFO  19:48:52,402 - #18 return
+INFO  19:48:52,402 - #48 i5
+INFO  19:48:52,402 - #7 ;
+INFO  19:48:52,402 - #4 }
+INFO  19:48:52,403 - #48 char
+INFO  19:48:52,403 - #48 m2
+INFO  19:48:52,403 - #12 (
+INFO  19:48:52,403 - #13 )
+INFO  19:48:52,404 - #48 char
+INFO  19:48:52,404 - #48 c6
+INFO  19:48:52,404 - #7 ;
+INFO  19:48:52,404 - #48 bool
+INFO  19:48:52,404 - #48 b6
+INFO  19:48:52,404 - #7 ;
+INFO  19:48:52,404 - #3 {
+INFO  19:48:52,404 - #18 return
+INFO  19:48:52,405 - #48 c6
+INFO  19:48:52,405 - #7 ;
+INFO  19:48:52,405 - #4 }
+INFO  19:48:52,405 - #14 void
+INFO  19:48:52,405 - #48 main
+INFO  19:48:52,405 - #12 (
+INFO  19:48:52,405 - #13 )
+INFO  19:48:52,405 - #3 {
+INFO  19:48:52,406 - #20 print
+INFO  19:48:52,406 - #12 (
+INFO  19:48:52,406 - #48 m2
+INFO  19:48:52,406 - #12 (
+INFO  19:48:52,406 - #13 )
+INFO  19:48:52,407 - #13 )
+INFO  19:48:52,407 - #7 ;
+INFO  19:48:52,412 - #4 }
+INFO  19:48:52,412 - #4 }
+INFO  19:48:52,425 - Program(
   ProgName(
    MJCompiler
   ) [ProgName]
@@ -525,35 +525,36 @@ INFO  19:33:29,551 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  19:33:29,552 - ===================================
-INFO  19:33:29,557 - Definisana konstanta i1 na liniji 3, objektni cvor: Con i1: Int, 1, 0
-INFO  19:33:29,557 - Definisana konstanta i2 na liniji 3, objektni cvor: Con i2: Int, 2, 0
-INFO  19:33:29,557 - Definisana konstanta c1 na liniji 4, objektni cvor: Con c1: Char, 99, 0
-INFO  19:33:29,557 - Definisana konstanta c2 na liniji 4, objektni cvor: Con c2: Char, 115, 0
-INFO  19:33:29,558 - Definisana konstanta b1 na liniji 5, objektni cvor: Con b1: Bool, 1, 0
-INFO  19:33:29,558 - Definisana konstanta b2 na liniji 5, objektni cvor: Con b2: Bool, 0, 0
-INFO  19:33:29,558 - Deklarisana globalna promenljiva i3 na liniji 8, objektni cvor: Var i3: Int, 0, 0
-INFO  19:33:29,558 - Deklarisan globalni niz i4 na liniji 8, objektni cvor: Var i4: Array, 1, 0
-INFO  19:33:29,558 - Deklarisana globalna matrica i5 na liniji 8, objektni cvor: Var i5: Array, 2, 0
-INFO  19:33:29,559 - Deklarisana globalna promenljiva c3 na liniji 9, objektni cvor: Var c3: Char, 3, 0
-INFO  19:33:29,559 - Deklarisan globalni niz c4 na liniji 9, objektni cvor: Var c4: Array, 4, 0
-INFO  19:33:29,559 - Deklarisana globalna matrica c5 na liniji 9, objektni cvor: Var c5: Array, 5, 0
-INFO  19:33:29,559 - Deklarisana globalna promenljiva b3 na liniji 10, objektni cvor: Var b3: Bool, 6, 0
-INFO  19:33:29,559 - Deklarisan globalni niz b4 na liniji 10, objektni cvor: Var b4: Array, 7, 0
-INFO  19:33:29,559 - Deklarisana globalna matrica b5 na liniji 10, objektni cvor: Var b5: Array, 8, 0
-INFO  19:33:29,559 - Deklarisana lokalna promenljiva cArg na liniji 14, objektni cvor: Var cArg: Char, 0, 1
-INFO  19:33:29,559 - Deklarisana lokalna promenljiva i3 na liniji 14, objektni cvor: Var i3: Int, 1, 1
-INFO  19:33:29,559 - Deklarisana lokalna promenljiva i5 na liniji 14, objektni cvor: Var i5: Int, 2, 1
-INFO  19:33:29,559 - Simbol i5 se koristi na liniji 17, objektni cvor: Var i5: Int, 2, 1
-INFO  19:33:29,559 - Simbol i4 se koristi na liniji 17, objektni cvor: Var i4: Array, 1, 0
-INFO  19:33:29,559 - Simbol i4 se koristi na liniji 18, objektni cvor: Var i4: Array, 1, 0
-INFO  19:33:29,559 - Simbol i5 se koristi na liniji 20, objektni cvor: Var i5: Int, 2, 1
-INFO  19:33:29,559 - Deklarisana lokalna promenljiva c6 na liniji 23, objektni cvor: Var c6: Char, 0, 1
-INFO  19:33:29,560 - Deklarisana lokalna promenljiva b6 na liniji 23, objektni cvor: Var b6: Bool, 1, 1
-INFO  19:33:29,560 - Simbol c6 se koristi na liniji 25, objektni cvor: Var c6: Char, 0, 1
-INFO  19:33:29,560 - Simbol m2 se koristi na liniji 30, objektni cvor: Meth m2: Char, 0, 0
-INFO  19:33:29,560 - Funkcija m2 se uspesno poziva na liniji 30
-INFO  19:33:29,560 - ===================================
+INFO  19:48:52,426 - ===================================
+INFO  19:48:52,432 - Definisana konstanta i1 na liniji 3, objektni cvor: Con i1: Int, 1, 0
+INFO  19:48:52,432 - Definisana konstanta i2 na liniji 3, objektni cvor: Con i2: Int, 2, 0
+INFO  19:48:52,433 - Definisana konstanta c1 na liniji 4, objektni cvor: Con c1: Char, 99, 0
+INFO  19:48:52,433 - Definisana konstanta c2 na liniji 4, objektni cvor: Con c2: Char, 115, 0
+INFO  19:48:52,435 - Definisana konstanta b1 na liniji 5, objektni cvor: Con b1: Bool, 1, 0
+INFO  19:48:52,435 - Definisana konstanta b2 na liniji 5, objektni cvor: Con b2: Bool, 0, 0
+INFO  19:48:52,436 - Deklarisana globalna promenljiva i3 na liniji 8, objektni cvor: Var i3: Int, 0, 0
+INFO  19:48:52,436 - Deklarisan globalni niz i4 na liniji 8, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:48:52,436 - Deklarisana globalna matrica i5 na liniji 8, objektni cvor: Var i5: Matrix of Int, 2, 0
+INFO  19:48:52,436 - Deklarisana globalna promenljiva c3 na liniji 9, objektni cvor: Var c3: Char, 3, 0
+INFO  19:48:52,436 - Deklarisan globalni niz c4 na liniji 9, objektni cvor: Var c4: Array of Char, 4, 0
+INFO  19:48:52,436 - Deklarisana globalna matrica c5 na liniji 9, objektni cvor: Var c5: Matrix of Char, 5, 0
+INFO  19:48:52,436 - Deklarisana globalna promenljiva b3 na liniji 10, objektni cvor: Var b3: Bool, 6, 0
+INFO  19:48:52,436 - Deklarisan globalni niz b4 na liniji 10, objektni cvor: Var b4: Array of Bool, 7, 0
+INFO  19:48:52,437 - Deklarisana globalna matrica b5 na liniji 10, objektni cvor: Var b5: Matrix of Bool, 8, 0
+INFO  19:48:52,437 - Deklarisana lokalna promenljiva cArg na liniji 14, objektni cvor: Var cArg: Char, 0, 1
+INFO  19:48:52,437 - Deklarisana lokalna promenljiva i3 na liniji 14, objektni cvor: Var i3: Int, 1, 1
+INFO  19:48:52,438 - Deklarisana lokalna promenljiva i5 na liniji 14, objektni cvor: Var i5: Int, 2, 1
+INFO  19:48:52,439 - Simbol i5 se koristi na liniji 17, objektni cvor: Var i5: Int, 2, 1
+INFO  19:48:52,439 - Simbol i4 se koristi na liniji 17, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:48:52,440 - Simbol i4 se koristi na liniji 18, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:48:52,440 - Simbol i5 se koristi na liniji 20, objektni cvor: Var i5: Int, 2, 1
+INFO  19:48:52,440 - Deklarisana funkcija m1 na liniji 14, objektni cvor: Meth m1: Int, 0, 0
+INFO  19:48:52,440 - Deklarisana lokalna promenljiva c6 na liniji 23, objektni cvor: Var c6: Char, 0, 1
+INFO  19:48:52,441 - Deklarisana lokalna promenljiva b6 na liniji 23, objektni cvor: Var b6: Bool, 1, 1
+INFO  19:48:52,441 - Simbol c6 se koristi na liniji 25, objektni cvor: Var c6: Char, 0, 1
+INFO  19:48:52,441 - Deklarisana funkcija m2 na liniji 23, objektni cvor: Meth m2: Char, 0, 0
+INFO  19:48:52,441 - Simbol m2 se koristi na liniji 30, objektni cvor: Meth m2: Char, 0, 0
+INFO  19:48:52,441 - ===================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -598,4 +599,4 @@ Prog MJCompiler: notype, 0, 1
 
 
 
-INFO  19:33:29,561 - Parsiranje uspesno zavrseno!
+INFO  19:48:52,466 - Parsiranje uspesno zavrseno!

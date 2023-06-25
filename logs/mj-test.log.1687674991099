@@ -1,345 +1,345 @@
-INFO  08:36:31,103 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
-INFO  08:36:31,156 - #2 program
-INFO  08:36:31,156 - #48 test301
-INFO  08:36:31,156 - #5 const
-INFO  08:36:31,158 - #48 int
-INFO  08:36:31,158 - #48 nula
-INFO  08:36:31,158 - #6 =
-INFO  08:36:31,159 - #47 0
-INFO  08:36:31,159 - #7 ;
-INFO  08:36:31,159 - #5 const
-INFO  08:36:31,159 - #48 int
-INFO  08:36:31,160 - #48 jedan
-INFO  08:36:31,160 - #6 =
-INFO  08:36:31,160 - #47 1
-INFO  08:36:31,160 - #7 ;
-INFO  08:36:31,160 - #5 const
-INFO  08:36:31,160 - #48 int
-INFO  08:36:31,160 - #48 pet
-INFO  08:36:31,160 - #6 =
-INFO  08:36:31,160 - #47 5
-INFO  08:36:31,160 - #7 ;
-INFO  08:36:31,160 - #48 int
-INFO  08:36:31,168 - #48 niz
-INFO  08:36:31,168 - #9 [
-INFO  08:36:31,169 - #10 ]
-INFO  08:36:31,169 - #8 ,
-INFO  08:36:31,170 - #48 niz2
-INFO  08:36:31,170 - #9 [
-INFO  08:36:31,170 - #10 ]
-INFO  08:36:31,170 - #8 ,
-INFO  08:36:31,170 - #48 a
-INFO  08:36:31,170 - #8 ,
-INFO  08:36:31,171 - #48 b
-INFO  08:36:31,171 - #7 ;
-INFO  08:36:31,171 - #48 char
-INFO  08:36:31,171 - #48 nizch
-INFO  08:36:31,171 - #9 [
-INFO  08:36:31,171 - #10 ]
-INFO  08:36:31,171 - #7 ;
-INFO  08:36:31,171 - #48 int
-INFO  08:36:31,171 - #48 mat
-INFO  08:36:31,172 - #9 [
-INFO  08:36:31,172 - #10 ]
-INFO  08:36:31,172 - #9 [
-INFO  08:36:31,172 - #10 ]
-INFO  08:36:31,172 - #7 ;
-INFO  08:36:31,173 - #3 {
-INFO  08:36:31,173 - #14 void
-INFO  08:36:31,173 - #48 main
-INFO  08:36:31,173 - #12 (
-INFO  08:36:31,174 - #13 )
-INFO  08:36:31,175 - #48 int
-INFO  08:36:31,176 - #48 bodovi
-INFO  08:36:31,176 - #7 ;
-INFO  08:36:31,176 - #48 bool
-INFO  08:36:31,177 - #48 bt
-INFO  08:36:31,177 - #7 ;
-INFO  08:36:31,177 - #3 {
-INFO  08:36:31,177 - #48 bodovi
-INFO  08:36:31,178 - #6 =
-INFO  08:36:31,178 - #47 0
-INFO  08:36:31,179 - #7 ;
-INFO  08:36:31,181 - #48 bodovi
-INFO  08:36:31,182 - #24 ++
-INFO  08:36:31,182 - #7 ;
-INFO  08:36:31,182 - #48 bodovi
-INFO  08:36:31,182 - #6 =
-INFO  08:36:31,182 - #48 bodovi
-INFO  08:36:31,187 - #36 +
-INFO  08:36:31,187 - #48 jedan
-INFO  08:36:31,188 - #7 ;
-INFO  08:36:31,188 - #48 bodovi
-INFO  08:36:31,188 - #6 =
-INFO  08:36:31,188 - #48 bodovi
-INFO  08:36:31,188 - #38 *
-INFO  08:36:31,188 - #48 pet
-INFO  08:36:31,188 - #7 ;
-INFO  08:36:31,190 - #48 bodovi
-INFO  08:36:31,190 - #25 --
-INFO  08:36:31,190 - #7 ;
-INFO  08:36:31,190 - #20 print
-INFO  08:36:31,190 - #12 (
-INFO  08:36:31,190 - #48 bodovi
-INFO  08:36:31,190 - #13 )
-INFO  08:36:31,191 - #7 ;
-INFO  08:36:31,191 - #48 niz
-INFO  08:36:31,191 - #6 =
-INFO  08:36:31,191 - #28 new
-INFO  08:36:31,191 - #48 int
-INFO  08:36:31,191 - #9 [
-INFO  08:36:31,191 - #47 3
-INFO  08:36:31,192 - #10 ]
-INFO  08:36:31,192 - #7 ;
-INFO  08:36:31,192 - #48 niz
-INFO  08:36:31,192 - #9 [
-INFO  08:36:31,192 - #48 nula
-INFO  08:36:31,192 - #10 ]
-INFO  08:36:31,192 - #6 =
-INFO  08:36:31,192 - #48 jedan
-INFO  08:36:31,192 - #7 ;
-INFO  08:36:31,192 - #48 niz
-INFO  08:36:31,192 - #9 [
-INFO  08:36:31,192 - #47 1
-INFO  08:36:31,193 - #10 ]
-INFO  08:36:31,193 - #6 =
-INFO  08:36:31,193 - #47 2
-INFO  08:36:31,193 - #7 ;
-INFO  08:36:31,193 - #48 niz
-INFO  08:36:31,193 - #9 [
-INFO  08:36:31,193 - #48 niz
-INFO  08:36:31,193 - #9 [
-INFO  08:36:31,193 - #48 jedan
-INFO  08:36:31,193 - #10 ]
-INFO  08:36:31,193 - #10 ]
-INFO  08:36:31,193 - #6 =
-INFO  08:36:31,193 - #48 niz
-INFO  08:36:31,193 - #9 [
-INFO  08:36:31,193 - #48 niz
-INFO  08:36:31,193 - #9 [
-INFO  08:36:31,193 - #47 0
-INFO  08:36:31,193 - #10 ]
-INFO  08:36:31,193 - #10 ]
-INFO  08:36:31,193 - #38 *
-INFO  08:36:31,193 - #47 3
-INFO  08:36:31,193 - #7 ;
-INFO  08:36:31,193 - #48 bodovi
-INFO  08:36:31,193 - #6 =
-INFO  08:36:31,193 - #48 niz
-INFO  08:36:31,193 - #9 [
-INFO  08:36:31,193 - #47 2
-INFO  08:36:31,193 - #10 ]
-INFO  08:36:31,193 - #39 /
-INFO  08:36:31,193 - #48 niz
-INFO  08:36:31,195 - #9 [
-INFO  08:36:31,195 - #47 0
-INFO  08:36:31,195 - #10 ]
-INFO  08:36:31,195 - #7 ;
-INFO  08:36:31,195 - #20 print
-INFO  08:36:31,195 - #12 (
-INFO  08:36:31,195 - #48 bodovi
-INFO  08:36:31,195 - #13 )
-INFO  08:36:31,195 - #7 ;
-INFO  08:36:31,195 - #20 print
-INFO  08:36:31,195 - #12 (
-INFO  08:36:31,195 - #48 niz
-INFO  08:36:31,195 - #9 [
-INFO  08:36:31,195 - #47 2
-INFO  08:36:31,195 - #10 ]
-INFO  08:36:31,195 - #13 )
-INFO  08:36:31,195 - #7 ;
-INFO  08:36:31,195 - #48 mat
-INFO  08:36:31,195 - #6 =
-INFO  08:36:31,195 - #28 new
-INFO  08:36:31,195 - #48 int
-INFO  08:36:31,195 - #9 [
-INFO  08:36:31,195 - #47 2
-INFO  08:36:31,195 - #10 ]
-INFO  08:36:31,195 - #9 [
-INFO  08:36:31,196 - #47 2
-INFO  08:36:31,196 - #10 ]
-INFO  08:36:31,196 - #7 ;
-INFO  08:36:31,196 - #48 mat
-INFO  08:36:31,196 - #9 [
-INFO  08:36:31,196 - #47 0
-INFO  08:36:31,196 - #10 ]
-INFO  08:36:31,196 - #9 [
-INFO  08:36:31,196 - #47 0
-INFO  08:36:31,196 - #10 ]
-INFO  08:36:31,196 - #6 =
-INFO  08:36:31,196 - #48 niz
-INFO  08:36:31,196 - #9 [
-INFO  08:36:31,196 - #48 nula
-INFO  08:36:31,196 - #10 ]
-INFO  08:36:31,197 - #7 ;
-INFO  08:36:31,197 - #48 mat
-INFO  08:36:31,197 - #9 [
-INFO  08:36:31,197 - #47 0
-INFO  08:36:31,197 - #10 ]
-INFO  08:36:31,197 - #9 [
-INFO  08:36:31,197 - #48 mat
-INFO  08:36:31,197 - #9 [
-INFO  08:36:31,197 - #47 0
-INFO  08:36:31,197 - #10 ]
-INFO  08:36:31,197 - #9 [
-INFO  08:36:31,197 - #47 0
-INFO  08:36:31,197 - #10 ]
-INFO  08:36:31,197 - #10 ]
-INFO  08:36:31,197 - #6 =
-INFO  08:36:31,197 - #47 2
-INFO  08:36:31,198 - #7 ;
-INFO  08:36:31,198 - #48 mat
-INFO  08:36:31,198 - #9 [
-INFO  08:36:31,198 - #47 1
-INFO  08:36:31,198 - #10 ]
-INFO  08:36:31,198 - #9 [
-INFO  08:36:31,198 - #48 jedan
-INFO  08:36:31,198 - #37 -
-INFO  08:36:31,198 - #48 niz
-INFO  08:36:31,199 - #9 [
-INFO  08:36:31,199 - #47 0
-INFO  08:36:31,199 - #10 ]
-INFO  08:36:31,199 - #10 ]
-INFO  08:36:31,199 - #6 =
-INFO  08:36:31,199 - #47 5
-INFO  08:36:31,199 - #7 ;
-INFO  08:36:31,199 - #48 mat
-INFO  08:36:31,200 - #9 [
-INFO  08:36:31,200 - #47 1
-INFO  08:36:31,200 - #10 ]
-INFO  08:36:31,200 - #9 [
-INFO  08:36:31,200 - #47 1
-INFO  08:36:31,200 - #10 ]
-INFO  08:36:31,200 - #6 =
-INFO  08:36:31,200 - #48 mat
-INFO  08:36:31,200 - #9 [
-INFO  08:36:31,201 - #47 0
-INFO  08:36:31,201 - #10 ]
-INFO  08:36:31,202 - #9 [
-INFO  08:36:31,202 - #47 0
-INFO  08:36:31,202 - #10 ]
-INFO  08:36:31,202 - #38 *
-INFO  08:36:31,202 - #48 mat
-INFO  08:36:31,202 - #9 [
-INFO  08:36:31,202 - #47 0
-INFO  08:36:31,202 - #10 ]
-INFO  08:36:31,202 - #9 [
-INFO  08:36:31,202 - #47 1
-INFO  08:36:31,202 - #10 ]
-INFO  08:36:31,202 - #7 ;
-INFO  08:36:31,202 - #20 print
-INFO  08:36:31,202 - #12 (
-INFO  08:36:31,202 - #48 mat
-INFO  08:36:31,202 - #9 [
-INFO  08:36:31,202 - #47 1
-INFO  08:36:31,202 - #10 ]
-INFO  08:36:31,202 - #9 [
-INFO  08:36:31,202 - #47 0
-INFO  08:36:31,202 - #10 ]
-INFO  08:36:31,202 - #13 )
-INFO  08:36:31,202 - #7 ;
-INFO  08:36:31,202 - #20 print
-INFO  08:36:31,202 - #12 (
-INFO  08:36:31,202 - #48 mat
-INFO  08:36:31,202 - #9 [
-INFO  08:36:31,203 - #47 1
-INFO  08:36:31,203 - #10 ]
-INFO  08:36:31,203 - #9 [
-INFO  08:36:31,206 - #47 1
-INFO  08:36:31,206 - #10 ]
-INFO  08:36:31,207 - #13 )
-INFO  08:36:31,207 - #7 ;
-INFO  08:36:31,207 - #48 nizch
-INFO  08:36:31,207 - #6 =
-INFO  08:36:31,207 - #28 new
-INFO  08:36:31,207 - #48 char
-INFO  08:36:31,207 - #9 [
-INFO  08:36:31,207 - #47 3
-INFO  08:36:31,207 - #10 ]
-INFO  08:36:31,207 - #7 ;
-INFO  08:36:31,207 - #48 nizch
-INFO  08:36:31,207 - #9 [
-INFO  08:36:31,207 - #47 0
-INFO  08:36:31,207 - #10 ]
-INFO  08:36:31,207 - #6 =
-INFO  08:36:31,207 - #49 'a'
-INFO  08:36:31,207 - #7 ;
-INFO  08:36:31,207 - #48 nizch
-INFO  08:36:31,207 - #9 [
-INFO  08:36:31,207 - #48 jedan
-INFO  08:36:31,207 - #10 ]
-INFO  08:36:31,207 - #6 =
-INFO  08:36:31,207 - #49 'b'
-INFO  08:36:31,207 - #7 ;
-INFO  08:36:31,207 - #48 nizch
-INFO  08:36:31,208 - #9 [
-INFO  08:36:31,208 - #48 pet
-INFO  08:36:31,208 - #37 -
-INFO  08:36:31,208 - #47 3
-INFO  08:36:31,208 - #10 ]
-INFO  08:36:31,208 - #6 =
-INFO  08:36:31,208 - #49 'c'
-INFO  08:36:31,208 - #7 ;
-INFO  08:36:31,208 - #20 print
-INFO  08:36:31,208 - #12 (
-INFO  08:36:31,208 - #48 nizch
-INFO  08:36:31,208 - #9 [
-INFO  08:36:31,208 - #47 1
-INFO  08:36:31,208 - #10 ]
-INFO  08:36:31,208 - #13 )
-INFO  08:36:31,208 - #7 ;
-INFO  08:36:31,208 - #20 print
-INFO  08:36:31,208 - #12 (
-INFO  08:36:31,208 - #48 nizch
-INFO  08:36:31,208 - #9 [
-INFO  08:36:31,208 - #48 jedan
-INFO  08:36:31,208 - #38 *
-INFO  08:36:31,209 - #47 2
-INFO  08:36:31,209 - #10 ]
-INFO  08:36:31,209 - #13 )
-INFO  08:36:31,209 - #7 ;
-INFO  08:36:31,209 - #19 read
-INFO  08:36:31,209 - #12 (
-INFO  08:36:31,209 - #48 bodovi
-INFO  08:36:31,209 - #13 )
-INFO  08:36:31,209 - #7 ;
-INFO  08:36:31,209 - #48 bodovi
-INFO  08:36:31,209 - #6 =
-INFO  08:36:31,209 - #37 -
-INFO  08:36:31,209 - #48 bodovi
-INFO  08:36:31,210 - #36 +
-INFO  08:36:31,210 - #12 (
-INFO  08:36:31,210 - #48 pet
-INFO  08:36:31,210 - #38 *
-INFO  08:36:31,210 - #48 a
-INFO  08:36:31,210 - #39 /
-INFO  08:36:31,210 - #47 2
-INFO  08:36:31,210 - #37 -
-INFO  08:36:31,210 - #48 jedan
-INFO  08:36:31,210 - #13 )
-INFO  08:36:31,210 - #38 *
-INFO  08:36:31,210 - #48 bodovi
-INFO  08:36:31,210 - #37 -
-INFO  08:36:31,210 - #12 (
-INFO  08:36:31,210 - #47 3
-INFO  08:36:31,211 - #40 %
-INFO  08:36:31,211 - #47 2
-INFO  08:36:31,211 - #36 +
-INFO  08:36:31,211 - #47 3
-INFO  08:36:31,211 - #38 *
-INFO  08:36:31,211 - #47 2
-INFO  08:36:31,212 - #37 -
-INFO  08:36:31,212 - #47 3
-INFO  08:36:31,212 - #13 )
-INFO  08:36:31,212 - #7 ;
-INFO  08:36:31,212 - #20 print
-INFO  08:36:31,212 - #12 (
-INFO  08:36:31,212 - #48 bodovi
-INFO  08:36:31,212 - #13 )
-INFO  08:36:31,212 - #7 ;
-INFO  08:36:31,212 - #4 }
-INFO  08:36:31,212 - #4 }
-INFO  08:36:31,232 - Program(
+INFO  08:27:24,694 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  08:27:24,745 - #2 program
+INFO  08:27:24,746 - #48 test301
+INFO  08:27:24,746 - #5 const
+INFO  08:27:24,747 - #48 int
+INFO  08:27:24,748 - #48 nula
+INFO  08:27:24,748 - #6 =
+INFO  08:27:24,748 - #47 0
+INFO  08:27:24,748 - #7 ;
+INFO  08:27:24,748 - #5 const
+INFO  08:27:24,749 - #48 int
+INFO  08:27:24,749 - #48 jedan
+INFO  08:27:24,750 - #6 =
+INFO  08:27:24,750 - #47 1
+INFO  08:27:24,750 - #7 ;
+INFO  08:27:24,750 - #5 const
+INFO  08:27:24,750 - #48 int
+INFO  08:27:24,750 - #48 pet
+INFO  08:27:24,750 - #6 =
+INFO  08:27:24,750 - #47 5
+INFO  08:27:24,750 - #7 ;
+INFO  08:27:24,750 - #48 int
+INFO  08:27:24,753 - #48 niz
+INFO  08:27:24,753 - #9 [
+INFO  08:27:24,753 - #10 ]
+INFO  08:27:24,753 - #8 ,
+INFO  08:27:24,755 - #48 niz2
+INFO  08:27:24,755 - #9 [
+INFO  08:27:24,755 - #10 ]
+INFO  08:27:24,755 - #8 ,
+INFO  08:27:24,755 - #48 a
+INFO  08:27:24,755 - #8 ,
+INFO  08:27:24,756 - #48 b
+INFO  08:27:24,756 - #7 ;
+INFO  08:27:24,756 - #48 char
+INFO  08:27:24,756 - #48 nizch
+INFO  08:27:24,756 - #9 [
+INFO  08:27:24,756 - #10 ]
+INFO  08:27:24,757 - #7 ;
+INFO  08:27:24,757 - #48 int
+INFO  08:27:24,757 - #48 mat
+INFO  08:27:24,757 - #9 [
+INFO  08:27:24,757 - #10 ]
+INFO  08:27:24,757 - #9 [
+INFO  08:27:24,757 - #10 ]
+INFO  08:27:24,757 - #7 ;
+INFO  08:27:24,758 - #3 {
+INFO  08:27:24,758 - #14 void
+INFO  08:27:24,759 - #48 main
+INFO  08:27:24,759 - #12 (
+INFO  08:27:24,759 - #13 )
+INFO  08:27:24,760 - #48 int
+INFO  08:27:24,761 - #48 bodovi
+INFO  08:27:24,761 - #7 ;
+INFO  08:27:24,762 - #48 bool
+INFO  08:27:24,763 - #48 bt
+INFO  08:27:24,763 - #7 ;
+INFO  08:27:24,763 - #3 {
+INFO  08:27:24,764 - #48 bodovi
+INFO  08:27:24,764 - #6 =
+INFO  08:27:24,765 - #47 0
+INFO  08:27:24,767 - #7 ;
+INFO  08:27:24,768 - #48 bodovi
+INFO  08:27:24,769 - #24 ++
+INFO  08:27:24,769 - #7 ;
+INFO  08:27:24,769 - #48 bodovi
+INFO  08:27:24,770 - #6 =
+INFO  08:27:24,770 - #48 bodovi
+INFO  08:27:24,770 - #36 +
+INFO  08:27:24,770 - #48 jedan
+INFO  08:27:24,772 - #7 ;
+INFO  08:27:24,772 - #48 bodovi
+INFO  08:27:24,772 - #6 =
+INFO  08:27:24,772 - #48 bodovi
+INFO  08:27:24,772 - #38 *
+INFO  08:27:24,772 - #48 pet
+INFO  08:27:24,773 - #7 ;
+INFO  08:27:24,774 - #48 bodovi
+INFO  08:27:24,774 - #25 --
+INFO  08:27:24,774 - #7 ;
+INFO  08:27:24,774 - #20 print
+INFO  08:27:24,774 - #12 (
+INFO  08:27:24,774 - #48 bodovi
+INFO  08:27:24,774 - #13 )
+INFO  08:27:24,775 - #7 ;
+INFO  08:27:24,775 - #48 niz
+INFO  08:27:24,775 - #6 =
+INFO  08:27:24,776 - #28 new
+INFO  08:27:24,776 - #48 int
+INFO  08:27:24,776 - #9 [
+INFO  08:27:24,776 - #47 3
+INFO  08:27:24,776 - #10 ]
+INFO  08:27:24,776 - #7 ;
+INFO  08:27:24,776 - #48 niz
+INFO  08:27:24,777 - #9 [
+INFO  08:27:24,777 - #48 nula
+INFO  08:27:24,777 - #10 ]
+INFO  08:27:24,777 - #6 =
+INFO  08:27:24,777 - #48 jedan
+INFO  08:27:24,777 - #7 ;
+INFO  08:27:24,777 - #48 niz
+INFO  08:27:24,777 - #9 [
+INFO  08:27:24,777 - #47 1
+INFO  08:27:24,777 - #10 ]
+INFO  08:27:24,777 - #6 =
+INFO  08:27:24,778 - #47 2
+INFO  08:27:24,778 - #7 ;
+INFO  08:27:24,778 - #48 niz
+INFO  08:27:24,778 - #9 [
+INFO  08:27:24,778 - #48 niz
+INFO  08:27:24,778 - #9 [
+INFO  08:27:24,778 - #48 jedan
+INFO  08:27:24,778 - #10 ]
+INFO  08:27:24,778 - #10 ]
+INFO  08:27:24,778 - #6 =
+INFO  08:27:24,778 - #48 niz
+INFO  08:27:24,778 - #9 [
+INFO  08:27:24,778 - #48 niz
+INFO  08:27:24,778 - #9 [
+INFO  08:27:24,779 - #47 0
+INFO  08:27:24,779 - #10 ]
+INFO  08:27:24,779 - #10 ]
+INFO  08:27:24,779 - #38 *
+INFO  08:27:24,779 - #47 3
+INFO  08:27:24,779 - #7 ;
+INFO  08:27:24,779 - #48 bodovi
+INFO  08:27:24,779 - #6 =
+INFO  08:27:24,779 - #48 niz
+INFO  08:27:24,780 - #9 [
+INFO  08:27:24,780 - #47 2
+INFO  08:27:24,780 - #10 ]
+INFO  08:27:24,780 - #39 /
+INFO  08:27:24,785 - #48 niz
+INFO  08:27:24,786 - #9 [
+INFO  08:27:24,786 - #47 0
+INFO  08:27:24,786 - #10 ]
+INFO  08:27:24,786 - #7 ;
+INFO  08:27:24,786 - #20 print
+INFO  08:27:24,786 - #12 (
+INFO  08:27:24,786 - #48 bodovi
+INFO  08:27:24,786 - #13 )
+INFO  08:27:24,786 - #7 ;
+INFO  08:27:24,786 - #20 print
+INFO  08:27:24,787 - #12 (
+INFO  08:27:24,787 - #48 niz
+INFO  08:27:24,787 - #9 [
+INFO  08:27:24,787 - #47 2
+INFO  08:27:24,787 - #10 ]
+INFO  08:27:24,787 - #13 )
+INFO  08:27:24,787 - #7 ;
+INFO  08:27:24,787 - #48 mat
+INFO  08:27:24,787 - #6 =
+INFO  08:27:24,787 - #28 new
+INFO  08:27:24,787 - #48 int
+INFO  08:27:24,787 - #9 [
+INFO  08:27:24,787 - #47 2
+INFO  08:27:24,787 - #10 ]
+INFO  08:27:24,787 - #9 [
+INFO  08:27:24,787 - #47 2
+INFO  08:27:24,787 - #10 ]
+INFO  08:27:24,788 - #7 ;
+INFO  08:27:24,788 - #48 mat
+INFO  08:27:24,788 - #9 [
+INFO  08:27:24,788 - #47 0
+INFO  08:27:24,788 - #10 ]
+INFO  08:27:24,788 - #9 [
+INFO  08:27:24,788 - #47 0
+INFO  08:27:24,788 - #10 ]
+INFO  08:27:24,788 - #6 =
+INFO  08:27:24,788 - #48 niz
+INFO  08:27:24,788 - #9 [
+INFO  08:27:24,788 - #48 nula
+INFO  08:27:24,788 - #10 ]
+INFO  08:27:24,789 - #7 ;
+INFO  08:27:24,789 - #48 mat
+INFO  08:27:24,789 - #9 [
+INFO  08:27:24,789 - #47 0
+INFO  08:27:24,789 - #10 ]
+INFO  08:27:24,789 - #9 [
+INFO  08:27:24,789 - #48 mat
+INFO  08:27:24,789 - #9 [
+INFO  08:27:24,789 - #47 0
+INFO  08:27:24,789 - #10 ]
+INFO  08:27:24,789 - #9 [
+INFO  08:27:24,789 - #47 0
+INFO  08:27:24,789 - #10 ]
+INFO  08:27:24,789 - #10 ]
+INFO  08:27:24,789 - #6 =
+INFO  08:27:24,789 - #47 2
+INFO  08:27:24,789 - #7 ;
+INFO  08:27:24,790 - #48 mat
+INFO  08:27:24,790 - #9 [
+INFO  08:27:24,790 - #47 1
+INFO  08:27:24,790 - #10 ]
+INFO  08:27:24,790 - #9 [
+INFO  08:27:24,790 - #48 jedan
+INFO  08:27:24,790 - #37 -
+INFO  08:27:24,790 - #48 niz
+INFO  08:27:24,791 - #9 [
+INFO  08:27:24,791 - #47 0
+INFO  08:27:24,791 - #10 ]
+INFO  08:27:24,791 - #10 ]
+INFO  08:27:24,791 - #6 =
+INFO  08:27:24,791 - #47 5
+INFO  08:27:24,791 - #7 ;
+INFO  08:27:24,791 - #48 mat
+INFO  08:27:24,791 - #9 [
+INFO  08:27:24,791 - #47 1
+INFO  08:27:24,791 - #10 ]
+INFO  08:27:24,791 - #9 [
+INFO  08:27:24,791 - #47 1
+INFO  08:27:24,791 - #10 ]
+INFO  08:27:24,792 - #6 =
+INFO  08:27:24,792 - #48 mat
+INFO  08:27:24,792 - #9 [
+INFO  08:27:24,792 - #47 0
+INFO  08:27:24,792 - #10 ]
+INFO  08:27:24,792 - #9 [
+INFO  08:27:24,792 - #47 0
+INFO  08:27:24,792 - #10 ]
+INFO  08:27:24,792 - #38 *
+INFO  08:27:24,792 - #48 mat
+INFO  08:27:24,792 - #9 [
+INFO  08:27:24,792 - #47 0
+INFO  08:27:24,792 - #10 ]
+INFO  08:27:24,792 - #9 [
+INFO  08:27:24,792 - #47 1
+INFO  08:27:24,792 - #10 ]
+INFO  08:27:24,792 - #7 ;
+INFO  08:27:24,793 - #20 print
+INFO  08:27:24,793 - #12 (
+INFO  08:27:24,793 - #48 mat
+INFO  08:27:24,793 - #9 [
+INFO  08:27:24,793 - #47 1
+INFO  08:27:24,793 - #10 ]
+INFO  08:27:24,793 - #9 [
+INFO  08:27:24,793 - #47 0
+INFO  08:27:24,793 - #10 ]
+INFO  08:27:24,793 - #13 )
+INFO  08:27:24,793 - #7 ;
+INFO  08:27:24,793 - #20 print
+INFO  08:27:24,793 - #12 (
+INFO  08:27:24,793 - #48 mat
+INFO  08:27:24,793 - #9 [
+INFO  08:27:24,793 - #47 1
+INFO  08:27:24,794 - #10 ]
+INFO  08:27:24,794 - #9 [
+INFO  08:27:24,797 - #47 1
+INFO  08:27:24,797 - #10 ]
+INFO  08:27:24,797 - #13 )
+INFO  08:27:24,797 - #7 ;
+INFO  08:27:24,797 - #48 nizch
+INFO  08:27:24,797 - #6 =
+INFO  08:27:24,797 - #28 new
+INFO  08:27:24,798 - #48 char
+INFO  08:27:24,798 - #9 [
+INFO  08:27:24,798 - #47 3
+INFO  08:27:24,798 - #10 ]
+INFO  08:27:24,798 - #7 ;
+INFO  08:27:24,798 - #48 nizch
+INFO  08:27:24,799 - #9 [
+INFO  08:27:24,799 - #47 0
+INFO  08:27:24,799 - #10 ]
+INFO  08:27:24,799 - #6 =
+INFO  08:27:24,799 - #49 'a'
+INFO  08:27:24,799 - #7 ;
+INFO  08:27:24,799 - #48 nizch
+INFO  08:27:24,799 - #9 [
+INFO  08:27:24,799 - #48 jedan
+INFO  08:27:24,799 - #10 ]
+INFO  08:27:24,799 - #6 =
+INFO  08:27:24,799 - #49 'b'
+INFO  08:27:24,799 - #7 ;
+INFO  08:27:24,799 - #48 nizch
+INFO  08:27:24,799 - #9 [
+INFO  08:27:24,799 - #48 pet
+INFO  08:27:24,799 - #37 -
+INFO  08:27:24,800 - #47 3
+INFO  08:27:24,800 - #10 ]
+INFO  08:27:24,800 - #6 =
+INFO  08:27:24,800 - #49 'c'
+INFO  08:27:24,800 - #7 ;
+INFO  08:27:24,800 - #20 print
+INFO  08:27:24,800 - #12 (
+INFO  08:27:24,800 - #48 nizch
+INFO  08:27:24,800 - #9 [
+INFO  08:27:24,800 - #47 1
+INFO  08:27:24,800 - #10 ]
+INFO  08:27:24,800 - #13 )
+INFO  08:27:24,800 - #7 ;
+INFO  08:27:24,800 - #20 print
+INFO  08:27:24,800 - #12 (
+INFO  08:27:24,800 - #48 nizch
+INFO  08:27:24,800 - #9 [
+INFO  08:27:24,800 - #48 jedan
+INFO  08:27:24,800 - #38 *
+INFO  08:27:24,800 - #47 2
+INFO  08:27:24,801 - #10 ]
+INFO  08:27:24,801 - #13 )
+INFO  08:27:24,801 - #7 ;
+INFO  08:27:24,801 - #19 read
+INFO  08:27:24,801 - #12 (
+INFO  08:27:24,801 - #48 bodovi
+INFO  08:27:24,801 - #13 )
+INFO  08:27:24,801 - #7 ;
+INFO  08:27:24,801 - #48 bodovi
+INFO  08:27:24,801 - #6 =
+INFO  08:27:24,801 - #37 -
+INFO  08:27:24,801 - #48 bodovi
+INFO  08:27:24,802 - #36 +
+INFO  08:27:24,802 - #12 (
+INFO  08:27:24,802 - #48 pet
+INFO  08:27:24,802 - #38 *
+INFO  08:27:24,802 - #48 a
+INFO  08:27:24,802 - #39 /
+INFO  08:27:24,802 - #47 2
+INFO  08:27:24,802 - #37 -
+INFO  08:27:24,802 - #48 jedan
+INFO  08:27:24,802 - #13 )
+INFO  08:27:24,803 - #38 *
+INFO  08:27:24,803 - #48 bodovi
+INFO  08:27:24,803 - #37 -
+INFO  08:27:24,803 - #12 (
+INFO  08:27:24,803 - #47 3
+INFO  08:27:24,803 - #40 %
+INFO  08:27:24,803 - #47 2
+INFO  08:27:24,803 - #36 +
+INFO  08:27:24,803 - #47 3
+INFO  08:27:24,803 - #38 *
+INFO  08:27:24,803 - #47 2
+INFO  08:27:24,803 - #37 -
+INFO  08:27:24,803 - #47 3
+INFO  08:27:24,803 - #13 )
+INFO  08:27:24,804 - #7 ;
+INFO  08:27:24,804 - #20 print
+INFO  08:27:24,804 - #12 (
+INFO  08:27:24,804 - #48 bodovi
+INFO  08:27:24,804 - #13 )
+INFO  08:27:24,804 - #7 ;
+INFO  08:27:24,804 - #4 }
+INFO  08:27:24,804 - #4 }
+INFO  08:27:24,827 - Program(
   ProgName(
    test301
   ) [ProgName]
@@ -1922,73 +1922,73 @@ INFO  08:36:31,232 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  08:36:31,237 - ===================================
-INFO  08:36:31,241 - Definisana konstanta nula na liniji 5, objektni cvor: Con nula: Int, 0, 0
-INFO  08:36:31,242 - Definisana konstanta jedan na liniji 6, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,242 - Definisana konstanta pet na liniji 7, objektni cvor: Con pet: Int, 5, 0
-INFO  08:36:31,243 - Deklarisan globalni niz niz na liniji 9, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,243 - Deklarisan globalni niz niz2 na liniji 9, objektni cvor: Var niz2: Array of Int, 1, 0
-INFO  08:36:31,243 - Deklarisana globalna promenljiva a na liniji 9, objektni cvor: Var a: Int, 2, 0
-INFO  08:36:31,243 - Deklarisana globalna promenljiva b na liniji 9, objektni cvor: Var b: Int, 3, 0
-INFO  08:36:31,243 - Deklarisan globalni niz nizch na liniji 10, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,243 - Deklarisana globalna matrica mat na liniji 11, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,243 - Deklarisana lokalna promenljiva bodovi na liniji 15, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,243 - Deklarisana lokalna promenljiva bt na liniji 16, objektni cvor: Var bt: Bool, 1, 1
-INFO  08:36:31,243 - Simbol bodovi se koristi na liniji 18, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,243 - Simbol bodovi se koristi na liniji 19, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,243 - Simbol bodovi se koristi na liniji 20, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,243 - Simbol bodovi se koristi na liniji 20, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol jedan se koristi na liniji 20, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,244 - Simbol bodovi se koristi na liniji 21, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol bodovi se koristi na liniji 21, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol pet se koristi na liniji 21, objektni cvor: Con pet: Int, 5, 0
-INFO  08:36:31,244 - Simbol bodovi se koristi na liniji 22, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol bodovi se koristi na liniji 23, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 26, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 27, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol nula se koristi na liniji 27, objektni cvor: Con nula: Int, 0, 0
-INFO  08:36:31,244 - Simbol jedan se koristi na liniji 27, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 28, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol jedan se koristi na liniji 29, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol bodovi se koristi na liniji 30, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 30, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 30, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol bodovi se koristi na liniji 31, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 32, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 34, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 35, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 35, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol nula se koristi na liniji 35, objektni cvor: Con nula: Int, 0, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 36, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 36, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 37, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol jedan se koristi na liniji 37, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,244 - Simbol niz se koristi na liniji 37, objektni cvor: Var niz: Array of Int, 0, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 38, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 38, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,244 - Simbol mat se koristi na liniji 38, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,245 - Simbol mat se koristi na liniji 39, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,245 - Simbol mat se koristi na liniji 40, objektni cvor: Var mat: Matrix of Int, 5, 0
-INFO  08:36:31,245 - Simbol nizch se koristi na liniji 42, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,245 - Simbol nizch se koristi na liniji 43, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,245 - Simbol nizch se koristi na liniji 44, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,245 - Simbol jedan se koristi na liniji 44, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,245 - Simbol nizch se koristi na liniji 45, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,245 - Simbol pet se koristi na liniji 45, objektni cvor: Con pet: Int, 5, 0
-INFO  08:36:31,245 - Simbol nizch se koristi na liniji 46, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,245 - Simbol nizch se koristi na liniji 47, objektni cvor: Var nizch: Array of Char, 4, 0
-INFO  08:36:31,245 - Simbol jedan se koristi na liniji 47, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,245 - Simbol bodovi se koristi na liniji 50, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,245 - Simbol bodovi se koristi na liniji 51, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,245 - Simbol bodovi se koristi na liniji 51, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,245 - Simbol pet se koristi na liniji 51, objektni cvor: Con pet: Int, 5, 0
-INFO  08:36:31,245 - Simbol a se koristi na liniji 51, objektni cvor: Var a: Int, 2, 0
-INFO  08:36:31,245 - Simbol jedan se koristi na liniji 51, objektni cvor: Con jedan: Int, 1, 0
-INFO  08:36:31,245 - Simbol bodovi se koristi na liniji 51, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,245 - Simbol bodovi se koristi na liniji 52, objektni cvor: Var bodovi: Int, 0, 1
-INFO  08:36:31,245 - ===================================
-INFO  08:36:31,263 - Parsiranje uspesno zavrseno!
+INFO  08:27:24,832 - ===================================
+INFO  08:27:24,840 - Definisana konstanta nula na liniji 5, objektni cvor: Con nula: Int, 0, 0
+INFO  08:27:24,840 - Definisana konstanta jedan na liniji 6, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,840 - Definisana konstanta pet na liniji 7, objektni cvor: Con pet: Int, 5, 0
+INFO  08:27:24,841 - Deklarisan globalni niz niz na liniji 9, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,841 - Deklarisan globalni niz niz2 na liniji 9, objektni cvor: Var niz2: Array of Int, 1, 0
+INFO  08:27:24,841 - Deklarisana globalna promenljiva a na liniji 9, objektni cvor: Var a: Int, 2, 0
+INFO  08:27:24,841 - Deklarisana globalna promenljiva b na liniji 9, objektni cvor: Var b: Int, 3, 0
+INFO  08:27:24,841 - Deklarisan globalni niz nizch na liniji 10, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,841 - Deklarisana globalna matrica mat na liniji 11, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,841 - Deklarisana lokalna promenljiva bodovi na liniji 15, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,841 - Deklarisana lokalna promenljiva bt na liniji 16, objektni cvor: Var bt: Bool, 1, 1
+INFO  08:27:24,841 - Simbol bodovi se koristi na liniji 18, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 19, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 20, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 20, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol jedan se koristi na liniji 20, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 21, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 21, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol pet se koristi na liniji 21, objektni cvor: Con pet: Int, 5, 0
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 22, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol bodovi se koristi na liniji 23, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,842 - Simbol niz se koristi na liniji 26, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,842 - Simbol niz se koristi na liniji 27, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,842 - Simbol nula se koristi na liniji 27, objektni cvor: Con nula: Int, 0, 0
+INFO  08:27:24,843 - Simbol jedan se koristi na liniji 27, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 28, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol jedan se koristi na liniji 29, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 29, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol bodovi se koristi na liniji 30, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 30, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 30, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol bodovi se koristi na liniji 31, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 32, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol mat se koristi na liniji 34, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,843 - Simbol mat se koristi na liniji 35, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,843 - Simbol niz se koristi na liniji 35, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,843 - Simbol nula se koristi na liniji 35, objektni cvor: Con nula: Int, 0, 0
+INFO  08:27:24,843 - Simbol mat se koristi na liniji 36, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,843 - Simbol mat se koristi na liniji 36, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,843 - Simbol mat se koristi na liniji 37, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,844 - Simbol jedan se koristi na liniji 37, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,844 - Simbol niz se koristi na liniji 37, objektni cvor: Var niz: Array of Int, 0, 0
+INFO  08:27:24,844 - Simbol mat se koristi na liniji 38, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,844 - Simbol mat se koristi na liniji 38, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,844 - Simbol mat se koristi na liniji 38, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,844 - Simbol mat se koristi na liniji 39, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,844 - Simbol mat se koristi na liniji 40, objektni cvor: Var mat: Matrix of Int, 5, 0
+INFO  08:27:24,844 - Simbol nizch se koristi na liniji 42, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,844 - Simbol nizch se koristi na liniji 43, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,844 - Simbol nizch se koristi na liniji 44, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,844 - Simbol jedan se koristi na liniji 44, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,844 - Simbol nizch se koristi na liniji 45, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,844 - Simbol pet se koristi na liniji 45, objektni cvor: Con pet: Int, 5, 0
+INFO  08:27:24,844 - Simbol nizch se koristi na liniji 46, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,844 - Simbol nizch se koristi na liniji 47, objektni cvor: Var nizch: Array of Char, 4, 0
+INFO  08:27:24,844 - Simbol jedan se koristi na liniji 47, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,844 - Simbol bodovi se koristi na liniji 50, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,844 - Simbol bodovi se koristi na liniji 51, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,845 - Simbol bodovi se koristi na liniji 51, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,845 - Simbol pet se koristi na liniji 51, objektni cvor: Con pet: Int, 5, 0
+INFO  08:27:24,845 - Simbol a se koristi na liniji 51, objektni cvor: Var a: Int, 2, 0
+INFO  08:27:24,845 - Simbol jedan se koristi na liniji 51, objektni cvor: Con jedan: Int, 1, 0
+INFO  08:27:24,845 - Simbol bodovi se koristi na liniji 51, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,845 - Simbol bodovi se koristi na liniji 52, objektni cvor: Var bodovi: Int, 0, 1
+INFO  08:27:24,845 - ===================================
+INFO  08:27:24,871 - Parsiranje uspesno zavrseno!

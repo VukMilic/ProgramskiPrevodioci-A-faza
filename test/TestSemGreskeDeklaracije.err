@@ -1,9 +1,9 @@
-ERROR 19:54:41,921 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 3
-ERROR 19:54:41,921 - Greska: promenljiva i je vec deklarisana!  na liniji 5
-ERROR 19:54:41,921 - Greska: ocekivan tip konstante con1 je Bool!  na liniji 8
-ERROR 19:54:41,923 - Greska: konstanta con1 je vec deklarisana!  na liniji 10
-ERROR 19:54:41,924 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 14
-ERROR 19:54:41,924 - Greska: Simbol nepostojeca koji se koristi nije deklarisan!  na liniji 17
-ERROR 19:54:41,924 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 17
+ERROR 17:35:26,944 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 3
+ERROR 17:35:26,945 - Greska: promenljiva i je vec deklarisana!  na liniji 5
+ERROR 17:35:26,945 - Greska: ocekivan tip konstante con1 je Bool!  na liniji 8
+ERROR 17:35:26,946 - Greska: konstanta con1 je vec deklarisana!  na liniji 10
+ERROR 17:35:26,946 - Greska: Nije pronadjen tip TypeError u tabeli simbola!  na liniji 14
+ERROR 17:35:26,947 - Greska: Simbol nepostojeca koji se koristi nije deklarisan!  na liniji 17
+ERROR 17:35:26,947 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 17
 
-ERROR 19:54:41,925 - Parsiranje NIJE uspesno zavrseno!
+ERROR 17:35:26,948 - Parsiranje NIJE uspesno zavrseno!

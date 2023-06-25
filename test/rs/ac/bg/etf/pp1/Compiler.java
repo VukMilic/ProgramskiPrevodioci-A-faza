@@ -41,8 +41,26 @@ public class Compiler {
 		
 		Reader br = null;
 		try {
+			String fileName;
+			
 			File sourceCode = new File(args[0]);
+			fileName = args[0];
 //			File sourceCode = new File("test/program.mj");
+//			fileName = "test/program.mj";
+//			File sourceCode = new File("test/TestSintaksaOporavak.mj");
+//			fileName = "test/TestSintaksaOporavak.mj";
+//			File sourceCode = new File("test/TestSintaksaNizMat.mj");
+//			fileName = "test/TestSintaksaNizMat.mj";
+//			File sourceCode = new File("test/TestSemUgradjeniObjekti.mj");
+//			fileName = "test/TestSemUgradjeniObjekti.mj";
+//			File sourceCode = new File("test/TestSemStatementa.mj");
+//			fileName = "test/TestSemStatementa.mj";
+//			File sourceCode = new File("test/TestSemGreskeStatementa.mj");
+//			fileName = "test/TestSemGreskeStatementa.mj";
+//			File sourceCode = new File("test/TestSemGreskeDeklaracije.mj");
+//			fileName = "test/TestSemGreskeDeklaracije.mj";
+//			File sourceCode = new File("test/TestSemDeklaracija.mj");
+//			fileName = "test/TestSemDeklaracija.mj";
 			
 			if(sourceCode.length() > 8*1024){
 				log.error("Greska: Izvorni kod programa ne sme biti veci od 8 KB!");
@@ -73,18 +91,22 @@ public class Compiler {
 //			log.info(v.nVars);
 			
 			if(!p.errorDetected && v.passed()){
-				File objFile = new File(args[1]);
-//				File objFile = new File("test/program.obj");
-				
-				if( objFile.exists() ) objFile.delete();
-				
-				CodeGenerator codeGenerator = new CodeGenerator();
-				prog.traverseBottomUp(codeGenerator);
-				
-				Code.dataSize = v.nVars;
-				Code.mainPc = codeGenerator.getMainPc();
-				Code.write(new FileOutputStream(objFile));
-				
+				// ako ulazni fajl treba da generise samo Semantiku i Sintaksu
+				// onda ti ne treba izlazni fajl 
+				if( !fileName.contains("TestSem") && !fileName.contains("TestSintaksa")){
+					File objFile = new File(args[1]);
+//					File objFile = new File("test/program.obj");
+					
+					if( objFile.exists() ) objFile.delete();
+					
+					CodeGenerator codeGenerator = new CodeGenerator();
+					prog.traverseBottomUp(codeGenerator);
+					
+					Code.dataSize = v.nVars;
+					Code.mainPc = codeGenerator.getMainPc();
+					Code.write(new FileOutputStream(objFile));	
+				}
+
 				log.info("Parsiranje uspesno zavrseno!");
 			}else{
 				log.error("Parsiranje NIJE uspesno zavrseno!");

@@ -1,153 +1,153 @@
-INFO  19:37:22,972 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\TestSemUgradjeniObjekti.mj
-INFO  19:37:23,037 - #2 program
-INFO  19:37:23,037 - #48 MJCompiler
-INFO  19:37:23,037 - #48 int
-INFO  19:37:23,038 - #48 i3
-INFO  19:37:23,038 - #8 ,
-INFO  19:37:23,040 - #48 i4
-INFO  19:37:23,040 - #9 [
-INFO  19:37:23,040 - #10 ]
-INFO  19:37:23,040 - #8 ,
-INFO  19:37:23,040 - #48 i5
-INFO  19:37:23,040 - #9 [
-INFO  19:37:23,040 - #10 ]
-INFO  19:37:23,040 - #9 [
-INFO  19:37:23,040 - #10 ]
-INFO  19:37:23,040 - #7 ;
-INFO  19:37:23,041 - #48 char
-INFO  19:37:23,041 - #48 c3
-INFO  19:37:23,041 - #8 ,
-INFO  19:37:23,041 - #48 c4
-INFO  19:37:23,041 - #9 [
-INFO  19:37:23,041 - #10 ]
-INFO  19:37:23,049 - #8 ,
-INFO  19:37:23,049 - #48 c5
-INFO  19:37:23,050 - #9 [
-INFO  19:37:23,050 - #10 ]
-INFO  19:37:23,050 - #9 [
-INFO  19:37:23,050 - #10 ]
-INFO  19:37:23,050 - #7 ;
-INFO  19:37:23,051 - #48 bool
-INFO  19:37:23,051 - #48 b3
-INFO  19:37:23,051 - #8 ,
-INFO  19:37:23,052 - #48 b4
-INFO  19:37:23,052 - #9 [
-INFO  19:37:23,052 - #10 ]
-INFO  19:37:23,052 - #8 ,
-INFO  19:37:23,052 - #48 b5
-INFO  19:37:23,053 - #9 [
-INFO  19:37:23,053 - #10 ]
-INFO  19:37:23,053 - #9 [
-INFO  19:37:23,053 - #10 ]
-INFO  19:37:23,053 - #7 ;
-INFO  19:37:23,054 - #3 {
-INFO  19:37:23,054 - #48 int
-INFO  19:37:23,056 - #48 main
-INFO  19:37:23,057 - #12 (
-INFO  19:37:23,057 - #13 )
-INFO  19:37:23,059 - #3 {
-INFO  19:37:23,061 - #48 i3
-INFO  19:37:23,062 - #6 =
-INFO  19:37:23,062 - #47 1
-INFO  19:37:23,065 - #7 ;
-INFO  19:37:23,068 - #48 i4
-INFO  19:37:23,068 - #6 =
-INFO  19:37:23,068 - #48 null
-INFO  19:37:23,068 - #7 ;
-INFO  19:37:23,069 - #48 i4
-INFO  19:37:23,069 - #6 =
-INFO  19:37:23,069 - #28 new
-INFO  19:37:23,069 - #48 int
-INFO  19:37:23,069 - #9 [
-INFO  19:37:23,069 - #47 4
-INFO  19:37:23,069 - #10 ]
-INFO  19:37:23,069 - #7 ;
-INFO  19:37:23,069 - #48 i5
-INFO  19:37:23,069 - #6 =
-INFO  19:37:23,070 - #28 new
-INFO  19:37:23,070 - #48 int
-INFO  19:37:23,070 - #9 [
-INFO  19:37:23,070 - #47 5
-INFO  19:37:23,070 - #10 ]
-INFO  19:37:23,074 - #9 [
-INFO  19:37:23,074 - #47 4
-INFO  19:37:23,074 - #10 ]
-INFO  19:37:23,074 - #7 ;
-INFO  19:37:23,074 - #20 print
-INFO  19:37:23,074 - #12 (
-INFO  19:37:23,075 - #48 i5
-INFO  19:37:23,075 - #9 [
-INFO  19:37:23,075 - #47 0
-INFO  19:37:23,075 - #10 ]
-INFO  19:37:23,075 - #9 [
-INFO  19:37:23,075 - #47 0
-INFO  19:37:23,075 - #10 ]
-INFO  19:37:23,075 - #13 )
-INFO  19:37:23,077 - #7 ;
-INFO  19:37:23,077 - #20 print
-INFO  19:37:23,077 - #12 (
-INFO  19:37:23,077 - #48 eol
-INFO  19:37:23,077 - #13 )
-INFO  19:37:23,077 - #7 ;
-INFO  19:37:23,077 - #20 print
-INFO  19:37:23,077 - #12 (
-INFO  19:37:23,077 - #48 i5
-INFO  19:37:23,077 - #9 [
-INFO  19:37:23,077 - #47 0
-INFO  19:37:23,077 - #10 ]
-INFO  19:37:23,077 - #9 [
-INFO  19:37:23,077 - #47 0
-INFO  19:37:23,077 - #10 ]
-INFO  19:37:23,078 - #13 )
-INFO  19:37:23,078 - #7 ;
-INFO  19:37:23,078 - #48 c3
-INFO  19:37:23,078 - #6 =
-INFO  19:37:23,078 - #48 chr
-INFO  19:37:23,078 - #12 (
-INFO  19:37:23,078 - #48 i3
-INFO  19:37:23,078 - #13 )
-INFO  19:37:23,080 - #7 ;
-INFO  19:37:23,081 - #48 i3
-INFO  19:37:23,081 - #6 =
-INFO  19:37:23,081 - #48 ord
-INFO  19:37:23,081 - #12 (
-INFO  19:37:23,081 - #48 c3
-INFO  19:37:23,081 - #13 )
-INFO  19:37:23,081 - #7 ;
-INFO  19:37:23,081 - #48 i3
-INFO  19:37:23,081 - #6 =
-INFO  19:37:23,081 - #48 len
-INFO  19:37:23,081 - #12 (
-INFO  19:37:23,081 - #48 i4
-INFO  19:37:23,081 - #13 )
-INFO  19:37:23,081 - #7 ;
-INFO  19:37:23,081 - #48 c3
-INFO  19:37:23,081 - #6 =
-INFO  19:37:23,081 - #48 chr
-INFO  19:37:23,081 - #12 (
-INFO  19:37:23,081 - #48 c3
-INFO  19:37:23,081 - #13 )
-INFO  19:37:23,081 - #7 ;
-INFO  19:37:23,081 - #48 i3
-INFO  19:37:23,082 - #6 =
-INFO  19:37:23,082 - #48 ord
-INFO  19:37:23,082 - #12 (
-INFO  19:37:23,082 - #48 i3
-INFO  19:37:23,082 - #13 )
-INFO  19:37:23,082 - #7 ;
-INFO  19:37:23,082 - #48 i3
-INFO  19:37:23,082 - #6 =
-INFO  19:37:23,082 - #48 len
-INFO  19:37:23,082 - #12 (
-INFO  19:37:23,082 - #48 b3
-INFO  19:37:23,082 - #13 )
-INFO  19:37:23,082 - #7 ;
-INFO  19:37:23,082 - #18 return
-INFO  19:37:23,083 - #47 1
-INFO  19:37:23,083 - #7 ;
-INFO  19:37:23,083 - #4 }
-INFO  19:37:23,083 - #4 }
-INFO  19:37:23,091 - Program(
+INFO  19:54:02,328 - Compiling source file: C:\Users\Vuk\Desktop\Finalna Verzija\workspace\MJCompiler\test\program.mj
+INFO  19:54:02,385 - #2 program
+INFO  19:54:02,385 - #48 MJCompiler
+INFO  19:54:02,385 - #48 int
+INFO  19:54:02,387 - #48 i3
+INFO  19:54:02,388 - #8 ,
+INFO  19:54:02,389 - #48 i4
+INFO  19:54:02,390 - #9 [
+INFO  19:54:02,390 - #10 ]
+INFO  19:54:02,391 - #8 ,
+INFO  19:54:02,391 - #48 i5
+INFO  19:54:02,391 - #9 [
+INFO  19:54:02,391 - #10 ]
+INFO  19:54:02,391 - #9 [
+INFO  19:54:02,391 - #10 ]
+INFO  19:54:02,391 - #7 ;
+INFO  19:54:02,391 - #48 char
+INFO  19:54:02,392 - #48 c3
+INFO  19:54:02,392 - #8 ,
+INFO  19:54:02,392 - #48 c4
+INFO  19:54:02,392 - #9 [
+INFO  19:54:02,392 - #10 ]
+INFO  19:54:02,392 - #8 ,
+INFO  19:54:02,392 - #48 c5
+INFO  19:54:02,392 - #9 [
+INFO  19:54:02,393 - #10 ]
+INFO  19:54:02,393 - #9 [
+INFO  19:54:02,393 - #10 ]
+INFO  19:54:02,393 - #7 ;
+INFO  19:54:02,393 - #48 bool
+INFO  19:54:02,393 - #48 b3
+INFO  19:54:02,393 - #8 ,
+INFO  19:54:02,393 - #48 b4
+INFO  19:54:02,393 - #9 [
+INFO  19:54:02,393 - #10 ]
+INFO  19:54:02,393 - #8 ,
+INFO  19:54:02,393 - #48 b5
+INFO  19:54:02,393 - #9 [
+INFO  19:54:02,394 - #10 ]
+INFO  19:54:02,394 - #9 [
+INFO  19:54:02,394 - #10 ]
+INFO  19:54:02,394 - #7 ;
+INFO  19:54:02,394 - #3 {
+INFO  19:54:02,394 - #48 int
+INFO  19:54:02,395 - #48 main
+INFO  19:54:02,396 - #12 (
+INFO  19:54:02,397 - #13 )
+INFO  19:54:02,397 - #3 {
+INFO  19:54:02,398 - #48 i3
+INFO  19:54:02,398 - #6 =
+INFO  19:54:02,398 - #47 1
+INFO  19:54:02,400 - #7 ;
+INFO  19:54:02,401 - #48 i4
+INFO  19:54:02,401 - #6 =
+INFO  19:54:02,401 - #48 null
+INFO  19:54:02,401 - #7 ;
+INFO  19:54:02,402 - #48 i4
+INFO  19:54:02,402 - #6 =
+INFO  19:54:02,402 - #28 new
+INFO  19:54:02,402 - #48 int
+INFO  19:54:02,402 - #9 [
+INFO  19:54:02,402 - #47 4
+INFO  19:54:02,402 - #10 ]
+INFO  19:54:02,402 - #7 ;
+INFO  19:54:02,402 - #48 i5
+INFO  19:54:02,402 - #6 =
+INFO  19:54:02,402 - #28 new
+INFO  19:54:02,403 - #48 int
+INFO  19:54:02,403 - #9 [
+INFO  19:54:02,403 - #47 5
+INFO  19:54:02,403 - #10 ]
+INFO  19:54:02,403 - #9 [
+INFO  19:54:02,403 - #47 4
+INFO  19:54:02,403 - #10 ]
+INFO  19:54:02,403 - #7 ;
+INFO  19:54:02,403 - #20 print
+INFO  19:54:02,403 - #12 (
+INFO  19:54:02,403 - #48 i5
+INFO  19:54:02,403 - #9 [
+INFO  19:54:02,404 - #47 0
+INFO  19:54:02,404 - #10 ]
+INFO  19:54:02,405 - #9 [
+INFO  19:54:02,405 - #47 0
+INFO  19:54:02,405 - #10 ]
+INFO  19:54:02,405 - #13 )
+INFO  19:54:02,405 - #7 ;
+INFO  19:54:02,406 - #20 print
+INFO  19:54:02,406 - #12 (
+INFO  19:54:02,406 - #48 eol
+INFO  19:54:02,406 - #13 )
+INFO  19:54:02,406 - #7 ;
+INFO  19:54:02,406 - #20 print
+INFO  19:54:02,406 - #12 (
+INFO  19:54:02,406 - #48 i5
+INFO  19:54:02,406 - #9 [
+INFO  19:54:02,406 - #47 0
+INFO  19:54:02,407 - #10 ]
+INFO  19:54:02,407 - #9 [
+INFO  19:54:02,407 - #47 0
+INFO  19:54:02,407 - #10 ]
+INFO  19:54:02,407 - #13 )
+INFO  19:54:02,407 - #7 ;
+INFO  19:54:02,407 - #48 c3
+INFO  19:54:02,407 - #6 =
+INFO  19:54:02,407 - #48 chr
+INFO  19:54:02,407 - #12 (
+INFO  19:54:02,407 - #48 i3
+INFO  19:54:02,407 - #13 )
+INFO  19:54:02,408 - #7 ;
+INFO  19:54:02,408 - #48 i3
+INFO  19:54:02,408 - #6 =
+INFO  19:54:02,408 - #48 ord
+INFO  19:54:02,408 - #12 (
+INFO  19:54:02,408 - #48 c3
+INFO  19:54:02,408 - #13 )
+INFO  19:54:02,408 - #7 ;
+INFO  19:54:02,408 - #48 i3
+INFO  19:54:02,409 - #6 =
+INFO  19:54:02,409 - #48 len
+INFO  19:54:02,409 - #12 (
+INFO  19:54:02,409 - #48 i4
+INFO  19:54:02,409 - #13 )
+INFO  19:54:02,409 - #7 ;
+INFO  19:54:02,409 - #48 c3
+INFO  19:54:02,409 - #6 =
+INFO  19:54:02,409 - #48 chr
+INFO  19:54:02,409 - #12 (
+INFO  19:54:02,409 - #48 c3
+INFO  19:54:02,409 - #13 )
+INFO  19:54:02,409 - #7 ;
+INFO  19:54:02,409 - #48 i3
+INFO  19:54:02,410 - #6 =
+INFO  19:54:02,410 - #48 ord
+INFO  19:54:02,410 - #12 (
+INFO  19:54:02,410 - #48 i3
+INFO  19:54:02,410 - #13 )
+INFO  19:54:02,410 - #7 ;
+INFO  19:54:02,410 - #48 i3
+INFO  19:54:02,410 - #6 =
+INFO  19:54:02,410 - #48 len
+INFO  19:54:02,410 - #12 (
+INFO  19:54:02,410 - #48 b3
+INFO  19:54:02,410 - #13 )
+INFO  19:54:02,410 - #7 ;
+INFO  19:54:02,410 - #18 return
+INFO  19:54:02,410 - #47 1
+INFO  19:54:02,410 - #7 ;
+INFO  19:54:02,411 - #4 }
+INFO  19:54:02,411 - #4 }
+INFO  19:54:02,423 - Program(
   ProgName(
    MJCompiler
   ) [ProgName]
@@ -827,53 +827,51 @@ INFO  19:37:23,091 - Program(
     ) [MethodDeclaration]
   ) [MethodDeclarations]
 ) [Program]
-INFO  19:37:23,092 - ===================================
-INFO  19:37:23,096 - Deklarisana globalna promenljiva i3 na liniji 2, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,096 - Deklarisan globalni niz i4 na liniji 2, objektni cvor: Var i4: Array, 1, 0
-INFO  19:37:23,096 - Deklarisana globalna matrica i5 na liniji 2, objektni cvor: Var i5: Array, 2, 0
-INFO  19:37:23,096 - Deklarisana globalna promenljiva c3 na liniji 3, objektni cvor: Var c3: Char, 3, 0
-INFO  19:37:23,097 - Deklarisan globalni niz c4 na liniji 3, objektni cvor: Var c4: Array, 4, 0
-INFO  19:37:23,097 - Deklarisana globalna matrica c5 na liniji 3, objektni cvor: Var c5: Array, 5, 0
-INFO  19:37:23,097 - Deklarisana globalna promenljiva b3 na liniji 4, objektni cvor: Var b3: Bool, 6, 0
-INFO  19:37:23,097 - Deklarisan globalni niz b4 na liniji 4, objektni cvor: Var b4: Array, 7, 0
-INFO  19:37:23,097 - Deklarisana globalna matrica b5 na liniji 4, objektni cvor: Var b5: Array, 8, 0
-INFO  19:37:23,097 - Simbol i3 se koristi na liniji 9, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,097 - Simbol i4 se koristi na liniji 11, objektni cvor: Var i4: Array, 1, 0
-INFO  19:37:23,097 - Simbol null se koristi na liniji 11, objektni cvor: Con null: Class, 0, 0
-INFO  19:37:23,097 - Simbol i4 se koristi na liniji 12, objektni cvor: Var i4: Array, 1, 0
-INFO  19:37:23,097 - Simbol i5 se koristi na liniji 14, objektni cvor: Var i5: Array, 2, 0
-INFO  19:37:23,097 - Simbol i5 se koristi na liniji 17, objektni cvor: Var i5: Array, 2, 0
-INFO  19:37:23,097 - Simbol eol se koristi na liniji 18, objektni cvor: Con eol: Char, 10, 0
-INFO  19:37:23,098 - Simbol i5 se koristi na liniji 19, objektni cvor: Var i5: Array, 2, 0
-INFO  19:37:23,098 - Simbol c3 se koristi na liniji 22, objektni cvor: Var c3: Char, 3, 0
-INFO  19:37:23,098 - Simbol chr se koristi na liniji 22, objektni cvor: Meth chr: Char, 0, 1
-INFO  19:37:23,098 - Simbol i3 se koristi na liniji 22, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,098 - Funkcija chr se uspesno poziva na liniji 22
-INFO  19:37:23,098 - Simbol i3 se koristi na liniji 23, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,098 - Simbol ord se koristi na liniji 23, objektni cvor: Meth ord: Int, 0, 1
-INFO  19:37:23,098 - Simbol c3 se koristi na liniji 23, objektni cvor: Var c3: Char, 3, 0
-INFO  19:37:23,098 - Funkcija ord se uspesno poziva na liniji 23
-INFO  19:37:23,098 - Simbol i3 se koristi na liniji 24, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,098 - Simbol len se koristi na liniji 24, objektni cvor: Meth len: Int, 0, 1
-INFO  19:37:23,098 - Simbol i4 se koristi na liniji 24, objektni cvor: Var i4: Array, 1, 0
-INFO  19:37:23,098 - Funkcija len se uspesno poziva na liniji 24
-INFO  19:37:23,098 - Simbol c3 se koristi na liniji 27, objektni cvor: Var c3: Char, 3, 0
-INFO  19:37:23,098 - Simbol chr se koristi na liniji 27, objektni cvor: Meth chr: Char, 0, 1
-INFO  19:37:23,098 - Simbol c3 se koristi na liniji 27, objektni cvor: Var c3: Char, 3, 0
-ERROR 19:37:23,098 - Greska: Prilikom poziva funkcije "chr" parametar mora biti tipa Int na liniji 27
-ERROR 19:37:23,098 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 27
-INFO  19:37:23,099 - Simbol i3 se koristi na liniji 28, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,099 - Simbol ord se koristi na liniji 28, objektni cvor: Meth ord: Int, 0, 1
-INFO  19:37:23,099 - Simbol i3 se koristi na liniji 28, objektni cvor: Var i3: Int, 0, 0
-ERROR 19:37:23,099 - Greska: Prilikom poziva funkcije "ord" parametar mora biti tipa Char na liniji 28
-ERROR 19:37:23,099 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 28
-INFO  19:37:23,099 - Simbol i3 se koristi na liniji 29, objektni cvor: Var i3: Int, 0, 0
-INFO  19:37:23,099 - Simbol len se koristi na liniji 29, objektni cvor: Meth len: Int, 0, 1
-INFO  19:37:23,099 - Simbol b3 se koristi na liniji 29, objektni cvor: Var b3: Bool, 6, 0
-ERROR 19:37:23,099 - Greska: Prilikom poziva funkcije "len" parametar mora biti tipa Array na liniji 29
-ERROR 19:37:23,099 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 29
-ERROR 19:37:23,100 - Greska: Ne postoji main funkcija u programu 
-INFO  19:37:23,100 - ===================================
+INFO  19:54:02,425 - ===================================
+INFO  19:54:02,429 - Deklarisana globalna promenljiva i3 na liniji 2, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,429 - Deklarisan globalni niz i4 na liniji 2, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:54:02,429 - Deklarisana globalna matrica i5 na liniji 2, objektni cvor: Var i5: Matrix of Int, 2, 0
+INFO  19:54:02,430 - Deklarisana globalna promenljiva c3 na liniji 3, objektni cvor: Var c3: Char, 3, 0
+INFO  19:54:02,430 - Deklarisan globalni niz c4 na liniji 3, objektni cvor: Var c4: Array of Char, 4, 0
+INFO  19:54:02,430 - Deklarisana globalna matrica c5 na liniji 3, objektni cvor: Var c5: Matrix of Char, 5, 0
+INFO  19:54:02,430 - Deklarisana globalna promenljiva b3 na liniji 4, objektni cvor: Var b3: Bool, 6, 0
+INFO  19:54:02,430 - Deklarisan globalni niz b4 na liniji 4, objektni cvor: Var b4: Array of Bool, 7, 0
+INFO  19:54:02,430 - Deklarisana globalna matrica b5 na liniji 4, objektni cvor: Var b5: Matrix of Bool, 8, 0
+INFO  19:54:02,430 - Simbol i3 se koristi na liniji 9, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,430 - Simbol i4 se koristi na liniji 11, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:54:02,430 - Simbol null se koristi na liniji 11, objektni cvor: Con null: Class, 0, 0
+INFO  19:54:02,431 - Simbol i4 se koristi na liniji 12, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:54:02,431 - Simbol i5 se koristi na liniji 14, objektni cvor: Var i5: Matrix of Int, 2, 0
+INFO  19:54:02,431 - Simbol i5 se koristi na liniji 17, objektni cvor: Var i5: Matrix of Int, 2, 0
+INFO  19:54:02,431 - Simbol eol se koristi na liniji 18, objektni cvor: Con eol: Char, 10, 0
+INFO  19:54:02,431 - Simbol i5 se koristi na liniji 19, objektni cvor: Var i5: Matrix of Int, 2, 0
+INFO  19:54:02,431 - Simbol c3 se koristi na liniji 22, objektni cvor: Var c3: Char, 3, 0
+INFO  19:54:02,431 - Simbol chr se koristi na liniji 22, objektni cvor: Meth chr: Char, 0, 1
+INFO  19:54:02,431 - Simbol i3 se koristi na liniji 22, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,431 - Simbol i3 se koristi na liniji 23, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,431 - Simbol ord se koristi na liniji 23, objektni cvor: Meth ord: Int, 0, 1
+INFO  19:54:02,431 - Simbol c3 se koristi na liniji 23, objektni cvor: Var c3: Char, 3, 0
+INFO  19:54:02,431 - Simbol i3 se koristi na liniji 24, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,431 - Simbol len se koristi na liniji 24, objektni cvor: Meth len: Int, 0, 1
+INFO  19:54:02,432 - Simbol i4 se koristi na liniji 24, objektni cvor: Var i4: Array of Int, 1, 0
+INFO  19:54:02,432 - Simbol c3 se koristi na liniji 27, objektni cvor: Var c3: Char, 3, 0
+INFO  19:54:02,432 - Simbol chr se koristi na liniji 27, objektni cvor: Meth chr: Char, 0, 1
+INFO  19:54:02,432 - Simbol c3 se koristi na liniji 27, objektni cvor: Var c3: Char, 3, 0
+ERROR 19:54:02,432 - Greska: Prilikom poziva funkcije "chr" parametar mora biti tipa Int na liniji 27
+ERROR 19:54:02,432 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 27
+INFO  19:54:02,432 - Simbol i3 se koristi na liniji 28, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,432 - Simbol ord se koristi na liniji 28, objektni cvor: Meth ord: Int, 0, 1
+INFO  19:54:02,432 - Simbol i3 se koristi na liniji 28, objektni cvor: Var i3: Int, 0, 0
+ERROR 19:54:02,432 - Greska: Prilikom poziva funkcije "ord" parametar mora biti tipa Char na liniji 28
+ERROR 19:54:02,432 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 28
+INFO  19:54:02,432 - Simbol i3 se koristi na liniji 29, objektni cvor: Var i3: Int, 0, 0
+INFO  19:54:02,432 - Simbol len se koristi na liniji 29, objektni cvor: Meth len: Int, 0, 1
+INFO  19:54:02,433 - Simbol b3 se koristi na liniji 29, objektni cvor: Var b3: Bool, 6, 0
+ERROR 19:54:02,433 - Greska: Prilikom poziva funkcije "len" parametar mora biti tipa Array na liniji 29
+ERROR 19:54:02,433 - Greska: tipovi se ne poklapaju prilikom dodele vrednosti!  na liniji 29
+INFO  19:54:02,433 - Deklarisana funkcija main na liniji 7, objektni cvor: Meth main: Int, 0, 0
+ERROR 19:54:02,433 - Greska: Ne postoji main funkcija u programu 
+INFO  19:54:02,433 - ===================================
 =====================SYMBOL TABLE DUMP=========================
 Type int: int, -1, -1 
 Type char: char, -1, -1 
@@ -903,5 +901,4 @@ Prog MJCompiler: notype, 0, 1
 
 
 
-ERROR 19:37:23,101 - Parsiranje NIJE uspesno zavrseno!
- 
+ERROR 19:54:02,438 - Parsiranje NIJE uspesno zavrseno!
